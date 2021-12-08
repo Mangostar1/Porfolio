@@ -1,31 +1,35 @@
-const nueve = document.getElementById("9").onclick;
+const nueve = document.getElementById("9");
 
-const ocho = document.getElementById("8").onclick;
+nueve.onclick = function nueve() {
+    document.calculadora.resultado.value += 9;
+}
 
-const siete = document.getElementById("7").onclick;
+const ocho = document.getElementById("8");
 
-const seis = document.getElementById("6").onclick;
+const siete = document.getElementById("7");
 
-const cinco = document.getElementById("5").onclick;
+const seis = document.getElementById("6");
 
-const cuatro = document.getElementById("4").onclick;
+const cinco = document.getElementById("5");
 
-const tres = document.getElementById("3").onclick;
+const cuatro = document.getElementById("4");
 
-const dos = document.getElementById("2").onclick;
+const tres = document.getElementById("3");
 
-const uno = document.getElementById("1").onclick;
+const dos = document.getElementById("2");
 
-const cero = document.getElementById("0").onclick;
+const uno = document.getElementById("1");
 
-const suma = document.getElementById("suma").onclick;
+const cero = document.getElementById("0");
 
-const resta = document.getElementById("resta").onclick;
+const suma = document.getElementById("suma");
 
-const divicion = document.getElementById("divicion").onclick;
+const resta = document.getElementById("resta");
 
-const multipli = document.getElementById("multiplicacion").onclick;
+const divicion = document.getElementById("divicion");
 
-const igual = document.getElementById("igual").onclick;
+const multipli = document.getElementById("multiplicacion");
+
+const igual = document.getElementById("igual");
 
 let resultado = document.getElementById("resultados");
