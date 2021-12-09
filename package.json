@@ -1,0 +1,22 @@
+{
+  "name": "gestor_prueba",
+  "version": "1.0.0",
+  "description": "Este es un proyecto de ejemplo de  npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mangostar1/repositorioDePrueba.git"
+  },
+  "keywords": [
+    "ejemplo"
+  ],
+  "author": "Mangostar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mangostar1/repositorioDePrueba/issues"
+  },
+  "homepage": "https://github.com/Mangostar1/repositorioDePrueba#readme"
+}
