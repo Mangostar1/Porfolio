@@ -70,3 +70,15 @@ footer{
 
     background-color: var(--colorGray);
 }
+/* Calculadora */
+
+#calcula{
+    background-color: var(--colorGray);
+
+    width: 250px;
+    height: 250px;
+}
+
+#resultados{
+    border-top: 1px solid var(--colorGray)
+}
