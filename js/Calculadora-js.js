@@ -40,5 +40,8 @@ divicion.onclick = () => document.calculadora.resultado.value += "/";
 const multipli = document.getElementById("multiplicacion");
 multipli.onclick = () => document.calculadora.resultado.value += "*";
 
+const coma = document.getElementById("coma");
+coma.onclick = () => document.calculadora.resultado.value += ".";
+
 const igualar = document.getElementById("igual");
 igualar.onclick = () => document.calculadora.resultado.value = eval(document.calculadora.resultado.value);

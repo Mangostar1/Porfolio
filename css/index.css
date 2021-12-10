@@ -4,7 +4,7 @@
     --color3: rgb(202, 81, 22);
     --color4: rgb(88, 28, 12);
 
-    --colorBlack: black;
+    --colorBlack: rgb(0, 0, 0);
     --colorWithe: white;
     --colorGray: gray;
 }
@@ -21,6 +21,8 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 3fr 1fr;
+
+    gap: 1em;
 }
 /* Header */
 header{
@@ -73,12 +75,32 @@ footer{
 /* Calculadora */
 
 #calcula{
-    background-color: var(--colorGray);
+    background-color: var(--color4);
 
-    width: 250px;
-    height: 250px;
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-flow: row wrap;
 }
 
 #resultados{
-    border-top: 1px solid var(--colorGray)
+    width: 100%;
+    height: 2em;
+
+    background-color: var(--color4);
+    color: var(--colorWithe);
+    border: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+.buttons{
+    padding: 0.5em 0em 0.5em 0em;
+    width: 23%;
+
+    background-color: rgb(241, 227, 203, 0.1);
+    border: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+#igual{
+    width: 100%;
 }
