@@ -84,7 +84,7 @@ footer{
     width: auto;
     height: auto;
 
-    display: flex;
+    /* display: flex; */
     flex-flow: row wrap;
 }
 
@@ -115,4 +115,14 @@ footer{
 
 #igual{
     width: 100%;
+}
+
+/* control botones */
+
+#calcula{
+    display: none;
+}
+
+#item_2{
+    display: none;
 }
