@@ -4,8 +4,6 @@
     --color3: rgb(202, 81, 22);
     --color4: rgb(88, 28, 12);
 
-    
-
     --colorBlack: rgb(0, 0, 0);
     --colorWithe: white;
     --colorGray: gray;
@@ -23,7 +21,9 @@
     position: relative;
     padding: 5px 10px 5px 35px; /* Arriba Derecha Abajo Izquierda */
     background-color: var(--color2);
+
     border-radius: 3px;
+    transition: all 0.3s ease;
 }
 
 #button_one::before, #button_two::before{
@@ -102,8 +102,31 @@
 /* Calculadora de calorias */
 
 #item_2{
-    background-color: var(--color3);
-
-    flex-flow: row wrap;
+    background-color: var(--color3);    
     width: 500px;
+}
+
+.calorias{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+    margin: 8px;
+}
+
+#genero{
+    padding: 0px;
+    border: 1.5px solid var(--colorGray);
+    border-radius: 5px;
+}
+#genero:hover{
+    border: 1.5px solid var(--colorBlack);
+}
+
+.calorias input[type="number"], #enviar,#resulta,#reset{
+    padding: 2px 5px;
+    border: 1.5px solid var(--colorGray);
+    border-radius: 5px;
+}
+.calorias input[type="number"]:hover, #enviar:hover,#resulta:hover,#reset:hover{
+    border: 1.5px solid var(--colorBlack);
 }
