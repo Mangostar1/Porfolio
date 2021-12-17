@@ -126,7 +126,11 @@
     padding: 2px 5px;
     border: 1.5px solid var(--colorGray);
     border-radius: 5px;
+    flex-basis: 4em;
 }
 .calorias input[type="number"]:hover, #enviar:hover,#resulta:hover,#reset:hover{
     border: 1.5px solid var(--colorBlack);
+}
+select{
+    margin-right: 3em;
 }
