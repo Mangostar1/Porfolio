@@ -134,3 +134,48 @@
 select{
     margin-right: 3em;
 }
+
+.calorias input[type="number"]{
+    margin-right: 16.5em;
+}
+
+.label_actividad{
+    width: 450px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding:  4px 0px 4px 10px; /* Arriba Derecha Abajo Izquierda */
+    cursor: pointer;
+
+    transition: 0.3;
+}
+.label_actividad::before{
+    content: "";
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgb(221, 221, 221);
+}
+
+.label_actividad:hover{
+    background-color: rgba(88, 28, 12, 0.274);
+}
+
+.label_actividad:hover::before{
+    background-color: rgb(146, 146, 146);
+}
+
+.calorias input[type="radio"]{
+    display: none;
+}
+
+.calorias input[type="radio"]:checked + label{
+    background-color: rgba(88, 28, 12, 0.274);
+}
+
+.calorias input[type="radio"]:checked + .label_actividad::before{
+    background-color: var(--colorWithe);
+    box-sizing: border-box;
+    border: 5px solid blue;
+}
