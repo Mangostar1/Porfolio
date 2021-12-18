@@ -143,10 +143,10 @@ select{
     width: 450px;
     margin-top: 3px;
     margin-bottom: 3px;
-    padding:  4px 0px 4px 10px; /* Arriba Derecha Abajo Izquierda */
+    padding:  4px 0px 4px 35px; /* Arriba Derecha Abajo Izquierda */
     cursor: pointer;
-
     transition: 0.3;
+    position: relative;
 }
 .label_actividad::before{
     content: "";
@@ -154,8 +154,9 @@ select{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    display: inline-block;
     background-color: rgb(221, 221, 221);
+    position: absolute;
+    left: 7px;
 }
 
 .label_actividad:hover{
