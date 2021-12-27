@@ -76,13 +76,19 @@ header{
 }
 
 /* main code */
+
 main{
+    display: flex;
+    justify-content: center;
+}
+
+#component-main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1em;
 
-    margin-top: 25%;
+    margin-top: 9em;
     width: 740px;
     height: 300px;
 }
