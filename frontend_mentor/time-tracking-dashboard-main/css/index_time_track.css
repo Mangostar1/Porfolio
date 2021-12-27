@@ -1,0 +1,185 @@
+:root{
+    --Blue: hsl(246, 80%, 60%);
+    --work: hsl(15, 100%, 70%);
+    --play: hsl(195, 74%, 62%);
+    --study: hsl(348, 100%, 68%);
+    --exercise: hsl(145, 58%, 55%);
+    --social: hsl(264, 64%, 52%);
+    --self_care: hsl(43, 84%, 65%);
+
+    /* neutrals */
+    --neutral_one: hsl(226, 43%, 10%);
+    --neutral_two: hsl(235, 46%, 20%);
+    --neutral_three: hsl(235, 45%, 61%);
+    --neutral_four: hsl(236, 100%, 87%);
+    --neutral_white: white;
+
+    /* header colors */
+    --color1: rgb(241, 227, 203);
+    --color2: rgb(249, 179, 132);
+    --color3: rgb(202, 81, 22);
+    --color4: rgb(88, 28, 12);
+
+    --colorBlack: rgb(0, 0, 0);
+    --colorWithe: white;
+    --colorGray: gray;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+#container{
+    display: grid;
+}
+
+body{
+    font-size: 18px;
+    background-color: var(--neutral_one);
+}
+
+/* header */
+header{
+    background-color: var(--color2);
+    width: 100%;
+    height: 3.5em;
+}
+
+.nav{
+    padding: 1em;
+}
+
+.nav-menu{
+    list-style: none;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.nav-link{
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 0.5em 1em 0.5em 1em; /* Arriba Derecha Abajo Izquierda */
+    border-radius: 3px;
+
+    color: var(--colorBlack);
+    background-color: var(--color3);
+}
+
+.nav-link:hover{
+    background-color: var(--color4);
+    color: var(--colorWithe);
+}
+
+/* main code */
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+
+    margin-top: 25%;
+    width: 740px;
+    height: 300px;
+}
+
+/* organizador */
+#jeremy{
+    background-color: var(--neutral_two);
+    border-radius: 10px;
+
+    grid-row: 1 / 3;
+}
+#data-jeremy{
+    background-color: var(--Blue);
+    border-radius: 10px;
+    height: 65%;
+}
+
+#work{
+    background-color: var(--neutral_two);
+    border-radius: 10px;
+}
+
+#play{
+    background-color: var(--neutral_two);
+    border-radius: 10px;
+}
+
+#study{
+    background-color: var(--neutral_two);
+    border-radius: 10px;
+}
+
+#exercise{
+    background-color: var(--neutral_two);
+    border-radius: 10px;
+}
+
+#social{
+    background-color: var(--neutral_two);
+    border-radius: 10px;
+}
+
+#self_care{
+    background-color: var(--neutral_two);
+    border-radius: 10px;
+}
+
+/* other */
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* images */
+
+#avatar {
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid var(--neutral_white);
+    border-radius: 50%;
+}
+
+/* text */
+
+#report{
+    font-size: 10px;
+    color: var(--neutral_white);
+}
+
+#name{
+    color: var(--neutral_white);
+    font-weight: 400;
+}
+
+#list{
+    list-style: none;
+    color: var(--neutral_three);
+    font-size: 15px;
+    cursor: pointer;
+}
+#list li:hover{
+    color: var(--neutral_white);
+}
+
+/* data */
+
+.daily{
+    color: var(--neutral_white);
+}
+
+.weekly{
+    color: var(--neutral_white);
+}
+
+.monthly{
+    color: var(--neutral_white);
+}
