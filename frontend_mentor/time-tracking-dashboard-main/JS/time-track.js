@@ -1,85 +1,58 @@
+/* btones */
+let day = document.getElementById("day");
+let week = document.getElementById("week");
+let month = document.getElementById("month");
+/* elementos contenedores */
 let daily = document.getElementsByClassName("daily");
 let weekly = document.getElementsByClassName("weekly");
 let monthly = document.getElementsByClassName("monthly");
 
-let day = document.getElementById("day");
-let week = document.getElementById("week");
-let month = document.getElementById("month");
+let hours = document.getElementsByClassName("hours");
+let previ = document.getElementsByClassName("previ");
+
+
+/* display: flex por defecto */
+
+for (let i = 0; i < 6; i++){
+    weekly[i].style = "display: none";
+    monthly[i].style = "display: none";
+    daily[i].style = "display: flex";
+}
+
+/* eventos click */
 
 day.onclick = () => {
-    weekly[0].style = "display: none";
-    monthly[0].style = "display: none";
-    daily[0].style = "display: flex";
-    
-    weekly[1].style = "display: none";
-    monthly[1].style = "display: none";
-    daily[1].style = "display: flex";
-
-    weekly[2].style = "display: none";
-    monthly[2].style = "display: none";
-    daily[2].style = "display: flex";
-
-    weekly[3].style = "display: none";
-    monthly[3].style = "display: none";
-    daily[3].style = "display: flex";
-
-    weekly[4].style = "display: none";
-    monthly[4].style = "display: none";
-    daily[4].style = "display: flex";
-
-    weekly[5].style = "display: none";
-    monthly[5].style = "display: none";
-    daily[5].style = "display: flex";
+    for (let i = 0; i < 6; i++){
+        weekly[i].style = "display: none";
+        monthly[i].style = "display: none";
+        daily[i].style = "display: flex";
+    }
 }
 
 week.onclick = () => {
-    monthly[0].style = "display: none";
-    daily[0].style = "display: none";
-    weekly[0].style = "display: flex";
-    
-    monthly[1].style = "display: none";
-    daily[1].style = "display: none";
-    weekly[1].style = "display: flex";
-
-    monthly[2].style = "display: none";
-    daily[2].style = "display: none";
-    weekly[2].style = "display: flex";
-
-    monthly[3].style = "display: none";
-    daily[3].style = "display: none";
-    weekly[3].style = "display: flex";
-
-    monthly[4].style = "display: none";
-    daily[4].style = "display: none";
-    weekly[4].style = "display: flex";
-
-    monthly[5].style = "display: none";
-    daily[5].style = "display: none";
-    weekly[5].style = "display: flex";
+    for (let i = 0; i < 6; i++){
+        monthly[i].style = "display: none";
+        daily[i].style = "display: none";
+        weekly[i].style = "display: flex";
+    }
 }
 
 month.onclick = () => {
-    weekly[0].style = "display: none";
-    daily[0].style = "display: none";
-    monthly[0].style = "display: flex";
-    
-    weekly[1].style = "display: none";
-    daily[1].style = "display: none";
-    monthly[1].style = "display: flex";
-
-    weekly[2].style = "display: none";
-    daily[2].style = "display: none";
-    monthly[2].style = "display: flex";
-
-    weekly[3].style = "display: none";
-    daily[3].style = "display: none";
-    monthly[3].style = "display: flex";
-
-    weekly[4].style = "display: none";
-    daily[4].style = "display: none";
-    monthly[4].style = "display: flex";
-
-    weekly[5].style = "display: none";
-    daily[5].style = "display: none";
-    monthly[5].style = "display: flex";
+    for (let i = 0; i < 6; i++){
+        weekly[i].style = "display: none";
+        daily[i].style = "display: none";
+        monthly[i].style = "display: flex";
+    }
 }
+
+/* pruebas */
+
+async function horasEventosDiario() {
+    const url = await fetch("http://127.0.0.1:5500/frontend_mentor/time-tracking-dashboard-main/data.json");
+    let json = await url.json();
+
+    document.getElementById("hour-day-work").innerHTML = json[0].timeframes.daily.current + " hrs";
+    document.getElementById("previD-work").innerHTML = json[0].timeframes.daily.previous + " hrs";
+}
+
+horasEventosDiario();
