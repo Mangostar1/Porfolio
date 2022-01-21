@@ -20,9 +20,9 @@ let previMonth = document.getElementsByClassName("previ-month");
 /* display: flex por defecto */
 
 for (let i = 0; i < 6; i++){
+    daily[i].style = "display: flex";
     weekly[i].style = "display: none";
     monthly[i].style = "display: none";
-    daily[i].style = "display: flex";
 }
 
 /* eventos click */
@@ -39,7 +39,7 @@ day.onclick = () => {
     
         for (let i = 0; i <= 6; i++){
             hoursDay[i].innerHTML = json[i].timeframes.daily.current + " hrs";
-            previDay[i].innerHTML = json[i].timeframes.daily.previous + " hrs";
+            previDay[i].innerHTML = "Last Week - " + json[i].timeframes.daily.previous + " hrs";
         }
     }
     horasEventosDiario();

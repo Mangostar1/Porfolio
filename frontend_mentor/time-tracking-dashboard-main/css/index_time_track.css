@@ -49,9 +49,11 @@ h2{
 
 .hours{/* tiene display flex */
     color: red;
+    width: 100%;
 }
 .previ{/* tiene display flex */
     color: pink;
+    width: 100%;
 }
 
 #svg-work{
@@ -124,35 +126,11 @@ main{
     height: 65%;
 }
 
-#work{
+#work, #play, #study, #exercise, #social, #self_care{
     background-color: var(--neutral_two);
     border-radius: 10px;
 }
 
-#play{
-    background-color: var(--neutral_two);
-    border-radius: 10px;
-}
-
-#study{
-    background-color: var(--neutral_two);
-    border-radius: 10px;
-}
-
-#exercise{
-    background-color: var(--neutral_two);
-    border-radius: 10px;
-}
-
-#social{
-    background-color: var(--neutral_two);
-    border-radius: 10px;
-}
-
-#self_care{
-    background-color: var(--neutral_two);
-    border-radius: 10px;
-}
 
 /* other */
 .attribution { 
@@ -196,14 +174,7 @@ main{
 
 /* data */
 
-.daily{
+.daily, .weekly, .monthly{
     color: var(--neutral_white);
-}
-
-.weekly{
-    color: var(--neutral_white);
-}
-
-.monthly{
-    color: var(--neutral_white);
+    flex-flow: row wrap;
 }
