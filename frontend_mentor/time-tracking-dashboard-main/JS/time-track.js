@@ -7,8 +7,14 @@ let daily = document.getElementsByClassName("daily");
 let weekly = document.getElementsByClassName("weekly");
 let monthly = document.getElementsByClassName("monthly");
 
-let hours = document.getElementsByClassName("hours");
-let previ = document.getElementsByClassName("previ");
+let hoursDay = document.getElementsByClassName("hours-daily");
+let previDay = document.getElementsByClassName("previ-daily");
+
+let hoursWeek = document.getElementsByClassName("hours-week");
+let previWeek = document.getElementsByClassName("previ-week");
+
+let hoursMonth = document.getElementsByClassName("hours-month");
+let previMonth = document.getElementsByClassName("previ-month");
 
 
 /* display: flex por defecto */
@@ -27,6 +33,16 @@ day.onclick = () => {
         monthly[i].style = "display: none";
         daily[i].style = "display: flex";
     }
+    async function horasEventosDiario() {
+        const url = await fetch("http://127.0.0.1:5500/frontend_mentor/time-tracking-dashboard-main/data.json");
+        let json = await url.json();
+    
+        for (let i = 0; i <= 6; i++){
+            hoursDay[i].innerHTML = json[i].timeframes.daily.current + " hrs";
+            previDay[i].innerHTML = json[i].timeframes.daily.previous + " hrs";
+        }
+    }
+    horasEventosDiario();
 }
 
 week.onclick = () => {
@@ -35,6 +51,16 @@ week.onclick = () => {
         daily[i].style = "display: none";
         weekly[i].style = "display: flex";
     }
+    async function horasEventosSemanal() {
+        const url = await fetch("http://127.0.0.1:5500/frontend_mentor/time-tracking-dashboard-main/data.json");
+        let json = await url.json();
+    
+        for (let i = 0; i <= 6; i++){
+            hoursWeek[i].innerHTML = json[i].timeframes.weekly.current + " hrs";
+            previWeek[i].innerHTML = json[i].timeframes.weekly.previous + " hrs";
+        }
+    }
+    horasEventosSemanal();
 }
 
 month.onclick = () => {
@@ -43,16 +69,21 @@ month.onclick = () => {
         daily[i].style = "display: none";
         monthly[i].style = "display: flex";
     }
+    async function horasEventosMensual() {
+        const url = await fetch("http://127.0.0.1:5500/frontend_mentor/time-tracking-dashboard-main/data.json");
+        let json = await url.json();
+    
+        for (let i = 0; i <= 6; i++){
+            hoursMonth[i].innerHTML = json[i].timeframes.monthly.current + " hrs";
+            previMonth[i].innerHTML = json[i].timeframes.monthly.previous + " hrs";
+        }
+    }
+    horasEventosMensual();
 }
 
 /* pruebas */
 
-async function horasEventosDiario() {
-    const url = await fetch("http://127.0.0.1:5500/frontend_mentor/time-tracking-dashboard-main/data.json");
-    let json = await url.json();
 
-    document.getElementById("hour-day-work").innerHTML = json[0].timeframes.daily.current + " hrs";
-    document.getElementById("previD-work").innerHTML = json[0].timeframes.daily.previous + " hrs";
-}
 
-horasEventosDiario();
+
+
