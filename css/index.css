@@ -68,6 +68,12 @@ body{
 
 main{
     margin-left: .3em;
+    grid-column: 2 / 3;
+}
+
+aside{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 
 footer{
@@ -75,4 +81,9 @@ footer{
     grid-row: 3 / 4;
 
     background-color: var(--colorGray);
+}
+
+/* texto */
+p::selection{
+    background-color: var(--color3);
 }

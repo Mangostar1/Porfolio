@@ -57,7 +57,7 @@ week.onclick = () => {
     
         for (let i = 0; i <= 6; i++){
             hoursWeek[i].innerHTML = json[i].timeframes.weekly.current + " hrs";
-            previWeek[i].innerHTML = json[i].timeframes.weekly.previous + " hrs";
+            previWeek[i].innerHTML = "Last Week - " + json[i].timeframes.weekly.previous + " hrs";
         }
     }
     horasEventosSemanal();
@@ -75,7 +75,7 @@ month.onclick = () => {
     
         for (let i = 0; i <= 6; i++){
             hoursMonth[i].innerHTML = json[i].timeframes.monthly.current + " hrs";
-            previMonth[i].innerHTML = json[i].timeframes.monthly.previous + " hrs";
+            previMonth[i].innerHTML = "Last Month - " + json[i].timeframes.monthly.previous + " hrs";
         }
     }
     horasEventosMensual();
