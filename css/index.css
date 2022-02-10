@@ -41,8 +41,12 @@ header{
     list-style: none;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     gap: 1em;
+}
+
+.nav-list{
+    z-index: 3;
 }
 
 .nav-link{
@@ -50,6 +54,7 @@ header{
     transition: 0.3s;
     padding: 0.5em 1em 0.5em 1em; /* Arriba Derecha Abajo Izquierda */
     border-radius: 3px;
+    display: block;
 
     color: var(--colorBlack);
     background-color: var(--color3);
@@ -60,6 +65,17 @@ header{
     color: var(--colorWithe);
 }
 
+.nav-submenu{
+    display: none;
+}
+
+ul>li:hover>ul{
+    display: block;
+}
+
+.sub-list{
+    list-style: none;
+}
 /* Body */
 
 body{
