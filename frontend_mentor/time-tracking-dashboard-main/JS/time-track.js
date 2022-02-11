@@ -2,6 +2,7 @@
 let day = document.getElementById("day");
 let week = document.getElementById("week");
 let month = document.getElementById("month");
+
 /* elementos contenedores */
 let daily = document.getElementsByClassName("daily");
 let weekly = document.getElementsByClassName("weekly");
@@ -16,14 +17,6 @@ let previWeek = document.getElementsByClassName("previ-week");
 let hoursMonth = document.getElementsByClassName("hours-month");
 let previMonth = document.getElementsByClassName("previ-month");
 
-
-/* display: flex por defecto */
-
-for (let i = 0; i < 6; i++){
-    daily[i].style = "display: flex";
-    weekly[i].style = "display: none";
-    monthly[i].style = "display: none";
-}
 
 /* eventos click */
 

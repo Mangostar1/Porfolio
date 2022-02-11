@@ -43,17 +43,42 @@ body{
 
 /* cont */
 
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elipsis{
+    height: 5px;
+
+    margin-right: 20px;
+
+    cursor: pointer;
+}
+
 h2{
     color: var(--neutral_white);
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 25px;
 }
 
 .hours{/* tiene display flex */
-    color: red;
+    color: var(--colorWithe);
     width: 100%;
+
+    font-size: 35px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 .previ{/* tiene display flex */
-    color: pink;
+    color: var(--neutral_four);
     width: 100%;
+
+    font-size: 11px;
+    margin-left: 20px;
 }
 
 #svg-work{
@@ -153,6 +178,11 @@ main{
     border-radius: 10px;
 }
 
+/* #work:hover, #play:hover, #study:hover, #exercise:hover, #social:hover, #self_care:hover{
+    background-color: var(--neutral_three);
+    cursor: pointer;
+} */
+
 
 /* other */
 .attribution { 
@@ -170,18 +200,25 @@ main{
 
     border: 1px solid var(--neutral_white);
     border-radius: 50%;
+
+    margin: 20px;
 }
 
 /* text */
 
 #report{
     font-size: 10px;
-    color: var(--neutral_white);
+    color: hsl(246, 80%, 90%);
+
+    margin-left: 20px;
 }
 
 #name{
     color: var(--neutral_white);
     font-weight: 400;
+    font-size: 27px;
+
+    margin-left: 20px;
 }
 
 #list{
@@ -193,7 +230,10 @@ main{
 #list li:hover{
     color: var(--neutral_white);
 }
-
+#list li{
+    margin-left: 20px;
+    margin-top: 13px;
+}
 /* data */
 
 .daily, .weekly, .monthly{
