@@ -73,10 +73,3 @@ month.onclick = () => {
     }
     horasEventosMensual();
 }
-
-/* pruebas */
-
-
-
-
-

@@ -20,7 +20,7 @@
 .contaienr{
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: .4fr 3fr 1fr;
 
     gap: 1em;
 }
@@ -85,11 +85,18 @@ body{
 main{
     margin-left: .3em;
     grid-column: 2 / 3;
+    grid-row: 2/3;
+}
+
+article{
+    background-color: gray;
+    height: 550px;
 }
 
 aside{
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    background-color: rgb(63, 63, 63);
 }
 
 footer{
