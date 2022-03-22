@@ -24,58 +24,7 @@
 
     gap: 1em;
 }
-/* Header */
-header{
-    background-color: var(--color2);
-    
-    grid-column: 1 / span 3;
-    
-    height: 3.5em;
-}
 
-.nav{
-    padding: 1em;
-}
-
-.nav-menu{
-    list-style: none;
-
-    display: flex;
-    justify-content: flex-start;
-    gap: 1em;
-}
-
-.nav-list{
-    z-index: 3;
-}
-
-.nav-link{
-    text-decoration: none;
-    transition: 0.3s;
-    padding: 0.5em 1em 0.5em 1em; /* Arriba Derecha Abajo Izquierda */
-    border-radius: 3px;
-    display: block;
-
-    color: var(--colorBlack);
-    background-color: var(--color3);
-}
-
-.nav-link:hover{
-    background-color: var(--color4);
-    color: var(--colorWithe);
-}
-
-.nav-submenu{
-    display: none;
-}
-
-ul>li:hover>ul{
-    display: block;
-}
-
-.sub-list{
-    list-style: none;
-}
 /* Body */
 
 body{

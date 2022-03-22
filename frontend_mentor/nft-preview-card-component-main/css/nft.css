@@ -68,7 +68,7 @@ header{
 .nav-link{
     text-decoration: none;
     transition: 0.3s;
-    padding: 0.5em 1em 0.5em 1em; /* Arriba Derecha Abajo Izquierda */
+    padding: 0.5em 1em 0.5em 1em;
     border-radius: 3px;
     display: block;
 
@@ -93,6 +93,7 @@ ul>li:hover>ul{
     list-style: none;
 }
 
+/* main */
 main{
     background-color: var(--neutral_two);
     border-radius: 8px;
