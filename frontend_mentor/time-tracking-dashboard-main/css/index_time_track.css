@@ -34,6 +34,9 @@
 
 #container{
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 85vh 30px;
+    gap: 1em;
 }
 
 body{
@@ -147,6 +150,7 @@ ul>li:hover>ul{
 main{
     display: flex;
     justify-content: center;
+    flex-flow: row wrap;
 }
 
 #component-main{
@@ -176,7 +180,10 @@ main{
 #work, #play, #study, #exercise, #social, #self_care{
     background-color: var(--neutral_two);
     border-radius: 10px;
+    height: 150px;
+    margin-top: 0px;
 }
+
 
 /* #work:hover, #play:hover, #study:hover, #exercise:hover, #social:hover, #self_care:hover{
     background-color: var(--neutral_three);
@@ -187,6 +194,9 @@ main{
 /* other */
 .attribution { 
     font-size: 11px; text-align: center; 
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -203,6 +213,41 @@ main{
 
     margin: 20px;
 }
+
+.img-config{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    height: 35px;
+}
+
+#work-img{
+    background-color: var(--work);
+}
+#play-img{
+    background-color: var(--play);
+}
+#study-img{
+    background-color: var(--study);
+}
+#exercise-img{
+    background-color: var(--exercise);
+}
+#social-img{
+    background-color: var(--social);
+}
+#self-care-img{
+    background-color: var(--self_care);
+}
+
+.img{
+    transform: translate(-0.5em, -0.5em);
+    height: 50px;
+    width: 50px;
+}
+
 
 /* text */
 
@@ -234,9 +279,36 @@ main{
     margin-left: 20px;
     margin-top: 13px;
 }
+
 /* data */
 
 .daily, .weekly, .monthly{
     color: var(--neutral_white);
     flex-flow: row wrap;
+}
+
+/* footer*/
+.attribution{
+    color: var(--neutral_white);
+    font-size: 15px;
+}
+.attribution a{
+    color: rgb(0, 153, 255);
+}
+
+/* media */
+@media (max-width:999px) {
+    #component-main{
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        width: auto;
+    }
+
+    #data-jeremy{
+        height: auto;
+    }
+
+    .attribution{
+        display: none;
+    }
 }
