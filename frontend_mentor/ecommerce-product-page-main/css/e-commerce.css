@@ -4,7 +4,7 @@
     --paleOrange: hsl(25, 100%, 94%);
 
     /* neutral */
-    --varkBlue: hsl(220, 13%, 13%):
+    --varkBlue: hsl(220, 13%, 13%);
     --DarkGrayishBlue: hsl(219, 9%, 45%);
     --GrayishBlue: hsl(220, 14%, 75%);
     --LightGrayishBlue: hsl(223, 64%, 98%);
@@ -23,3 +23,158 @@
 /* Font size (paragraph): 16px */
 
 /* Desde aca comienza el codigo, lo anterior son los parametros que nos entregan */
+
+/* header */
+header{
+    border-bottom: 1px solid var(--GrayishBlue);
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* nav */
+.nav{
+}
+
+.menu{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+}
+
+.li-link{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--black);
+
+    transition: all 0.1s ease;
+    padding: 43px 20px;
+}
+
+.link:hover{
+    border-bottom: 5px solid var(--Orange);
+}
+
+/* avatar and cart box */
+.user{
+    
+}
+
+.avatar{
+    width: 45px;
+    height: 45px;
+}
+
+/* body */
+body{
+    background-color: var(--White);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* main */
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0px;
+
+    margin: 130px 200px;
+}
+
+
+/* imagenes content */
+.images{
+    width: 50%;
+}
+
+.info-products{
+    width: 50%;
+}
+
+.main-img{
+    height: 400px;
+    width: 400px;
+
+    border-radius: 16px;
+}
+
+.small{
+    border-radius: 16px;
+
+    height: 96px;
+    width: 96px;
+    cursor: pointer;
+}
+
+.small:hover{
+    
+}
+
+.big-image{
+    grid-column: 1 / 4spam;
+    grid-row: 1 / 3spam;
+}
+
+/* info productos contenedor */
+
+.controlPro{
+    background-color: var(--LightGrayishBlue);
+
+    font-weight: bold;
+    border: none;
+
+    padding: 15px 15px;
+    
+    cursor: pointer;
+}
+#resta{
+    margin-right: 0px;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#suma{
+    margin-left: 0px;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#countPro{
+    text-align: left;
+    font-weight: bold;
+    border: none;
+
+    width: 60px;
+    padding: 15px 25px;
+
+    background-color: var(--LightGrayishBlue);
+}
+
+#addCarts{
+    padding: 15px 80px;
+    font-weight: bold;
+
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px 2px hsla(26, 100%, 55%, 0.199); /* offset-x | offset-y | blur-radius o difuminado | spread-radius o ancho del radio | color */
+    cursor: pointer;
+}
+
+/* footer */
+.attribution{
+    font-size: 16px;
+    font-weight: bold;
+    grid-column: 1 / 2spam;
+}
