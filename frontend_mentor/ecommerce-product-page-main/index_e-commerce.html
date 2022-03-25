@@ -7,26 +7,34 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet"> 
+
   <title>Frontend Mentor | E-commerce product page</title>
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="logo">
-        <img class="logo" src="/frontend_mentor/ecommerce-product-page-main/images/logo.svg" alt="">
+      <div class="logo-nav-content">
+        <div class="logo-content">
+          <a href="#"><img class="logo" src="/frontend_mentor/ecommerce-product-page-main/images/logo.svg" alt=""></a>
+        </div>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="li-link"><a class="link" href="#">Collections</a></li>
+            <li class="li-link"><a class="link" href="#">Men</a></li>
+            <li class="li-link"><a class="link" href="#">Women</a></li>
+            <li class="li-link"><a class="link" href="#">About</a></li>
+            <li class="li-link"><a class="link" href="#">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="nav">
-        <ul class="menu">
-          <li class="li-link"><a class="link" href="#">Collections</a></li>
-          <li class="li-link"><a class="link" href="#">Men</a></li>
-          <li class="li-link"><a class="link" href="#">Women</a></li>
-          <li class="li-link"><a class="link" href="#">About</a></li>
-          <li class="li-link"><a class="link" href="#">Contact</a></li>
-        </ul>
-      </nav>
       <div class="user">
-        <img class="avatar" src="/frontend_mentor/ecommerce-product-page-main/images/image-avatar.png" alt="">
+        <img class="cartShop" id="shop" src="/frontend_mentor/ecommerce-product-page-main/images/icon-cart.svg" alt="">
+        <div class="avatarContent">
+          <img class="avatar" src="/frontend_mentor/ecommerce-product-page-main/images/image-avatar.png" alt="">
+        </div>
       </div>
     </header>
     <main>
@@ -35,10 +43,17 @@
           <img class="main-img" id="main-image" src="/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg">
         </article>
         <article  class="small-images" id="small-img">
-          <img class="small" id="sm-1" src="/frontend_mentor/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg">
-          <img class="small" id="sm-2" src="/frontend_mentor/ecommerce-product-page-main/images/image-product-2-thumbnail.jpg">
-          <img class="small" id="sm-3" src="/frontend_mentor/ecommerce-product-page-main/images/image-product-3-thumbnail.jpg">
-          <img class="small" id="sm-4" src="/frontend_mentor/ecommerce-product-page-main/images/image-product-4-thumbnail.jpg">
+
+            <img class="small" id="sm-1" src="/frontend_mentor/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg">
+
+            <img class="small" id="sm-2" src="/frontend_mentor/ecommerce-product-page-main/images/image-product-2-thumbnail.jpg">
+
+
+            <img class="small" id="sm-3" src="/frontend_mentor/ecommerce-product-page-main/images/image-product-3-thumbnail.jpg">
+
+
+            <img class="small" id="sm-4" src="/frontend_mentor/ecommerce-product-page-main/images/image-product-4-thumbnail.jpg">
+
         </article>
       </section>
       <section class="info-products">
@@ -51,10 +66,10 @@
         durable rubber outer sole, they’ll withstand everything the weather can offer.
       </p>
       
-      $125.00
-      50%
-      $250.00
-
+      <p id="price">$125.00</p>
+      <p id="discount">50%</p>
+      <p id="old-price">$250.00</p>
+      
       <form action="" method="post">
         <input class="controlPro" id="resta" type="button" value="-">
         <input id="countPro" type="text" value="0" name="" id="" readonly>
