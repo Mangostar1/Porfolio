@@ -104,8 +104,11 @@ header{
 
 .cartShop{
     cursor: pointer;
-
     height: 20px;
+}
+
+.cartContent{
+    position: relative;
 }
 
 /* body */
