@@ -82,6 +82,20 @@ header{
     gap: 2.5em;
 }
 
+
+
+.avatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    cursor: pointer;
+    /* position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2; */
+}
+
 .avatarContent{
     position: relative;
 }
@@ -96,15 +110,8 @@ header{
     height: 42px;
     border-radius: 50%;
     border: 2px solid var(--Orange);
-
-}
-
-.avatar{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-
-    cursor: pointer;
+    /* background-color: black;
+    z-index: 1; */
 }
 
 
@@ -155,19 +162,58 @@ main{
     cursor: zoom-in;
 }
 
-.small{
-    border-radius: 16px;
-
-    margin: 20px 20px 10px 0px;
-    height: 96px;
+.sm-1-div{
+    display: inline-block;
     width: 96px;
+    height: 96px;
+    border-radius: 16px;
+    margin: 20px 20px 10px 0px;
+
     cursor: pointer;
-}
 
-.small:hover{
-    border: 3px solid var(--Orange);
+    background-image: url(/frontend_mentor/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+.sm-2-div{
+    display: inline-block;
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+    margin: 20px 20px 10px 0px;
 
+    cursor: pointer;
+
+    background-image: url(/frontend_mentor/ecommerce-product-page-main/images/image-product-2-thumbnail.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sm-3-div{
+    display: inline-block;
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+    margin: 20px 20px 10px 0px;
+
+    cursor: pointer;
+
+    background-image: url(/frontend_mentor/ecommerce-product-page-main/images/image-product-3-thumbnail.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sm-4-div{
+    display: inline-block;
+    width: 96px;
+    height: 96px;
+    border-radius: 16px;
+    margin: 20px 20px 10px 0px;
+
+    cursor: pointer;
+
+    background-image: url(/frontend_mentor/ecommerce-product-page-main/images/image-product-4-thumbnail.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .big-image{
     grid-column: 1 / 4spam;
