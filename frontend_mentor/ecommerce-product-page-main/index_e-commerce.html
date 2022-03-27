@@ -34,6 +34,30 @@
         <div class="cartContent">
           <div class="count-product" id="shopNumber"></div>
           <img class="cartShop" id="shop" src="/frontend_mentor/ecommerce-product-page-main/images/icon-cart.svg" alt="">
+          
+          <div class="popup-product">
+            <div class="tittle-div">
+              <p id="tittle-cart">Cart</p>
+            </div>
+            <!-- solo visible cuando existan productos en el carrito -->
+            <div class="product-list">
+              <div class="product-item">
+                <img id="img-cart-product" src="/frontend_mentor/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg">
+
+                <div class="info-shop">
+                  <p class="product-shop">Fall Limited Edition Sneakers</p>
+                  <p class="product-price">$125.00 x</p>
+                  <p class="product-count-shop" id="product-count-shop">3</p>
+                  <p class="value-shop" id="value-shop">$111.00</p>
+                </div>
+
+                <img class="delete-product" id="delete-product" src="/frontend_mentor/ecommerce-product-page-main/images/icon-delete.svg">
+              </div>
+              <div class="product-btn">
+                <button class="btn-checkout">Checkout</button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="avatar">
           <div class="border-avatar" id=""></div>
@@ -114,6 +138,7 @@
       Coded by <a href="https://github.com/Mangostar1" target="_blank">Mangostar</a>.
     </div>
   </div>
-  <script src="/frontend_mentor/ecommerce-product-page-main/js/e-commerce.js"></script>
+  <script src="/frontend_mentor/ecommerce-product-page-main/js/ctrl-image.js"></script>
+  <script src="/frontend_mentor/ecommerce-product-page-main/js/ctrl-products.js"></script>
 </body>
 </html>

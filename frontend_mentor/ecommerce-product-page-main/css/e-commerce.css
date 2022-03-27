@@ -117,6 +117,96 @@ header{
     position: relative;
 }
 
+/* popup cart shop */
+.popup-product{
+    position: absolute;
+    top: 150%;
+    left: -600%;
+    right: 0%;
+    z-index: 100;
+
+    width: 350px;
+    height: auto;
+
+    background-color: var(--White);
+
+    box-shadow: 0px 10px 20px var(--GrayishBlue);
+
+    visibility: hidden;
+}
+
+.tittle-div{
+    border-bottom: 1px solid var(--GrayishBlue);
+}
+
+#tittle-cart{
+    font-weight: 700;
+    font-size: 15px;
+    text-align: left;
+    padding: 5px 0px 5px 5px;
+}
+
+.product-item{
+    margin: 20px 0px 20px 25px;
+    display: flex;
+}
+
+.product-item{
+    font-size: 15px;
+    align-items: center;
+}
+
+#img-cart-product{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.info-shop{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.product-shop{
+    color: var(--GrayishBlue);
+    font-size: 15px;
+}
+.product-price{
+    display: inline-block;
+    color: var(--GrayishBlue);
+}
+.product-count-shop{
+    display:inline-block;
+    color: var(--GrayishBlue);
+}
+.value-shop{
+    display:inline-block;
+    margin-left: 10px;
+}
+
+.delete-product{
+    cursor: pointer;
+
+    height: 15px;
+}
+
+.btn-checkout{
+    background-color: var(--Orange);
+    color: var(--White);
+    border: none;
+    border-radius: 10px;
+
+    width: 300px;
+    height: 50px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+
+    cursor: pointer;
+}
+.btn-checkout:hover{
+    background-color: hsl(26, 100%, 66%);
+}
+
 /*      */
 /* body */
 /*      */
@@ -385,7 +475,7 @@ h1{
 .sm-4-div-pop{
     background-image: url(/frontend_mentor/ecommerce-product-page-main/images/image-product-4-thumbnail.jpg);
 }
-.sm-1-div-pop:hover .filtro, .sm-2-div-pop:hover .filtro, .sm-3-div-pop:hover .filtro, .sm-4-div-pop:hover .filtro{
+.sm-1-div-pop:hover .filtro-pop, .sm-2-div-pop:hover .filtro-pop, .sm-3-div-pop:hover .filtro-pop, .sm-4-div-pop:hover .filtro-pop{
     background-color: rgba(255, 255, 255, 0.336);
     border: 4px solid var(--Orange);
     width: 96px;
