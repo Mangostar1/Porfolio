@@ -118,6 +118,19 @@ header{
 }
 
 /* popup cart shop */
+#product-list{
+    /* visibility: hidden; */
+    display: none;
+}
+
+#cartEmpty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
 .popup-product{
     position: absolute;
     top: 150%;
@@ -132,7 +145,11 @@ header{
 
     box-shadow: 0px 10px 20px var(--GrayishBlue);
 
-    visibility: hidden;
+    visibility: hidden; /* cambiar visivilidad por javascript */
+}
+
+.popup-product.activo{
+    visibility: visible;
 }
 
 .tittle-div{
@@ -143,15 +160,12 @@ header{
     font-weight: 700;
     font-size: 15px;
     text-align: left;
-    padding: 5px 0px 5px 5px;
+    padding: 20px 0px 20px 20px;
 }
 
 .product-item{
     margin: 20px 0px 20px 25px;
     display: flex;
-}
-
-.product-item{
     font-size: 15px;
     align-items: center;
 }

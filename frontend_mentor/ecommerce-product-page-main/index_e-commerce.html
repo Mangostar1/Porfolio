@@ -35,20 +35,23 @@
           <div class="count-product" id="shopNumber"></div>
           <img class="cartShop" id="shop" src="/frontend_mentor/ecommerce-product-page-main/images/icon-cart.svg" alt="">
           
-          <div class="popup-product">
+          <div class="popup-product" id="popup-product">
             <div class="tittle-div">
               <p id="tittle-cart">Cart</p>
             </div>
-            <!-- solo visible cuando existan productos en el carrito -->
-            <div class="product-list">
+            <div id="cartEmpty">
+              <p>Your cart is empty</p>
+            </div>
+
+            <div class="product-list" id="product-list">
               <div class="product-item">
                 <img id="img-cart-product" src="/frontend_mentor/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg">
 
                 <div class="info-shop">
                   <p class="product-shop">Fall Limited Edition Sneakers</p>
                   <p class="product-price">$125.00 x</p>
-                  <p class="product-count-shop" id="product-count-shop">3</p>
-                  <p class="value-shop" id="value-shop">$111.00</p>
+                  <p class="product-count-shop" id="product-count-shop"></p>
+                  <p class="value-shop" id="value-shop"></p>
                 </div>
 
                 <img class="delete-product" id="delete-product" src="/frontend_mentor/ecommerce-product-page-main/images/icon-delete.svg">
