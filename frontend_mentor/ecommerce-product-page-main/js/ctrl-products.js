@@ -27,10 +27,15 @@ let valueShop = document.getElementById('value-shop');
 let productList = document.getElementById('product-list');
 
 btnAdd.onclick = () => {
-    if (countProduct.value > 0) {
+    if (shopNumber.innerHTML == countProduct.value) {
+        shopNumber.innerHTML = parseInt(countProduct.value, 0) + parseInt(shopNumber.innerHTML, 0);
+        productCount.innerHTML = parseInt(countProduct.value, 0) + parseInt(productCount.innerHTML, 0);
+        valueShop.innerHTML = '$' + parseInt(shopNumber.innerHTML, 0) * 125 + '.00';
+
+    } else if (countProduct.value > 0) {
         shopNumber.style.cssText = 'background-color: var(--Orange); width: 24px; height: 19px; border-radius: 8px; position: absolute; top: -10px; left: 5px; font-size: 15px; text-align: center; color: white; padding: 0px 0px;';
-        shopNumber.innerHTML = countProduct.value;
-        productCount.innerHTML = countProduct.value;
+        shopNumber.innerHTML = countProduct.value;//numero en carro naranjo
+        productCount.innerHTML = countProduct.value;//numero dentro del div a la izquierda del multiplicador
         valueShop.innerHTML = '$' + countProduct.value * 125 + '.00';
         cartEmpty.style = 'display: none;';
         productList.style = 'display: block;';
