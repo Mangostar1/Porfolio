@@ -20,7 +20,7 @@
         <div class="logo-content">
           <a href="#"><img class="logo" src="/frontend_mentor/ecommerce-product-page-main/images/logo.svg" alt=""></a>
         </div>
-        <nav class="nav">
+        <nav class="nav"><!-- pasar a un menu lateral con un z-index en vercion movil -->
           <ul class="menu">
             <li class="li-link"><a class="link" href="../../index.html">Inicio</a></li>
             <li class="li-link"><a class="link" href="#">Collections</a></li>
@@ -72,7 +72,9 @@
     <main>
       <section class="images">
         <article class="big-image" id="big-img">
+          <button class="prev" id="prev"><img src="/frontend_mentor/ecommerce-product-page-main/images/icon-previous.svg" class="prev-img prev-img-mobile" id="prev-img-mobile"></button>
           <img class="main-img" id="main-image" src="/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg">
+          <button class="next" id="next"><img src="/frontend_mentor/ecommerce-product-page-main/images/icon-next.svg" class="next-img next-img-mobile" id="next-img-mobile"></button>
         </article>
         <article  class="small-images" id="small-img">
           <div class="sm-1-div" id="sm-1">
@@ -93,10 +95,12 @@
         </article>
       </section>
 
-      <div class="overlay" id="overlay"><!-- este ligado a body parece -->
+      <div class="overlay" id="overlay">
         <div class="popup" in="popup">
           <a href="#" class="close-pop" id="close-pop">x</a>
+          <button class="prev" id="prev"><img src="/frontend_mentor/ecommerce-product-page-main/images/icon-previous.svg" class="prev-img" id="prev-img"></button>
           <img class="main-img-popup" id="main-image-popup" src="/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg">
+          <button class="next" id="next"><img src="/frontend_mentor/ecommerce-product-page-main/images/icon-next.svg" class="next-img" id="next-img"></button>
           <div class="sm-1-div-pop" id="sm-1-pop">
             <div class="filtro-pop" id="filtro-1-pop"></div>
           </div>
@@ -118,7 +122,7 @@
       <section class="info-products">
       
       <p id="company-Name">Sneaker Company</p>
-      <h1>Fall Limited Edition Sneakers</h1>
+      <h1 class="title-pro">Fall Limited Edition Sneakers</h1>
 
       <p id="description">
         These low-profile sneakers are your perfect casual wear companion. Featuring a 
@@ -129,12 +133,12 @@
       <p id="discount">50%</p>
       <p id="old-price">$250.00</p>
       
-      <form action="" method="post">
-        <input class="controlPro" id="resta" type="button" value="-">
+      <div id="form-inputs">
+        <button class="controlPro" id="resta">-</button>
         <input id="countPro" type="text" value="0" name="" id="" readonly>
-        <input class="controlPro" id="suma" type="button" value="+">
-        <input id="addCarts" type="button" value="Add to cart">
-      </form>
+        <button class="controlPro" id="suma">+</button>
+        <button id="addCarts"><img class="icon-add" src="/frontend_mentor/ecommerce-product-page-main/images/icon-cart-btn-add.svg">Add to cart</button>
+      </div>
       </section>
     </main>  
     <div class="attribution">
@@ -144,5 +148,6 @@
   </div>
   <script src="/frontend_mentor/ecommerce-product-page-main/js/ctrl-image.js"></script>
   <script src="/frontend_mentor/ecommerce-product-page-main/js/ctrl-products.js"></script>
+  <script src="../ecommerce-product-page-main/js/ctrl-popup-img.js"></script>
 </body>
 </html>
