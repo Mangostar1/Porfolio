@@ -189,3 +189,65 @@ next.onclick = () => {
         console.log(error);
     }
 }
+
+/* prev y next mobile */
+let prevMobile = document.getElementById('prev-img-mobile');
+let nextMobile = document.getElementById('next-img-mobile');
+
+prevMobile.onclick = () => {
+    console.log('prev presionado');
+        if (bigImage.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg") {
+        bigImage.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-4.jpg';
+        filtro4.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
+        filtro1.style = null;
+        filtro2.style = null;
+        filtro3.style = null;
+    } else if(bigImage.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-4.jpg") {
+        bigImage.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg';
+        filtro3.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
+        filtro1.style = null;
+        filtro2.style = null;
+        filtro4.style = null;
+    } else if(bigImage.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg") {
+        bigImage.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-2.jpg';
+        filtro2.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
+        filtro1.style = null;
+        filtro3.style = null;
+        filtro4.style = null;
+    } else {
+        bigImage.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg';
+        filtro1.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
+        filtro2.style = null;
+        filtro3.style = null;
+        filtro4.style = null;
+    }
+}
+
+nextMobile.onclick = () => {
+    console.log('nex presionado');
+        if (bigImagePop.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg") {
+        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-2.jpg';
+        filtro2Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
+        filtro1Pop.style = null;
+        filtro3Pop.style = null;
+        filtro4Pop.style = null;
+    } else if(bigImagePop.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-2.jpg") {
+        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg';
+        filtro3Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
+        filtro1Pop.style = null;
+        filtro2Pop.style = null;
+        filtro4Pop.style = null;
+    } else if(bigImagePop.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg") {
+        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-4.jpg';
+        filtro4Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
+        filtro1Pop.style = null;
+        filtro2Pop.style = null;
+        filtro3Pop.style = null;
+    } else {
+        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg';
+        filtro1Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
+        filtro2Pop.style = null;
+        filtro3Pop.style = null;
+        filtro4Pop.style = null;
+    }
+}
