@@ -136,20 +136,27 @@ smallImg4Pop.onclick = () => {
 let prev = document.getElementById('prev-img');
 let next = document.getElementById('next-img');
 
+let numtest = 1;
+
 prev.onclick = () => {
-        if (bigImagePop.src == ruta1) {
+    numtest--;
+    if (numtest < 1) {
+        numtest = 4;
+    }
+    console.log(numtest);
+    if (numtest == 1) {
         bigImagePop.src = ruta4;
         filtro4Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1Pop.style = null;
         filtro2Pop.style = null;
         filtro3Pop.style = null;
-    } else if(bigImagePop.src == ruta4) {
+    } else if(numtest == 4) {
         bigImagePop.src = ruta3;
         filtro3Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1Pop.style = null;
         filtro2Pop.style = null;
         filtro4Pop.style = null;
-    } else if(bigImagePop.src == ruta3) {
+    } else if(numtest == 3) {
         bigImagePop.src = ruta2;
         filtro2Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1Pop.style = null;
@@ -165,19 +172,24 @@ prev.onclick = () => {
 }
 
 next.onclick = () => {
-        if (bigImagePop.src == ruta1) {
+    numtest++;
+    if (numtest > 4) {
+        numtest = 1;
+    }
+    console.log(numtest);
+    if (numtest == 1) {
         bigImagePop.src = ruta2;
         filtro2Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1Pop.style = null;
         filtro3Pop.style = null;
         filtro4Pop.style = null;
-    } else if(bigImagePop.src == ruta2) {
+    } else if(numtest == 2) {
         bigImagePop.src = ruta3;
         filtro3Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1Pop.style = null;
         filtro2Pop.style = null;
         filtro4Pop.style = null;
-    } else if(bigImagePop.src == ruta3) {
+    } else if(numtest == 3) {
         bigImagePop.src = ruta4;
         filtro4Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1Pop.style = null;
@@ -197,20 +209,24 @@ let prevMobile = document.getElementById('prev-img-mobile');
 let nextMobile = document.getElementById('next-img-mobile');
 
 prevMobile.onclick = () => {
-    console.log('prev presionado');
-        if (bigImage.src == ruta1) {
+    numtest--;
+    if (numtest < 1) {
+        numtest = 4;
+    }
+    console.log(numtest);
+        if (numtest == 1) {
         bigImage.src = ruta4;
         filtro4.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1.style = null;
         filtro2.style = null;
         filtro3.style = null;
-    } else if(bigImage.src == ruta4) {
+    } else if(numtest == 4) {
         bigImage.src = ruta3;
         filtro3.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1.style = null;
         filtro2.style = null;
         filtro4.style = null;
-    } else if(bigImage.src == ruta3) {
+    } else if(numtest == 3) {
         bigImage.src = ruta2;
         filtro2.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1.style = null;
@@ -226,20 +242,24 @@ prevMobile.onclick = () => {
 }
 
 nextMobile.onclick = () => {
-    console.log('nex presionado');
-        if (bigImage.src == ruta1) {
+    numtest++;
+    if (numtest > 4) {
+        numtest = 1;
+    }
+    console.log(numtest);
+        if (numtest == 1) {
         bigImage.src = ruta2;
         filtro2.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1.style = null;
         filtro3.style = null;
         filtro4.style = null;
-    } else if(bigImage.src == ruta2) {
+    } else if(numtest == 2) {
         bigImage.src = ruta3;
         filtro3.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1.style = null;
         filtro2.style = null;
         filtro4.style = null;
-    } else if(bigImage.src == ruta3) {
+    } else if(numtest == 3) {
         bigImage.src = ruta4;
         filtro4.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1.style = null;
