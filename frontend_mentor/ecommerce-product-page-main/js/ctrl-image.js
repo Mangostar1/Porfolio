@@ -16,12 +16,22 @@ let filtro3 = document.getElementById('filtro-3');
 let filtro4 = document.getElementById('filtro-4'); 
 
 //
+// ruta de imagen
+//
+
+let ruta1 = "/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg";
+let ruta2 = "/frontend_mentor/ecommerce-product-page-main/images/image-product-2.jpg";
+let ruta3 = "/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg";
+let ruta4 = "/frontend_mentor/ecommerce-product-page-main/images/image-product-4.jpg";
+
+
+//
 //selected 4 default
 //
 filtro1.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
 
 smallImg1.onclick = () => {
-    bigImage.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg';
+    bigImage.src = ruta1;
     filtro1.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
     filtro2.style = null;
     filtro3.style = null;
@@ -29,7 +39,7 @@ smallImg1.onclick = () => {
 }
 
 smallImg2.onclick = () => {
-    bigImage.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-2.jpg';
+    bigImage.src = ruta2;
     filtro2.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
     filtro1.style = null;
     filtro3.style = null;
@@ -37,7 +47,7 @@ smallImg2.onclick = () => {
 }
 
 smallImg3.onclick = () => {
-    bigImage.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg';
+    bigImage.src = ruta3;
     filtro3.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
     filtro1.style = null;
     filtro2.style = null;
@@ -45,7 +55,7 @@ smallImg3.onclick = () => {
 }
 
 smallImg4.onclick = () => {
-    bigImage.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-4.jpg';
+    bigImage.src = ruta4;
     filtro4.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
     filtro1.style = null;
     filtro2.style = null;
@@ -92,7 +102,7 @@ closePop.onclick = () => {
 filtro1Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
 
 smallImg1Pop.onclick = () => {
-    bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg';
+    bigImagePop.src = ruta1;
     filtro1Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
     filtro2Pop.style = null;
     filtro3Pop.style = null;
@@ -100,7 +110,7 @@ smallImg1Pop.onclick = () => {
 }
 
 smallImg2Pop.onclick = () => {
-    bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-2.jpg';
+    bigImagePop.src = ruta2;
     filtro2Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
     filtro1Pop.style = null;
     filtro3Pop.style = null;
@@ -108,7 +118,7 @@ smallImg2Pop.onclick = () => {
 }
 
 smallImg3Pop.onclick = () => {
-    bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg';
+    bigImagePop.src = ruta3;
     filtro3Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
     filtro1Pop.style = null;
     filtro2Pop.style = null;
@@ -116,7 +126,7 @@ smallImg3Pop.onclick = () => {
 }
 
 smallImg4Pop.onclick = () => {
-    bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-4.jpg';
+    bigImagePop.src = ruta4;
     filtro4Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
     filtro1Pop.style = null;
     filtro2Pop.style = null;
@@ -127,66 +137,58 @@ let prev = document.getElementById('prev-img');
 let next = document.getElementById('next-img');
 
 prev.onclick = () => {
-    try {
-        if (bigImagePop.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg") {
-        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-4.jpg';
+        if (bigImagePop.src == ruta1) {
+        bigImagePop.src = ruta4;
         filtro4Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1Pop.style = null;
         filtro2Pop.style = null;
         filtro3Pop.style = null;
-    } else if(bigImagePop.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-4.jpg") {
-        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg';
+    } else if(bigImagePop.src == ruta4) {
+        bigImagePop.src = ruta3;
         filtro3Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1Pop.style = null;
         filtro2Pop.style = null;
         filtro4Pop.style = null;
-    } else if(bigImagePop.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg") {
-        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-2.jpg';
+    } else if(bigImagePop.src == ruta3) {
+        bigImagePop.src = ruta2;
         filtro2Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1Pop.style = null;
         filtro3Pop.style = null;
         filtro4Pop.style = null;
     } else {
-        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg';
+        bigImagePop.src = ruta1;
         filtro1Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro2Pop.style = null;
         filtro3Pop.style = null;
         filtro4Pop.style = null;
-    }
-    } catch (error) {
-        console.error(error);
     }
 }
 
 next.onclick = () => {
-    try {
-        if (bigImagePop.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg") {
-        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-2.jpg';
+        if (bigImagePop.src == ruta1) {
+        bigImagePop.src = ruta2;
         filtro2Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1Pop.style = null;
         filtro3Pop.style = null;
         filtro4Pop.style = null;
-    } else if(bigImagePop.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-2.jpg") {
-        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg';
+    } else if(bigImagePop.src == ruta2) {
+        bigImagePop.src = ruta3;
         filtro3Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1Pop.style = null;
         filtro2Pop.style = null;
         filtro4Pop.style = null;
-    } else if(bigImagePop.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg") {
-        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-4.jpg';
+    } else if(bigImagePop.src == ruta3) {
+        bigImagePop.src = ruta4;
         filtro4Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1Pop.style = null;
         filtro2Pop.style = null;
         filtro3Pop.style = null;
     } else {
-        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg';
+        bigImagePop.src = ruta1;
         filtro1Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro2Pop.style = null;
         filtro3Pop.style = null;
         filtro4Pop.style = null;
-    }
-    } catch (error) {
-        console.log(error);
     }
 }
 
@@ -196,26 +198,26 @@ let nextMobile = document.getElementById('next-img-mobile');
 
 prevMobile.onclick = () => {
     console.log('prev presionado');
-        if (bigImage.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg") {
-        bigImage.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-4.jpg';
+        if (bigImage.src == ruta1) {
+        bigImage.src = ruta4;
         filtro4.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1.style = null;
         filtro2.style = null;
         filtro3.style = null;
-    } else if(bigImage.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-4.jpg") {
-        bigImage.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg';
+    } else if(bigImage.src == ruta4) {
+        bigImage.src = ruta3;
         filtro3.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1.style = null;
         filtro2.style = null;
         filtro4.style = null;
-    } else if(bigImage.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg") {
-        bigImage.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-2.jpg';
+    } else if(bigImage.src == ruta3) {
+        bigImage.src = ruta2;
         filtro2.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro1.style = null;
         filtro3.style = null;
         filtro4.style = null;
     } else {
-        bigImage.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg';
+        bigImage.src = ruta1;
         filtro1.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
         filtro2.style = null;
         filtro3.style = null;
@@ -225,29 +227,29 @@ prevMobile.onclick = () => {
 
 nextMobile.onclick = () => {
     console.log('nex presionado');
-        if (bigImagePop.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg") {
-        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-2.jpg';
-        filtro2Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
-        filtro1Pop.style = null;
-        filtro3Pop.style = null;
-        filtro4Pop.style = null;
-    } else if(bigImagePop.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-2.jpg") {
-        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg';
-        filtro3Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
-        filtro1Pop.style = null;
-        filtro2Pop.style = null;
-        filtro4Pop.style = null;
-    } else if(bigImagePop.src == "http://127.0.0.1:5500/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg") {
-        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-4.jpg';
-        filtro4Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
-        filtro1Pop.style = null;
-        filtro2Pop.style = null;
-        filtro3Pop.style = null;
+        if (bigImage.src == ruta1) {
+        bigImage.src = ruta2;
+        filtro2.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
+        filtro1.style = null;
+        filtro3.style = null;
+        filtro4.style = null;
+    } else if(bigImage.src == ruta2) {
+        bigImage.src = ruta3;
+        filtro3.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
+        filtro1.style = null;
+        filtro2.style = null;
+        filtro4.style = null;
+    } else if(bigImage.src == ruta3) {
+        bigImage.src = ruta4;
+        filtro4.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
+        filtro1.style = null;
+        filtro2.style = null;
+        filtro3.style = null;
     } else {
-        bigImagePop.src = '/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg';
-        filtro1Pop.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
-        filtro2Pop.style = null;
-        filtro3Pop.style = null;
-        filtro4Pop.style = null;
+        bigImage.src = ruta1;
+        filtro1.style.cssText = 'background-color: rgba(255, 255, 255, 0.336); border: 4px solid var(--Orange); width: 96px; height: 96px; border-radius: 16px;';
+        filtro2.style = null;
+        filtro3.style = null;
+        filtro4.style = null;
     }
 }

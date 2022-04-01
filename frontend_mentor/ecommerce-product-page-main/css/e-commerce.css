@@ -485,6 +485,8 @@ main{
     border-radius: 50%;
     border: none;
 
+    cursor: pointer;
+
     position: absolute;
     top: 40%;
     left: 34.5%;
@@ -502,6 +504,8 @@ main{
     height: 45px;
     border-radius: 50%;
     border: none;
+
+    cursor: pointer;
 
     position: absolute;
     top: 40%;
