@@ -20,15 +20,18 @@
 .contaienr{
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: .4fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
 
     gap: 1em;
+
+    min-height: 100vh;
 }
 
 /* Body */
 
 body{
-    background-color: var(--color1);
+    background: linear-gradient(to right, var(--color1), var(--color2));
+    min-height: 100vh;
 }
 
 main{
@@ -38,21 +41,47 @@ main{
 }
 
 article{
-    background-color: gray;
-    height: 550px;
+    background-color: rgba(128, 128, 128, 0.233);
+    min-height: 50vh;
+    height: auto;
 }
 
 aside{
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    background-color: rgb(63, 63, 63);
+
+    margin-left: 1em;
+    height: auto;
+    min-height: 50vh;
+
+    background-color: rgba(63, 63, 63, 0.26);
 }
+
+/* footer */
 
 footer{
     grid-column: 1 /span 3;
     grid-row: 3 / 4;
 
-    background-color: var(--colorGray);
+    min-height: 4em;
+
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+.git{
+    width: 20px;
+    height: 20px;
+    margin-right: .1em;
+}
+
+footer p{
+    margin-left: 1em;
+    margin-top: .5em;
+}
+
+.personalLinks{
+    color: white;
+    font-weight: bold;
 }
 
 /* texto */

@@ -1,6 +1,6 @@
 /* Header */
 header{
-    background-color: var(--color2);
+    background-color: rgba(192, 192, 192, 0.507);
     
     grid-column: 1 / span 3;
     
@@ -8,7 +8,8 @@ header{
 }
 
 .nav{
-    padding: 1em;
+    margin-top: 0.6em;
+    margin-left: 1em;
 }
 
 .nav-menu{
@@ -26,17 +27,17 @@ header{
 .nav-link{
     text-decoration: none;
     transition: 0.3s;
-    padding: 0.5em 1em 0.5em 1em; /* Arriba Derecha Abajo Izquierda */
-    /* border-radius: 5px; */
+    padding: .5em .5em;
     display: block;
 
     color: var(--colorBlack);
-    background-color: var(--color3);
+    border: 1px solid transparent;
 }
 
 .nav-link:hover{
-    background-color: var(--color4);
     color: var(--colorWithe);
+    background-color: hsla(0, 0%, 0%, 0.233);
+    border-left: 2px solid rgb(0, 0, 0);
 }
 
 .nav-submenu{
@@ -45,6 +46,9 @@ header{
 
 ul>li:hover>ul{
     display: block;
+    color: var(--colorWithe);
+    background-color: rgba(192, 192, 192, 0.75);
+    border-left: 2px solid rgb(0, 0, 0);
 }
 
 .sub-list{

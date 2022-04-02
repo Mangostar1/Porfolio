@@ -1,3 +1,5 @@
+/*   solo se aplica a vercion mobile  */
+
 let closeNav = document.getElementById('close-nav-id');
 let menu = document.getElementById('nav');
 let openNav = document.getElementById('mobile-menu');
