@@ -1,6 +1,6 @@
 /* Header */
 header{
-    background-color: rgba(192, 192, 192, 0.507);
+    background-color: rgba(192, 192, 192, 0.50);
     
     grid-column: 1 / span 3;
     
@@ -36,18 +36,19 @@ header{
 
 .nav-link:hover{
     color: var(--colorWithe);
-    background-color: hsla(0, 0%, 0%, 0.233);
+    background-color: hsla(0, 0%, 0%, 0.75);
     border-left: 2px solid rgb(0, 0, 0);
 }
 
 .nav-submenu{
     display: none;
+    list-style: none;
 }
 
 ul>li:hover>ul{
     display: block;
     color: var(--colorWithe);
-    background-color: rgba(192, 192, 192, 0.75);
+    background-color: rgba(192, 192, 192, 0.95);
     border-left: 2px solid rgb(0, 0, 0);
 }
 
