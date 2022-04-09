@@ -19,10 +19,10 @@ let filtro4 = document.getElementById('filtro-4');
 // ruta de imagen
 //
 
-let ruta1 = "/frontend_mentor/ecommerce-product-page-main/images/image-product-1.jpg";
-let ruta2 = "/frontend_mentor/ecommerce-product-page-main/images/image-product-2.jpg";
-let ruta3 = "/frontend_mentor/ecommerce-product-page-main/images/image-product-3.jpg";
-let ruta4 = "/frontend_mentor/ecommerce-product-page-main/images/image-product-4.jpg";
+let ruta1 = "./images/image-product-1.jpg";
+let ruta2 = "./images/image-product-2.jpg";
+let ruta3 = "./images/image-product-3.jpg";
+let ruta4 = "./images/image-product-4.jpg";
 
 //
 //selected 4 default

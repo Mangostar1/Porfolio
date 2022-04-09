@@ -97,7 +97,7 @@ header{
     height: 45px;
     border-radius: 50%;
 
-    background-image: url(/frontend_mentor/ecommerce-product-page-main/images/image-avatar.png);
+    background-image: url(../images/image-avatar.png);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -290,16 +290,16 @@ main{
     background-repeat: no-repeat;
 }
 .sm-1-div{
-    background-image: url(/frontend_mentor/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg);
+    background-image: url(../images/image-product-1-thumbnail.jpg);
 }
 .sm-2-div{
-    background-image: url(/frontend_mentor/ecommerce-product-page-main/images/image-product-2-thumbnail.jpg);
+    background-image: url(../images/image-product-2-thumbnail.jpg);
 }
 .sm-3-div{
-    background-image: url(/frontend_mentor/ecommerce-product-page-main/images/image-product-3-thumbnail.jpg);
+    background-image: url(../images/image-product-3-thumbnail.jpg);
 }
 .sm-4-div{
-    background-image: url(/frontend_mentor/ecommerce-product-page-main/images/image-product-4-thumbnail.jpg);
+    background-image: url(../images/image-product-4-thumbnail.jpg);
 }
 .sm-1-div:hover .filtro, .sm-2-div:hover .filtro, .sm-3-div:hover .filtro, .sm-4-div:hover .filtro{
     background-color: rgba(255, 255, 255, 0.336);
@@ -532,16 +532,16 @@ main{
     background-repeat: no-repeat;
 }
 .sm-1-div-pop{
-    background-image: url(/frontend_mentor/ecommerce-product-page-main/images/image-product-1-thumbnail.jpg);
+    background-image: url(../images/image-product-1-thumbnail.jpg);
 }
 .sm-2-div-pop{
-    background-image: url(/frontend_mentor/ecommerce-product-page-main/images/image-product-2-thumbnail.jpg);
+    background-image: url(../images/image-product-2-thumbnail.jpg);
 }
 .sm-3-div-pop{
-    background-image: url(/frontend_mentor/ecommerce-product-page-main/images/image-product-3-thumbnail.jpg);
+    background-image: url(../images/image-product-3-thumbnail.jpg);
 }
 .sm-4-div-pop{
-    background-image: url(/frontend_mentor/ecommerce-product-page-main/images/image-product-4-thumbnail.jpg);
+    background-image: url(../images/image-product-4-thumbnail.jpg);
 }
 .sm-1-div-pop:hover .filtro-pop, .sm-2-div-pop:hover .filtro-pop, .sm-3-div-pop:hover .filtro-pop, .sm-4-div-pop:hover .filtro-pop{
     background-color: rgba(255, 255, 255, 0.336);
