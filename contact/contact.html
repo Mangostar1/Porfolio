@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,25 +46,34 @@
         </header>
 
         <main>
-            <section>
-                <article>
+            <section id="content-contact">
+                <article id="contact-form">
+                    <h1 id="h1-contact">Contacto</h1>
+                    <!-- <p class="contact-descript">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, eos.</p> -->
                     <form action="" method="post">
                         <div class="form-group">
-                            <label for="name">Nombre</label>
+                            <label for="name" class="name">Nombre</label>
                             <input type="text" name="name" id="name" class="form-control" placeholder="Nombre" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email" class="email">Email</label>
                             <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Mensaje</label>
+                            <label for="message" class="message">Mensaje</label>
                             <textarea name="message" id="message" class="form-control" placeholder="Mensaje" required></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Enviar" class="btn btn-primary">
                         </div>
                     </form>
+                </article>
+
+                <article id="detail-contact"><!-- display: none; -->
+                    <h1 id="h1-detail">Detalles de contacto</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non architecto obcaecati labore quidem impedit totam vitae dolores, praesentium nihil unde!
+                    </p>
                 </article>
             </section>
         </main>

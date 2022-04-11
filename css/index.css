@@ -79,6 +79,10 @@ footer p{
     text-decoration: none;
 }
 
+.personalLinks:hover{
+    color: var(--color1);
+}
+
 /* texto */
 p::selection{
     background-color: var(--color3);
