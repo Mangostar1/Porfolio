@@ -45,13 +45,32 @@ header{
     list-style: none;
 }
 
-ul>li:hover>ul{
+ul li:hover .nav-submenu{
     display: block;
     color: var(--colorWithe);
     background-color: rgba(192, 192, 192, 0.95);
     border-left: 2px solid rgb(0, 0, 0);
 }
 
-.sub-list{
+.nav-sublist-1:hover>ul{
+    display: block;
+    color: var(--colorWithe);
+    background-color: rgba(192, 192, 192, 0.95);
+    border-left: 2px solid rgb(0, 0, 0);
+}
+
+.nav-sublist-1:hover{
+    background-color: hsla(0, 0%, 0%, 0.75);
+    color: var(--colorWithe);
+}
+
+.nav-subsubmenu{
+    display: none;
+    list-style: none;
+    position: absolute;
+    left: 10em;
+}
+
+.sub-list-2{
     list-style: none;
 }

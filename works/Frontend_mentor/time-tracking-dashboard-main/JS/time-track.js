@@ -27,7 +27,7 @@ day.onclick = () => {
         daily[i].style = "display: flex";
     }
     async function horasEventosDiario() {
-        const url = await fetch("http://127.0.0.1:5500/frontend_mentor/time-tracking-dashboard-main/data.json");
+        const url = await fetch("http://127.0.0.1:5500/works/Frontend_mentor/time-tracking-dashboard-main/data.json");
         let json = await url.json();
     
         for (let i = 0; i <= 6; i++){
@@ -45,7 +45,7 @@ week.onclick = () => {
         weekly[i].style = "display: flex";
     }
     async function horasEventosSemanal() {
-        const url = await fetch("http://127.0.0.1:5500/frontend_mentor/time-tracking-dashboard-main/data.json");
+        const url = await fetch("http://127.0.0.1:5500/works/Frontend_mentor/time-tracking-dashboard-main/data.json");
         let json = await url.json();
     
         for (let i = 0; i <= 6; i++){
@@ -63,7 +63,7 @@ month.onclick = () => {
         monthly[i].style = "display: flex";
     }
     async function horasEventosMensual() {
-        const url = await fetch("http://127.0.0.1:5500/frontend_mentor/time-tracking-dashboard-main/data.json");
+        const url = await fetch("http://127.0.0.1:5500/works/Frontend_mentor/time-tracking-dashboard-main/data.json");
         let json = await url.json();
     
         for (let i = 0; i <= 6; i++){
