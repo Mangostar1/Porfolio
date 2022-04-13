@@ -24,9 +24,12 @@ header{
     z-index: 3;
 }
 
+.nav-list:hover{
+    background-color: hsla(0, 0%, 15%, 0.65);
+}
+
 .nav-link{
     text-decoration: none;
-    transition: 0.3s;
     padding: .5em .5em;
     display: block;
 
@@ -35,9 +38,9 @@ header{
 }
 
 .nav-link:hover{
-    color: var(--colorWithe);
-    background-color: hsla(0, 0%, 0%, 0.75);
     border-left: 2px solid rgb(0, 0, 0);
+
+    /* animation: navAnim 4s ease-in-out forwards; */
 }
 
 .nav-submenu{
@@ -67,10 +70,17 @@ ul li:hover .nav-submenu{
 .nav-subsubmenu{
     display: none;
     list-style: none;
-/*     position: absolute;
-    left: 10em; */
 }
 
 .sub-list-2{
     list-style: none;
 }
+
+/* @keyframes navAnim{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+} */

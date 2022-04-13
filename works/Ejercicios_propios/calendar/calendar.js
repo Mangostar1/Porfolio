@@ -238,7 +238,7 @@ for (var i = 0; i < 7; i++) {
 /* month */
 
 let wrapper = document.getElementById('days-of-month');
-let containerMonth = document.getElementById('container');
+let containerMonth = document.getElementById('container-month');
 const daysOfWeek = [{
   day: 'Lun'
 }, {
@@ -307,7 +307,9 @@ function writeMonth(month) {
   
   eventoMonth();
 }
-/* Boton today, hace que se vuelva a la fecha actual asi no se recarga pagina para volver */
+
+/* 
+// Boton today, hace que se vuelva a la fecha actual asi no se recarga pagina para volver
 let todayMonth = document.getElementsByClassName("today");
 
 todayMonth[0].onclick = () => {
@@ -317,7 +319,7 @@ todayMonth[0].onclick = () => {
   document.getElementById("fecha-month").innerHTML = nameMonth[d.getMonth()] + " de " + d.getFullYear();
   wrapper.innerHTML = " "
   writeMonth(d.getMonth());
-}
+} */
 
 /* funcion evento */
 function handleBtn() {

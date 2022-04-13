@@ -6,8 +6,8 @@
   --neutralBlack: black;
 
   /* paleta de colores claros */
-  --color1: rgb(244, 243, 243);
-  --color2: rgb(223, 223, 223);
+  --color1C: rgb(244, 243, 243);
+  --color2C: rgb(223, 223, 223);
 
   /* colores definitivos */
   --colorOne: #0096a6; /* color de todo */
@@ -17,14 +17,11 @@
   --red: red;
 } 
 
-body{
-  background-color: var(--color1);
-  font-family: 'Roboto', sans-serif;
-  margin: 0px;
+.calendar{
+  width: 100%;
+  height: 100%;
 
-}
-h1, div, p, h2, h3{
-  color: var(--neutralBlack);
+  grid-column: 1 / 3;
 }
 
 h1{
@@ -41,7 +38,6 @@ h1{
 }
 
 .grid-item {
-  /*background-color: var(--color2);*/
   background-color: var(--colorbg);
   border-bottom: 1px solid var(--neutralGray);
   border-right: 1px solid var(--neutralGray);
@@ -54,9 +50,7 @@ h1{
 }
 
 #days-of-month .grid-item:nth-child(7n+1){
-  /* border-top: 1px solid var(--neutralGray); */
   border-left: 1px solid var(--neutralGray);
-  /* background-color: red; */
 }
 
 #days-of-month .grid-item:nth-child(7n+14){
@@ -104,7 +98,7 @@ h1{
 ul{/* month */
   list-style: none;
   padding: 0px;
-  width: 105%; /* atencion */
+  width: 100%; /* atencion */
 
   margin-left: -15px;
 }
@@ -129,7 +123,6 @@ ul{/* month */
   top: 10px;
   margin-right: 15px;
   background-color: var(--neutralWhite);
-  /*background-color: var(--colorOne);*/
   border-radius: 50%;
 }
 
@@ -179,8 +172,8 @@ ul{/* month */
   display: flex;
   align-items: center;
   margin: 0px;
-  width: 28em;
-  height: 4.5em;
+  width: 24.5em;
+  height: 4em;
   padding-left: 0.5em;
   border-radius: 10px;
   background-color: var(--colorOne);
@@ -218,6 +211,8 @@ ul{/* month */
 
 .fecha{
   width: 360px;
+
+  font-size: 25px;
   text-align: center;
   color: var(--neutralWhite);
 }
@@ -228,7 +223,7 @@ ul{/* month */
   display: flex;
   justify-content: center;
   background-color: var(--colorOne);
-  width: 98.5%;
+  width: 100%;
   padding: 10px;
 }
 
@@ -283,7 +278,7 @@ ul{/* month */
   background-color: var(--colorOne);
   color: var(--neutralWhite);
   padding: 10px;
-  width: 6em;
+  width: 6.5em;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin-top: 15px;
@@ -301,7 +296,6 @@ ul{/* month */
   border-left: 1px solid var(--neutralGray);
   border-right: 1px solid var(--neutralGray);
   background-color: var(--colorbg);
-  /*background-color: var(--color2); */
 }
 
 #cambia-dia + .diario{
@@ -320,7 +314,6 @@ ul{/* month */
 #container-week{
   flex-flow: row wrap;
   margin: 15px;
-  /* justify-content: flex-end; */
 }
 
 #container-week #days-of-week{
@@ -392,7 +385,6 @@ ul{/* month */
 .semanal{
   border-bottom: 1px solid var(--neutralGray);
   border-right: 1px solid var(--neutralGray);
-  /*background-color: var(--color2); */
   background-color: var(--colorbg);
   min-height: 59.1px;
 }
@@ -409,14 +401,14 @@ ul{/* month */
 
 /* container month / wrapper */
 
-#container{
+#container-month{
   margin: 15px;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-#container .grid-days{
+#container-month .grid-days{
   padding-right: 15px;
   padding-top: 4px;
   padding-bottom: 5px;
@@ -426,7 +418,6 @@ ul{/* month */
 
 #container-Year{
   flex-flow: row wrap;
-  /* justify-content: flex-end; */
   margin: 15px;
 }
 
@@ -442,7 +433,6 @@ ul{/* month */
   border: 1px solid var(--neutralGray);
   border-radius: 5px;
   background-color: var(--colorbg);
-  /*background-color: var(--color2);*/
 }
 .tittle{
   text-align: center;
@@ -474,7 +464,7 @@ ul{/* month */
 }
 
 hr{
-  display: flex;
+  display: none; /* flex */
   width: 100%;
   border-color: #ff8383;
   z-index: 1;
@@ -493,6 +483,8 @@ hr{
 /* boton today */
 
 .today{
+  display: none;
+
   background-color: var(--colorOne);
   color: var(--neutralWhite);
   border: none;
