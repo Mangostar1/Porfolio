@@ -58,6 +58,11 @@ footer{
     min-height: 4em;
 
     background-color: rgba(128, 128, 128, 0.6);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
 }
 
 .git, .linkedin{
@@ -67,7 +72,6 @@ footer{
 }
 
 footer p{
-    margin-left: 1em;
     margin-top: .5em;
 }
 
@@ -76,6 +80,11 @@ footer p{
     font-weight: bold;
 
     text-decoration: none;
+}
+
+.email{
+    width: 20px;
+    height: 20px;
 }
 
 .personalLinks:hover{

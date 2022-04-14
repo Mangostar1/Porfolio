@@ -46,10 +46,7 @@ coma.onclick = () => document.calculadora.resultado.value += ".";
 const igualar = document.getElementById("igual");
 igualar.onclick = () => {
     if (document.calculadora.resultado.value == "") {
-        console.log("No hay nada que calcular");
     } else {
         document.calculadora.resultado.value = eval(document.calculadora.resultado.value);
-        console.log('funciona, hay una operacion escrita')
     }
-    /* document.calculadora.resultado.value = eval(document.calculadora.resultado.value); */
 };
