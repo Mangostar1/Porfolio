@@ -39,8 +39,7 @@ header{
 
 .nav-link:hover{
     border-left: 2px solid rgb(0, 0, 0);
-
-    /* animation: navAnim 4s ease-in-out forwards; */
+    color: white;
 }
 
 .nav-submenu{
@@ -75,12 +74,3 @@ ul li:hover .nav-submenu{
 .sub-list-2{
     list-style: none;
 }
-
-/* @keyframes navAnim{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(100%);
-    }
-} */

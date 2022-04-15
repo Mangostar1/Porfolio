@@ -77,11 +77,12 @@ form{
 }
 
 .btn-primary{
-    background-color: var(--color2);
+    background-color: var(--colorMain);
+    color: var(--colorWhite);
 }
 
 .btn-primary:hover{
-    background-color: var(--color3);
+    background-color: var(--colorHover);
     color: white;
 
     transition: all 0.2s ease-in-out;
