@@ -14,6 +14,10 @@
     font-size: 18px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .contaienr{
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -35,13 +39,9 @@ main{
     grid-row: 2/3;
 }
 
-section{
-    margin: 0px 0px 20px 0px;
-}
-
-article{
-    min-height: 50vh;
-    height: auto;
+/* titles h5 */
+.card-title{
+    text-align: center;
 }
 
 /* welcome */
@@ -57,11 +57,15 @@ article{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     height: 100vh;
     display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    margin: 0px 0px 200px 0px;
 }
 
 #welcome{
@@ -78,8 +82,9 @@ article{
     font-size: 1.5em;
     font-weight: 500; /* 700 */
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+
+    margin: 0px 1em 200px 1em;
 }
 
 /* about */
@@ -90,11 +95,36 @@ article{
     -webkit-backdrop-filter: blur(5px);
 
     display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+
+    margin: 0px 1em 200px 1em;
+}
+
+#about{
+    width: 45%;
+}
+#tecno{
+    width: 45%;
 }
 
 .logos-tec{
     width: 60px;
     height: 60px;
+}
+
+/* work */
+
+#sec-works{
+    margin: 0px 1em 200px 1em;
+}
+
+.content-works{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    gap: 1em;
+    margin: 1em;
 }
 
 /* contacto */
@@ -233,6 +263,9 @@ footer div{
 
 /* texto */
 p::selection{
-    background-color: var(--colorMain);
+    background-color: var(--colorHover);
     color: var(--colorWhite);
 }
+
+
+/* experimentos */
