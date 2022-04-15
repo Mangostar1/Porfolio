@@ -22,10 +22,12 @@ header{
 
 .nav-list{
     z-index: 3;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .nav-list:hover{
-    background-color: hsla(0, 0%, 15%, 0.65);
+    background-color: var(--colorMain);
 }
 
 .nav-link{

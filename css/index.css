@@ -35,16 +35,22 @@ main{
     grid-row: 2/3;
 }
 
+section{
+    margin: 0px 0px 20px 0px;
+}
+
 article{
     min-height: 50vh;
     height: auto;
 }
 
-aside{
-    display: none;
-}
-
 /* welcome */
+
+.card-title{
+    font-size: 2em;
+    font-weight: 900;
+    color: var(--colorMain);
+}
 
 .sec-welcome{
     background-image: url(../icons/bg-images/pexels-pixabay-270404.jpg);
@@ -59,18 +65,132 @@ aside{
 }
 
 #welcome{
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+
+    width: auto; /* tamaño de la ventana */
+    height: auto;
+    
+    padding: 1em;
+    border-radius: 8px;
+    font-size: 1.5em;
+    font-weight: 500; /* 700 */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* about */
+
+.sec-about{
+    background-color: white;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 
-    color: white;
+    display: flex;
 }
-
-/* logos tecno */
 
 .logos-tec{
     width: 60px;
     height: 60px;
+}
+
+/* contacto */
+
+    /* Contact content */
+#content-contact{
+    padding: 1em;
+}
+
+    /* Form  */
+#contact-form{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#h1-contact{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-descript{
+    color: rgb(66, 66, 66);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form{
+    width: 100%;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.name::after, .email::after, .message::after{
+    content: "*";
+    color: red;
+    display: inline-block;
+    width: 1em;
+    margin-left: .2em;
+}
+
+.form-group #message{
+    width: 100%;
+    height: 120px;
+
+    resize: vertical;
+    max-height: 250px;
+    min-height: 120px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn-primary{
+    background-color: var(--colorMain);
+    color: var(--colorWhite);
+}
+
+.btn-primary:hover{
+    background-color: var(--colorHover);
+    color: white;
+
+    transition: all 0.2s ease-in-out;
+}
+
+    /* Detail contact */
+#detail-contact{
+    display: none;
+    width: 48%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#h1-detail{
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* footer */
@@ -79,7 +199,7 @@ footer{
     grid-column: 1 / 3;
     grid-row: 3 / 4;
 
-    min-height: 4em;
+    min-height: 5em;
 
     background-color: rgba(128, 128, 128, 0.6);
 

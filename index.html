@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="icons/webpagehome_85808.ico">
     <link rel="stylesheet" href="/css/nav.css">
     <meta name="description" content="Este es mi portfolio">
@@ -22,6 +22,7 @@
                 <ul class="nav-menu">
                     <li class="nav-list"><a href="./index.html" class="nav-link">Inicio</a></li>
                     <li class="nav-list"><a href="./works/works.html" class="nav-link">Proyectos</a>
+                    <li class="nav-list"><a href="#about" class="nav-link">Acerca de</a>
                         <ul class="nav-submenu">
                             <li class="nav-list nav-sublist-1"><a href="./works/Ejercicios_propios/ejercicios web.html" class="nav-link">Ejercicios web</a>
                                 <ul class="nav-subsubmenu">
@@ -38,47 +39,67 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-list"><a href="./contact/contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-list"><a href="#content-contact" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
         </header>
+        
         <main>
             <section class="sec-welcome">
                 <article id="welcome">
                     <h5 class="card-title">Bienvenido</h5>
-                    <p class="card-text">Este es mi portfolio, en el podras encontrar todo lo que he hecho en el pasado, en el presente y en el futuro.</p>
-                    <a href="./works/works.html" class="btn btn-primary">Ver más</a>
+                    <p class="card-text">
+                        Soy Omar Zavala
+                    </p>
+                    <p>
+                        Desarrollador Frontend
+                    </p>
                 </article>
             </section>
 
-            <section>
+            <section class="sec-about">
                 <article id="about">
                     <h5 class="card-title">Acerca de mí</h5>
-                    <p class="card-text">Soy una persona apasionada por el desarrollo web, me gusta aprender nuevas tecnologías y también aprender de los demás. Me encanta la programación y la creación de sitios web, también me gusta la música, la lectura y el deporte.</p>
-                    <a href="./works/works.html" class="btn btn-primary">Ver más</a>
+                    <p class="card-text">
+                        Soy una persona apasionada por el desarrollo web, me gusta aprender nuevas tecnologías y también aprender de los demás. Me encanta la programación y la creación de sitios web, también me gusta la música, la lectura y el deporte.
+                    </p>
                 </article>
-            </section>
 
-            <section>
                 <article id="tecno">
                     <h5 class="card-title">Tecnologias que manejo</h5>
                     <div class="content-tec">
-                        <img id="html5" class="logos-tec" src="./icons/logos tecnologias/html5-svgrepo-com.svg">
-                        <img id="css3" class="logos-tec"  src="./icons/logos tecnologias/css3-svgrepo-com.svg">
-                        <img id="javascript" class="logos-tec" src="./icons/logos tecnologias/javascript-svgrepo-com.svg">
-                        <img id="git" class="logos-tec" src="./icons/logos tecnologias/git-svgrepo-com.svg">
+                        <img id="html5" class="logos-tec" src="./icons/logos tecnologias/html5-svgrepo-com.svg" alt="HTML 5" title="HTML 5">
+                        <img id="css3" class="logos-tec"  src="./icons/logos tecnologias/css3-svgrepo-com.svg" alt="CSS 3" title="CSS 3">
+                        <img id="javascript" class="logos-tec" src="./icons/logos tecnologias/javascript-svgrepo-com.svg" alt="JavaScript" title="JavaScript">
+                        <img id="git" class="logos-tec" src="./icons/logos tecnologias/git-svgrepo-com.svg" alt="GIT" title="GIT">
                     </div>
                 </article>
             </section>
 
-            <section>
-                <article id="contact">
+            <section id="content-contact">
+                <article id="contact-form">
                     <h5 class="card-title">Contacto</h5>
-                    <p class="card-text">Si tienes alguna duda o sugerencia, puedes contactarme en mi correo electrónico o en mi whatsapp.</p>
-                    <a href="./contact/contact.html" class="btn btn-primary">Contactar</a>
+                    <p class="contact-descript">
+                        Si tienes alguna duda o sugerencia, puedes contactarme en mi correo electrónico o en mi whatsapp.
+                    </p>
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label for="name" class="name">Nombre</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="message">Mensaje</label>
+                            <textarea name="message" id="message" class="form-control" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Enviar" class="btn btn-primary">
+                        </div>
+                    </form>
                 </article>
-            </section>
-
         </main>
 
         <footer>
