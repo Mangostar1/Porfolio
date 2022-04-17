@@ -21,8 +21,8 @@
             <nav class="nav">
                 <ul class="nav-menu">
                     <li class="nav-list"><a href="#" class="nav-link">Inicio</a></li>
-                    <li class="nav-list"><a href="#sec-works" class="nav-link">Proyectos</a>
                     <li class="nav-list"><a href="#about" class="nav-link">Acerca de</a></li>
+                    <li class="nav-list"><a href="#sec-works" class="nav-link">Proyectos</a>
                     <li class="nav-list"><a href="#content-contact" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
@@ -44,14 +44,14 @@
 
             <section class="sec-about">
                 <article class="article" id="about">
-                    <h5 class="card-title">Acerca de mí</h5>
+                    <h5 class="card-title title-other">Acerca de mí</h5>
                     <p class="card-text">
                         Soy una persona apasionada por el desarrollo web, me gusta aprender nuevas tecnologías y también aprender de los demás. Me encanta la programación y la creación de sitios web, también me gusta la música, la lectura y el deporte.
                     </p>
                 </article>
 
                 <article class="article" id="tecno">
-                    <h5 class="card-title">Tecnologias que manejo</h5>
+                    <h5 class="card-title title-other">Tecnologias que manejo</h5>
                     <div class="content-tec">
                         <img id="html5" class="logos-tec" src="./icons/logos tecnologias/html5-svgrepo-com.svg" alt="HTML 5" title="HTML 5">
                         <img id="css3" class="logos-tec"  src="./icons/logos tecnologias/css3-svgrepo-com.svg" alt="CSS 3" title="CSS 3">
@@ -63,34 +63,58 @@
 
             <section id="sec-works">
                 <article class="article" id="article">
-                    <h5 class="card-title">Proyectos</h5> 
-                    <p class="card-text">
+                    <h5 class="card-title title-other">Proyectos</h5> 
+                    <p class="card-text work-text">
                         Aquí puedes ver algunos de mis proyectos.
                     </p>
 
                     <div class="content-works">
                         <div class="content-works-1">
                             <div class="content-works-2">
-                                <img class="img-works" src="https://picsum.photos/300/400" alt="Calendario" title="Calendario">
                                 <p class="texto-work">
                                     Calendario
                                 </p>
+                                <img class="img-works" src="https://picsum.photos/300/400" alt="Calendario" title="Calendario">
+                                <div class="overlay-work">
+                                    <p class="descript-work">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta minima quos rerum nisi fugit, perspiciatis corrupti qui atque? Perferendis, omnis!
+                                    </p>
+                                    <p class="tec-used">HTML</p>
+                                    <p class="tec-used">CSS</p>
+                                    <p class="tec-used">JavaScript</p>
+                                </div>
                             </div>
                         </div>
                         <div class="content-works-1">
                             <div class="content-works-2">
-                                <img class="img-works" src="https://picsum.photos/300/400" alt="Calculadora" title="Calculadoras">
                                 <p class="texto-work">
                                     Calculadora
                                 </p>
+                                <img class="img-works" src="https://picsum.photos/300/400" alt="Calculadora" title="Calculadoras">
+                                <div class="overlay-work">
+                                    <p class="descript-work">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta minima quos rerum nisi fugit, perspiciatis corrupti qui atque? Perferendis, omnis!
+                                    </p>
+                                    <p class="tec-used">HTML</p>
+                                    <p class="tec-used">CSS</p>
+                                    <p class="tec-used">JavaScript</p>
+                                </div>
                             </div>
                         </div>
                         <div class="content-works-1">
                             <div class="content-works-2">
-                                <img class="img-works" src="https://picsum.photos/300/400" alt="Frontend Mentor" title="Frontend Mentor">
                                 <p class="texto-work">
                                     Frontend Mentor
                                 </p>
+                                <img class="img-works" src="https://picsum.photos/300/400" alt="Frontend Mentor" title="Frontend Mentor">
+                                <div class="overlay-work">
+                                    <p class="descript-work">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta minima quos rerum nisi fugit, perspiciatis corrupti qui atque? Perferendis, omnis!
+                                    </p>
+                                    <p class="tec-used">HTML</p>
+                                    <p class="tec-used">CSS</p>
+                                    <p class="tec-used">JavaScript</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -127,20 +151,21 @@
         <footer>
             <div id="git-content-footer">
                 <a id="personalLink" class="personalLinks" href="https://github.com/Mangostar1" target="_blank">
-                    <img src="./icons/github-svgrepo-com.svg" class="github" id="github">
+                    <img src="./icons/github-svgrepo-com.svg" class="github" id="github" title="GitHub">
                 </a>
             </div>
             <div id="linkedin-content-footer">
                 <a href="https://www.linkedin.com/in/omar-zavala-ugarte-7b5036149/" class="personalLinks" target="_blank">
-                    <img src="./icons/linkedin-svgrepo-com.svg" class="linkedin" id="linkedin">
+                    <img src="./icons/linkedin-svgrepo-com.svg" class="linkedin" id="linkedin" title="Linkedin">
                 </a>
             </div>
             <div id="email-content-footer">
                 <a href="mailto:influencia.x.94@gmail.com" class="personalLinks" target="_blank">
-                    <img src="./icons/email-svgrepo-com.svg" class="email" id="email">
+                    <img src="./icons/email-svgrepo-com.svg" class="email" id="email" title="e-mail">
                 </a>
             </div>
         </footer>
     </div>
 </body>
+<script src="./js/works.js"></script>
 </html>

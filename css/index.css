@@ -42,15 +42,17 @@ main{
 /* titles h5 */
 .card-title{
     text-align: center;
-}
 
-/* welcome */
-
-.card-title{
     font-size: 2em;
     font-weight: 900;
     color: var(--colorMain);
 }
+
+.title-other{
+    margin-bottom: 1em;
+}
+
+/* welcome */
 
 .sec-welcome{
     background-image: url(../icons/bg-images/pexels-pixabay-270404.jpg);
@@ -108,9 +110,21 @@ main{
     width: 45%;
 }
 
+.content-tec{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
 .logos-tec{
     width: 60px;
     height: 60px;
+    cursor: pointer;
+}
+.logos-tec:hover{
+    filter: brightness(1.2);
+    transform: scale(1.1);
 }
 
 /* work */
@@ -125,6 +139,65 @@ main{
     justify-items: center;
     gap: 1em;
     margin: 1em;
+}
+
+.work-text{
+    text-align: center;
+
+    margin-bottom: 100px;
+}
+
+    /* works view */
+
+.content-works-2{
+    position: relative;
+    z-index: 1;
+}
+
+.overlay-work{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 300PX;
+    height: 400PX;
+    position: absolute;
+    top: 1.2em;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+
+    transition: all 0.4s ease-in-out;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.overlay-work:hover{
+    opacity: 1;
+}
+
+.descript-work{
+    color: var(--colorWhite);
+    text-align: center;
+}
+
+.tec-used{
+    color: white;
+    background-color: var(--colorMain);
+
+    text-align: center;
+
+    width: 79px;
+    height: 1.5em;
+    margin-bottom: 1em;
+    padding: 2px 5px;
+    border-radius: 5px;
+
+    font-size: .8em;
+}
+.tec-used:hover{
+    background-color: var(--colorHover);
 }
 
 /* contacto */
@@ -266,6 +339,3 @@ p::selection{
     background-color: var(--colorHover);
     color: var(--colorWhite);
 }
-
-
-/* experimentos */
