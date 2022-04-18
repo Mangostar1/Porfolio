@@ -118,7 +118,6 @@
                             </div>
                         </div>
                     </div>
-
                 </article>
             </section>
 
@@ -128,10 +127,14 @@
                     <p class="contact-descript">
                         Si tienes alguna duda o sugerencia, puedes contactarme en mi correo electrónico o en mi whatsapp.
                     </p>
-                    <form action="" method="post">
+                    <form action="send.php" method="post">
                         <div class="form-group">
                             <label for="name" class="name">Nombre</label>
                             <input type="text" name="name" id="name" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="subject">Asunto</label>
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Asunto" required>
                         </div>
                         <div class="form-group">
                             <label for="email" class="email">Email</label>
