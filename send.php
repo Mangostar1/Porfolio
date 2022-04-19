@@ -9,10 +9,10 @@
     $headers = 'From: ' . $email . "\r\n" .
     'Reply-To: ' . $email . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
-    $status = mail($to, $subject, $message, $headers);
-    if ($status) {
-        echo "<script>alert('Mensaje enviado correctamente');</script>";
-    } else {
-        echo "<script>alert('Error al enviar el mensaje');</script>";
-    }
+
+    mail($to, $subject, $message, $headers);
+
+    header("Location: index.html");
+
+    exit;
 ?>
