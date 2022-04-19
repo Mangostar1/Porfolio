@@ -120,7 +120,6 @@ main{
 .logos-tec{
     width: 60px;
     height: 60px;
-    cursor: pointer;
 }
 .logos-tec:hover{
     filter: brightness(1.2);
@@ -149,6 +148,34 @@ main{
 
     /* works view */
 
+#img-calendar{
+    width: 400px;
+    height: 400px;
+
+    background-image: url("/icons/works-img/calendar.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#img-calc{
+    width: 400px;
+    height: 400px;
+
+    background-image: url("/icons/works-img/Calculadoras.PNG");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#img-Frontend{
+    width: 400px;
+    height: 400px;
+
+    background-image: url("/icons/works-img/Frontend.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .content-works-2{
     position: relative;
     z-index: 1;
@@ -156,7 +183,7 @@ main{
 
 .overlay-work{
     background-color: rgba(0, 0, 0, 0.5);
-    width: 300PX;
+    width: 400PX;
     height: 400PX;
     position: absolute;
     top: 1.2em;
@@ -328,11 +355,6 @@ footer div{
 
     text-decoration: none;
 }
-
-/* .email{
-    width: 40px;
-    height: 40px;
-} */
 
 /* texto */
 p::selection{

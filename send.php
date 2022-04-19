@@ -8,8 +8,8 @@
     $to = 'influencia.x.94@gmail.com';
     
     if (mail($to, $subject, $message)) {
-        echo 'mensaje enviado';
+        echo '<h1>mensaje enviado</h1>';
     } else {
-        echo 'Error, mensaje no enviado';
+        echo '<h1>Error, mensaje no enviado</h1>';
     }
 ?>

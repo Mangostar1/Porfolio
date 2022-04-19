@@ -11,5 +11,5 @@ calc.onclick = () => {
 };
 
 fornendM.onclick = () => {
-    location.assign('https://github.com/Mangostar1/Frontend-mentor');
+    location.assign('https://github.com/Mangostar1/Frontend_mentor');
 };
