@@ -117,9 +117,18 @@ main{
     gap: 1em;
 }
 
+.box-tex{
+    width: 120px;
+    height: 120px;
+    border-radius: 25%;
+    background-color: #2742f528;
+}
+
 .logos-tec{
     width: 60px;
     height: 60px;
+
+    margin: 30px 0px 0px 30px;
 }
 .logos-tec:hover{
     filter: brightness(1.2);
@@ -162,7 +171,7 @@ main{
     height: 400px;
 
     background-image: url("/icons/works-img/Calculadoras.PNG");
-    background-size: 300px;
+    background-size: 320px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -171,7 +180,7 @@ main{
     height: 400px;
 
     background-image: url("/icons/works-img/Frontend.PNG");
-    background-size: cover;
+    background-size: 1600px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -269,7 +278,7 @@ form{
     font-size: 16px;
 }
 
-.name::after, .email::after, .message::after{
+.name::after, .email::after, .message::after, .subject::after{
     content: "*";
     color: red;
     display: inline-block;
