@@ -6,10 +6,13 @@
     $email = $_POST['email'];
     $message = $_POST['message'];
     $to = 'influencia.x.94@gmail.com';
-    
-    if (mail($to, $subject, $message)) {
-        echo '<h1>mensaje enviado</h1>';
+    $headers = 'From: ' . $email . "\r\n" .
+    'Reply-To: ' . $email . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+    $status = mail($to, $subject, $message, $headers);
+    if ($status) {
+        echo "<script>alert('Mensaje enviado correctamente');</script>";
     } else {
-        echo '<h1>Error, mensaje no enviado</h1>';
+        echo "<script>alert('Error al enviar el mensaje');</script>";
     }
 ?>
