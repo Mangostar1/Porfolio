@@ -312,7 +312,7 @@ footer{
     gap: 1em;
 }
 
-.github, .linkedin{
+.github, .linkedin, .email{
     width: 40px;
     height: 40px;
     margin-right: .1em;
@@ -329,10 +329,10 @@ footer div{
     text-decoration: none;
 }
 
-.email{
+/* .email{
     width: 40px;
     height: 40px;
-}
+} */
 
 /* texto */
 p::selection{
