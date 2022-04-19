@@ -10,7 +10,11 @@
     'Reply-To: ' . $email . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-    mail($to, $subject, $message, $headers);
+    if(mail($to, $subject, $message, $headers)){
+        echo '<p>Your message has been sent!</p>';
+    } else {
+        echo '<p>Something went wrong, go back and try again!</p>';
+    }
 
     header("Location: index.html");
 
