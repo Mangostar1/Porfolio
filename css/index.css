@@ -259,8 +259,20 @@ footer{
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1em;
+}
+
+.icons_foter{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+    margin-right: 1em;
+}
+
+.copyright{
+    margin-left: 1em;
 }
 
 .github, .linkedin, .email, .instagram{
@@ -279,6 +291,7 @@ footer div{
 
     text-decoration: none;
 }
+
 
 /* texto */
 p::selection{
