@@ -158,29 +158,29 @@ main{
     /* works view */
 
 #img-calendar{
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 250px;
 
     background-image: url("../icons/works-img/calendar.PNG");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 #img-calc{
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 250px;
 
-    background-image: url("../icons/works-img/Calculadoras.PNG");
-    background-size: 320px;
+    background-image: url("../icons/works-img/ejercicios\ web.PNG");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 #img-Frontend{
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 250px;
 
     background-image: url("../icons/works-img/Frontend.PNG");
-    background-size: 1600px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -192,8 +192,8 @@ main{
 
 .overlay-work{
     background-color: rgba(0, 0, 0, 0.5);
-    width: 400PX;
-    height: 400PX;
+    width: 450px;
+    height: 250px;
     position: absolute;
     top: 1.2em;
     left: 0;
@@ -237,99 +237,7 @@ main{
 
 /* contacto */
 
-    /* Contact content */
-#content-contact{
-    padding: 1em;
-}
 
-    /* Form  */
-#contact-form{
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.75);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-#h1-contact{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.contact-descript{
-    color: rgb(66, 66, 66);
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-form{
-    width: 100%;
-}
-
-.form-group input{
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
-.name::after, .email::after, .message::after, .subject::after{
-    content: "*";
-    color: red;
-    display: inline-block;
-    width: 1em;
-    margin-left: .2em;
-}
-
-.form-group #message{
-    width: 100%;
-    height: 120px;
-
-    resize: vertical;
-    max-height: 250px;
-    min-height: 120px;
-
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.form-group{
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.btn-primary{
-    background-color: var(--colorMain);
-    color: var(--colorWhite);
-}
-
-.btn-primary:hover{
-    background-color: var(--colorHover);
-    color: white;
-
-    transition: all 0.2s ease-in-out;
-}
-
-    /* Detail contact */
-#detail-contact{
-    display: none;
-    width: 48%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.75);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-#h1-detail{
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 /* footer */
 
@@ -347,7 +255,7 @@ footer{
     gap: 1em;
 }
 
-.github, .linkedin, .email{
+.github, .linkedin, .email, .instagram{
     width: 40px;
     height: 40px;
     margin-right: .1em;
