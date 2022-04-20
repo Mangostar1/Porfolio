@@ -39,6 +39,11 @@ main{
     grid-row: 2/3;
 }
 
+/* textos */
+.card-text{
+    text-align: center;
+}
+
 /* titles h5 */
 .card-title{
     text-align: center;
@@ -237,6 +242,9 @@ main{
 
 /* contacto */
 
+#content-contact{
+    margin: 1em;
+}
 
 
 /* footer */
