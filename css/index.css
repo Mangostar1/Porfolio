@@ -57,6 +57,13 @@ main{
     margin-bottom: 1em;
 }
 
+.title-inner-about{
+    color: var(--colorMain);
+    font-size: 1.1em;
+
+    margin: 2em 0px 1em 0px;
+}
+
 /* welcome */
 
 .sec-welcome{
@@ -123,14 +130,11 @@ main{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    gap: 1em;
 }
 
 .box-tex{
     width: 120px;
     height: 120px;
-    border-radius: 25%;
-    background-color: #2742f528;
 }
 
 .logos-tec{
@@ -140,7 +144,7 @@ main{
     margin: 30px 0px 0px 30px;
 }
 .logos-tec:hover{
-    filter: brightness(1.2);
+    filter: brightness(1.1);
     transform: scale(1.1);
 }
 
@@ -247,7 +251,12 @@ main{
 /* contacto */
 
 #content-contact{
-    margin: 1em;
+    background-color: darkgrey;
+    box-shadow: 0px -100px 80px 40px darkgrey;
+}
+
+.contact-article{/* testeando */
+    
 }
 
 .contact-me{
@@ -256,9 +265,11 @@ margin-left: 5em;
 
 .link-contact{
     color: var(--colorMain);
+    text-decoration: none;
 }
 .link-contact:hover{
     color: var(--colorHover);
+    border: solid 1px black;
 }
 
 /* footer */
@@ -269,7 +280,7 @@ footer{
 
     min-height: 5em;
 
-    background-color: rgba(128, 128, 128, 0.6);
+    background-color: darkgrey;
 
     display: flex;
     align-items: center;
