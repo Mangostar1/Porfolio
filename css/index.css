@@ -115,6 +115,10 @@ main{
     width: 45%;
 }
 
+.tec-p{
+    text-align: center;
+}
+
 .content-tec{
     display: flex;
     flex-flow: row wrap;
@@ -246,6 +250,16 @@ main{
     margin: 1em;
 }
 
+.contact-me{
+margin-left: 5em;
+}
+
+.link-contact{
+    color: var(--colorMain);
+}
+.link-contact:hover{
+    color: var(--colorHover);
+}
 
 /* footer */
 
@@ -276,8 +290,8 @@ footer{
 }
 
 .github, .linkedin, .email, .instagram{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-right: .1em;
 }
 
