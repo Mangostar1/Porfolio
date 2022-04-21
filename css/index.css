@@ -263,7 +263,9 @@ main{
 
 #content-contact{
     background-color: darkgrey;
-    box-shadow: 0px -100px 80px 40px darkgrey;
+
+    box-shadow: 0px -5px 10px 10px darkgrey;/* en testeo */
+    padding: 0px 0px 2em 0px;
 }
 
 .contact-article{
@@ -271,7 +273,10 @@ main{
 }
 
 .contact-me{
-margin-left: 5em;
+margin-left: 30%;
+}
+.contact-me:first-of-type{
+    margin-top: 1em;
 }
 
 .link-contact{
