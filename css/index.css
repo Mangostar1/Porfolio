@@ -105,25 +105,36 @@ main{
 
 .sec-about{
     background-color: white;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-
+    margin: 0px 0em 200px 0em;
     display: flex;
-    flex-flow: row wrap;
-    gap: 1em;
-
-    margin: 0px 1em 200px 1em;
+    justify-content: center;
 }
 
 #about{
-    width: 45%;
-}
-#tecno{
-    width: 45%;
+    max-width: 1800px;
 }
 
 .tec-p{
     text-align: center;
+}
+
+#img-html, #img-css, #img-js, #img-git{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+#git-p{
+    text-align: center;
+}
+
+#img-js{
+    margin-left: 25px;
+}
+
+.tec-div{
+    display: inline-block;
+    margin-left: 2em;
 }
 
 .content-tec{
@@ -253,10 +264,6 @@ main{
 #content-contact{
     background-color: darkgrey;
     box-shadow: 0px -100px 80px 40px darkgrey;
-}
-
-.contact-article{/* testeando */
-    
 }
 
 .contact-me{
