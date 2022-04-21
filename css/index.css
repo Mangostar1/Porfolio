@@ -274,6 +274,7 @@ main{
 
 .contact-me{
 margin-left: 30%;
+margin-bottom: 1em;
 }
 .contact-me:first-of-type{
     margin-top: 1em;
@@ -281,7 +282,11 @@ margin-left: 30%;
 
 .link-contact{
     color: var(--colorMain);
+    background-color: aliceblue;
     text-decoration: none;
+    border: solid 1px transparent;
+    border-radius: 10px;
+    padding: 10px 5px;
 }
 .link-contact:hover{
     color: var(--colorHover);
