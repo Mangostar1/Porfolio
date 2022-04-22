@@ -301,15 +301,15 @@ margin-bottom: 1em;
 }
 .email-contact{
     width: 25px;
-    height: 25px;
 }
 .linkedin-contact{
     width: 25px;
-    height: 25px;
 }
 .instagram-contact{
     width: 30px;
-    height: 30px;
+}
+.link-contact:hover .email-contact, .link-contact:hover .linkedin-contact, .link-contact:hover .instagram-contact{
+    filter: invert(100%);
 }
 
 
@@ -343,7 +343,6 @@ footer{
 
 .github, .linkedin, .email, .instagram{
     width: 30px;
-    height: 30px;
     margin-right: .1em;
 }
 
