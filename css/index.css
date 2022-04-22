@@ -206,7 +206,7 @@ main{
 }
 
 .overlay-work{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.65);
     width: 450px;
     height: 250px;
     position: absolute;
@@ -225,6 +225,7 @@ main{
 
 .overlay-work:hover{
     opacity: 1;
+    box-shadow: 0px 0px 10px 2px gray;
 }
 
 .descript-work{
@@ -253,10 +254,10 @@ main{
 /* contacto */
 
 #content-contact{
-    background-color: darkgrey;
+    /* background-color: darkgrey; */
 
-    box-shadow: 0px -5px 10px 10px darkgrey;/* en testeo */
-    padding: 0px 0px 2em 0px;
+    /* box-shadow: 0px -5px 10px 10px darkgrey; */
+    padding: 0px 0px 5em 0px;
 }
 
 .contact-article{
@@ -271,6 +272,10 @@ main{
     margin-left: 30%;
 }
 
+
+#email-contact{
+    width: 100px;
+}
 .link-contact{
     color: var(--colorMain);
     background-color: aliceblue;
@@ -313,6 +318,7 @@ footer{
     min-height: 5em;
 
     background-color: darkgrey;
+    box-shadow: 0px -5px 10px 10px darkgrey;
 
     display: flex;
     align-items: center;
