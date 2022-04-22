@@ -163,7 +163,6 @@ main{
 
 
 .btn-pdf{
-    margin-top: 1em;
     padding: .5em 1em;
     background-color: var(--buttons);
     border: none;
@@ -183,6 +182,13 @@ main{
 }
 .btn-pdf:hover .btn-pdf-link{
     color: white;
+}
+.cv-img{
+    width: 20px;
+    margin-right: 5px;
+}
+.btn-pdf:hover .cv-img{
+    filter: invert(100%);
 }
 
 /* work */
