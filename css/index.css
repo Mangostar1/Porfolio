@@ -181,32 +181,23 @@ main{
 
     /* works view */
 
-#img-calendar{
+#img-calendar, #img-calc, #img-Frontend{
     width: 450px;
     height: 250px;
 
-    background-image: url("../icons/works-img/calendar.PNG");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#img-calendar, #img-calc, #img-Frontend{
+    background-image: url("../icons/works-img/calendar.PNG");
 }
 #img-calc{
-    width: 450px;
-    height: 250px;
-
     background-image: url("../icons/works-img/ejercicios\ web.PNG");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 #img-Frontend{
-    width: 450px;
-    height: 250px;
-
     background-image: url("../icons/works-img/Frontend.PNG");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .content-works-2{
@@ -222,7 +213,6 @@ main{
     top: 1.2em;
     left: 0;
     z-index: 2;
-    cursor: pointer;
     opacity: 0;
 
     transition: all 0.4s ease-in-out;
@@ -257,6 +247,7 @@ main{
 }
 .tec-used:hover{
     background-color: var(--colorHover);
+    box-shadow: 0px 1px 10px 0px var(--colorMain);
 }
 
 /* contacto */
@@ -273,11 +264,11 @@ main{
 }
 
 .contact-me{
-margin-left: 30%;
-margin-bottom: 1em;
+    margin: 1.5em 1em 1em 0px;
+    display: inline-block;
 }
 .contact-me:first-of-type{
-    margin-top: 1em;
+    margin-left: 30%;
 }
 
 .link-contact{
@@ -344,6 +335,10 @@ footer{
 .github, .linkedin, .email, .instagram{
     width: 30px;
     margin-right: .1em;
+    transition: all 0.4s ease;
+}
+.github:hover, .linkedin:hover, .email:hover, .instagram:hover{
+    filter: invert(100%);
 }
 
 footer div{
