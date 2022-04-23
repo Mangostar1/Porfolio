@@ -120,10 +120,19 @@ main{
     text-align: center;
 }
 
-#img-html, #img-css, #img-js, #img-git{
+#img-html, #img-css, #img-js, #img-git, #img-node{
     width: 40px;
     height: 40px;
     margin-left: 5px;
+}
+#img-npm{
+    width: 55px;
+    height: 55px;
+    margin-left: 5px;
+    background-color: #206EDB;
+}
+.npm-p{
+    text-align: center;
 }
 
 #git-p{
@@ -194,7 +203,7 @@ main{
 /* work */
 
 #sec-works{
-    margin: 0px 1em 200px 1em;
+    margin: 0px 1em 100px 1em;
 }
 
 .content-works{
@@ -286,10 +295,8 @@ main{
 /* contacto */
 
 #content-contact{
-    /* background-color: darkgrey; */
-
-    /* box-shadow: 0px -5px 10px 10px darkgrey; */
     padding: 0px 0px 5em 0px;
+    margin: 0px 0px 200px 0px;
 }
 
 .contact-article{
