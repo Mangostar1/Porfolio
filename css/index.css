@@ -62,7 +62,7 @@ main{
 .title-inner-about{
     color: var(--colorMain);
     font-size: 1.1em;
-
+    text-align: center;
     margin: 2em 0px 1em 0px;
 }
 
@@ -81,7 +81,7 @@ main{
     justify-content: center;
     align-items: center;
 
-    margin: 0px 0px 200px 0px;
+    margin: 0px;
 }
 
 #welcome{
@@ -107,13 +107,40 @@ main{
 
 .sec-about{
     background-color: white;
-    margin: 0px 0em 200px 0em;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    margin: 0px;
     display: flex;
     justify-content: center;
 }
 
 #about{
     max-width: 1600px;
+}
+
+.content-tec{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+    justify-content: space-around;
+}
+
+.about-box{
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 10px;
+
+    width: auto;
+    height: auto;
+
+    padding: 1em;
+    margin-top: .5em;
+}
+
+#abot-me{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .tec-p{
@@ -147,12 +174,6 @@ main{
     margin-left: 2em;
 }
 
-.content-tec{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-
 .box-tex{
     width: 120px;
     height: 120px;
@@ -182,14 +203,12 @@ main{
 }
 .btn-pdf:hover{
     background-color: var(--colorMain);
+    color: white;
     box-shadow: 0px 1px 10px 0px var(--colorMain);
 }
 .btn-pdf-link{
     text-decoration: none;
     color: var(--colorMain);
-}
-.btn-pdf:hover .btn-pdf-link{
-    color: white;
 }
 .cv-img{
     width: 20px;
@@ -202,7 +221,10 @@ main{
 /* work */
 
 #sec-works{
-    margin: 0px 1em 100px 1em;
+    margin: 0px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background: linear-gradient(to bottom, #ff0000cc, rgba(0, 0, 0, 0.8)), url(../icons/bg-images/pexels-pixabay-270404.jpg);
 }
 
 .content-works{
@@ -228,6 +250,8 @@ main{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+
+    background-color: hsla(0, 0%, 100%, 0.5);
 }
 
 #img-calendar, #img-calc, #img-Frontend{
@@ -294,8 +318,8 @@ main{
 /* contacto */
 
 #content-contact{
-    padding: 0px 0px 5em 0px;
-    margin: 0px 0px 200px 0px;
+    padding: 150px 0px 150px 0px;
+    margin: 0px;
 }
 
 .contact-article{
@@ -403,3 +427,6 @@ p::selection{
     background-color: var(--colorHover);
     color: var(--colorWhite);
 }
+
+/* testing ideas */
+
