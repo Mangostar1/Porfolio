@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    background-color:#F4F6F7;
+}
+
 h1{
     color: #206EDB;
     font-size: 2em;
@@ -21,4 +25,5 @@ h1{
     border-radius: 20px;
     background-color:#fff;
     padding:10px;
+    box-shadow: 0px 0px 15px rgb(156, 156, 156);
 }
