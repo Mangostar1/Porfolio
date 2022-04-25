@@ -128,6 +128,7 @@ main{
 .about-box{
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 10px;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.125);
 
     width: auto;
     height: auto;
@@ -141,6 +142,8 @@ main{
     flex-flow: column;
     justify-content: center;
     align-items: center;
+
+    margin-top: 1em;
 }
 
 .tec-p{
@@ -224,7 +227,7 @@ main{
     margin: 0px;
     padding-top: 150px;
     padding-bottom: 100px;
-    background: linear-gradient(to bottom, #ff0000cc, rgba(0, 0, 0, 0.8)), url(../icons/bg-images/pexels-pixabay-270404.jpg);
+    background: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.8), hsla(215, 25%, 76%, 0.5)), url(../icons/bg-images/pexels-markus-spiske-2004161.jpg);
 }
 
 .content-works{
@@ -322,16 +325,16 @@ main{
     margin: 0px;
 }
 
-.contact-article{
-    max-width: 1600px;
+.content-contact-me{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-me{
     margin: 1.5em 1em 1em 0px;
     display: inline-block;
-}
-.contact-me:first-of-type{
-    margin-left: 30%;
 }
 
 
