@@ -6,6 +6,9 @@
     --colorMain: #206EDB;
 
     --buttons: rgb(231, 244, 255);
+
+    --widh-works: 100%;
+    --height-works: 100%;
 }
 
 *{
@@ -232,23 +235,19 @@ main{
 }
 
 .content-works{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-items: center;
-    gap: 1em;
-    margin: 1em;
+    display: flex; 
+    justify-content: center;
 }
 
 .work-text{
     text-align: center;
-
     margin-bottom: 100px;
 }
 
     /* works view */
 
-#img-calendar, #img-calc, #img-Frontend{
-    width: 450px;
+#img-calendar, #img-calc, #img-Frontend, #img-TimeTrack, #img-NFT{
+    width: 350px;
     height: 250px;
 
     background-size: contain;
@@ -265,7 +264,13 @@ main{
     background-image: url("../icons/works-img/ejercicios\ web.PNG");
 }
 #img-Frontend{
-    background-image: url("../icons/works-img/Frontend.PNG");
+    background-image: url("../icons/works-img/Comercio electronico.PNG");
+}
+#img-TimeTrack{
+    background-image: url("../icons/works-img/time track.PNG");
+}
+#img-NFT{
+    background-image: url("../icons/works-img/NFT.PNG");
 }
 
 .content-works-2{
@@ -275,7 +280,7 @@ main{
 
 .overlay-work{
     background-color: rgba(0, 0, 0, 0.65);
-    width: 450px;
+    width: 350px;
     height: 250px;
     position: absolute;
     top: 1.2em;
