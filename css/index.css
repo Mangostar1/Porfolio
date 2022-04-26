@@ -6,9 +6,6 @@
     --colorMain: #206EDB;
 
     --buttons: rgb(231, 244, 255);
-
-    --widh-works: 100%;
-    --height-works: 100%;
 }
 
 *{
@@ -78,11 +75,17 @@ main{
     background-repeat: no-repeat;
 
     height: 100vh;
+    width: 100%;
     display: flex;
 
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 
     margin: 0px;
 }
@@ -112,9 +115,12 @@ main{
     background-color:#F4F6F7;
     padding-top: 100px;
     padding-bottom: 100px;
-    margin: 0px;
+    margin: 100vh 0px 0px 0px;
     display: flex;
     justify-content: center;
+
+    position: relative;
+    z-index: 4;
 }
 
 #about{
@@ -231,7 +237,11 @@ main{
     margin: 0px;
     padding-top: 150px;
     padding-bottom: 100px;
-    background: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.8), hsla(215, 25%, 76%, 0.5)), url(../icons/bg-images/pexels-markus-spiske-2004161.jpg);
+    background-color:hsla(200, 16%, 96%, 0.8);
+    backdrop-filter: blur(20px);
+
+    position: relative;
+    z-index: 4;
 }
 
 .content-works{
@@ -335,6 +345,9 @@ main{
     align-items: center;
 
     background-color:#F4F6F7;
+    
+    position: relative;
+    z-index: 4;
 }
 
 .contact-article{
@@ -413,6 +426,9 @@ footer{
     align-items: center;
     justify-content: space-between;
     gap: 1em;
+
+    position: relative;
+    z-index: 4;
 }
 
 .icons_foter{
