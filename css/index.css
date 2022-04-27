@@ -449,7 +449,7 @@ footer{
     transition: all 0.4s ease;
 }
 .github:hover, .linkedin:hover, .email:hover, .instagram:hover{
-    filter: brightness(0) saturate(100%) invert(22%) sepia(95%) saturate(6701%) hue-rotate(238deg) brightness(101%) contrast(92%);
+    filter: invert(18%) sepia(73%) saturate(5632%) hue-rotate(236deg) brightness(98%) contrast(96%);
 }
 
 footer div{
