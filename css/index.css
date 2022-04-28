@@ -92,7 +92,7 @@ main{
 }
 
 #welcome{
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgb(81 153 255 / 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     color: black;

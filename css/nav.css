@@ -40,10 +40,10 @@ header{
     padding: .5em .5em;
     display: block;
 
-    color: var(--colorLight);
+    color: var(--colorHover);
 }
 
 .nav-link:hover{
-    color: var(--colorHover);
+    color: var(--colorLight);
 }
 
