@@ -1,9 +1,10 @@
 :root{
-    --colorHover: #2743F5;
+    --colorMain: #206EDB;
+    --colorHover: #0B428F;
+    --colorLight: #408FFF;
 
     --colorWhite: white;
     --colorBlack: black;
-    --colorMain: #206EDB;
 
     --buttons: rgb(231, 244, 255);
 }
@@ -69,7 +70,7 @@ main{
 /* welcome */
 
 .sec-welcome{
-    background-image: url(../icons/bg-images/pexels-pixabay-270404.jpg);
+    background-image: url(../icons/bg-images/17973908.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -94,7 +95,7 @@ main{
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    color: white;
+    color: black;
 
     width: auto; /* tamaño de la ventana */
     height: auto;
@@ -132,8 +133,6 @@ main{
     border-radius: 10px;
     background-color: white;
     animation: sliderImage .5s;
-    /* border: 1px solid rgba(0, 0, 0, 0.125); */
-    /* box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.125); */
 
     width: 100%;
     height: auto;
@@ -234,6 +233,7 @@ main{
 .prev{
     width: 30px;
     height: 30px;
+    margin-left: 5px;
 
     position: absolute;
     top: 40%;
@@ -244,6 +244,7 @@ main{
 .next{
     width: 30px;
     height: 30px;
+    margin-right: 5px;
 
     position: absolute;
     top: 40%;

@@ -4,6 +4,18 @@ header{
     
     height: 3.5em;
     transition: all 0.4s ease;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 160px;
+    height: 45px;
+    margin-left: 40px;
+    margin-top: 10px;
+
+    z-index: 3;
 }
 
 .nav{
@@ -23,16 +35,12 @@ header{
     z-index: 3;
 }
 
-.nav-list:hover{
-    background-color: var(--colorWhite);
-}
-
 .nav-link{
     text-decoration: none;
     padding: .5em .5em;
     display: block;
 
-    color: var(--colorMain);
+    color: var(--colorLight);
 }
 
 .nav-link:hover{
