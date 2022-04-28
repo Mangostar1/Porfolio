@@ -47,3 +47,7 @@ header{
     color: var(--colorLight);
 }
 
+/* mobile */
+@media (max-width: 768px) {
+    
+}

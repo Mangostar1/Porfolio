@@ -107,7 +107,7 @@ main{
     text-align: center;
     letter-spacing: 2px;
 
-    margin: 0px 1em 200px 1em;
+    margin: 0px auto 200px auto;
 }
 
 /* about */
@@ -299,6 +299,7 @@ main{
 .content-works{
     display: flex; 
     justify-content: center;
+    flex-flow: row wrap;
 }
 
 .work-text{
