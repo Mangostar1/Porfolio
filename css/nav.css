@@ -1,41 +1,30 @@
 /* Header */
-header{
-    background-color: rgba(192, 192, 192, 0.50);
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 10px 0px rgb(36, 36, 36);
-    
+header{    
     grid-column: 1 / span 3;
     
     height: 3.5em;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
+    transition: all 0.4s ease;
 }
 
 .nav{
     margin-top: 0.6em;
-    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .nav-menu{
     list-style: none;
 
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     gap: 1em;
 }
 
 .nav-list{
     z-index: 3;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
 }
 
 .nav-list:hover{
-    background-color: var(--colorMain);
+    background-color: var(--colorWhite);
 }
 
 .nav-link{
@@ -43,12 +32,10 @@ header{
     padding: .5em .5em;
     display: block;
 
-    color: var(--colorBlack);
-    border: 1px solid transparent;
+    color: var(--colorMain);
 }
 
 .nav-link:hover{
-    border-left: 2px solid rgb(0, 0, 0);
-    color: white;
+    color: var(--colorHover);
 }
 
