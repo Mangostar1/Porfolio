@@ -63,7 +63,7 @@ main{
     color: var(--colorMain);
     font-size: 1.1em;
     text-align: center;
-    margin: 2em 0px 1em 0px;
+    margin: 0em 0px 1em 0px;
 }
 
 /* welcome */
@@ -124,27 +124,25 @@ main{
 }
 
 #about{
+    width: 100%;
     max-width: 1600px;
 }
 
-.content-tec{
-    display: flex;
-    flex-flow: row wrap;
-    gap: 1em;
-    justify-content: space-around;
-}
-
 .about-box{
-    border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 10px;
-    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.125);
     background-color: white;
+    animation: sliderImage .5s;
+    /* border: 1px solid rgba(0, 0, 0, 0.125); */
+    /* box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.125); */
 
-    width: auto;
+    width: 100%;
     height: auto;
+    min-height: 170px;
 
     padding: 1em;
     margin-top: .5em;
+
+    position: relative;
 }
 
 #abot-me{
@@ -154,6 +152,7 @@ main{
     align-items: center;
 
     margin-top: 1em;
+    width: auto;
 }
 
 .tec-p{
@@ -229,6 +228,58 @@ main{
 }
 .btn-pdf:hover .cv-img{
     filter: invert(100%);
+}
+
+    /* slider */
+.prev{
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    top: 40%;
+    left: 0;
+
+    cursor: pointer;
+}
+.next{
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    top: 40%;
+    right: 0;
+
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+
+.dots{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+
+    margin-top: 5px;
+}
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: grey;
+
+    cursor: pointer;
+}
+
+
+@keyframes sliderImage{
+    0%{
+        opacity: .4;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 /* work */
@@ -351,9 +402,9 @@ main{
 }
 
 .contact-article{
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    /* border: 1px solid rgba(0, 0, 0, 0.125); */
     border-radius: 10px;
-    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.125);
+    /* box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.125); */
     padding: 1em;
     width: auto;
     height: auto;
@@ -366,6 +417,8 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    margin-top: 4em;
 }
 
 .contact-me{
@@ -471,4 +524,3 @@ p::selection{
 }
 
 /* testing ideas */
-
