@@ -537,4 +537,24 @@ p::selection{
     color: var(--colorWhite);
 }
 
-/* testing ideas */
+/* @medias */
+@media (max-width: 767px){
+    .prev{
+        width: 40px;
+        height: 40px;
+    
+        top: 5%;
+        left: 0;
+
+        z-index: 10;
+    }
+    .next{
+        width: 40px;
+        height: 40px;
+    
+        top: 5%;
+        right: 0;
+        
+        z-index: 10;
+    }
+}
