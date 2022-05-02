@@ -1,7 +1,5 @@
 /* Header */
-header{
-    grid-column: 1 / span 3;
-    
+header{    
     height: 3.5em;
     transition: all 0.4s ease;
 
@@ -48,6 +46,10 @@ header{
 }
 
 /* mobile */
-@media (max-width: 768px) {
-    
+@media (max-width: 767px) {
+    header{
+        height: 6em;
+        flex-direction: column;
+        align-items: center;
+    }
 }
