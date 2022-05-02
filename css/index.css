@@ -132,6 +132,9 @@ main{
     width: 100%;
     max-width: 1600px;
 }
+#about div .card-text{
+    padding-bottom: 2em;
+}
 
 .about-box{
     border-radius: 10px;
