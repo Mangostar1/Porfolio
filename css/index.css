@@ -3,10 +3,14 @@
     --colorHover: #0B428F;
     --colorLight: #408FFF;
 
+    --colorExtra: #96CEE3;
+
     --colorWhite: white;
     --colorBlack: black;
 
     --buttons: rgb(231, 244, 255);
+
+    -test: red;
 }
 
 *{
@@ -168,26 +172,34 @@ main{
     height: 55px;
     margin-left: 5px;
 }
-.npm-p{
-    text-align: center;
-}
-
-#git-p{
-    text-align: center;
-}
-
-#img-js{
-    margin-left: 25px;
-}
 
 .tec-div{
-    display: inline-block;
-    margin-left: 2em;
+    display: block;
+    margin-left: 10%;
+    margin-bottom: 1em;
+
+    width: 90%;
+}
+.tec-div img{
+    position: relative;
+    top: -40px;
+    left: -55px;
 }
 
-.box-tex{
-    width: 120px;
-    height: 120px;
+.percent-tec{
+    width: 80%;
+    height: 40px;
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    background-color: var(--colorExtra);
+}
+.percent-tec p{
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-left: 10px;
+    padding-top: 4px;
 }
 
 .logos-tec{
@@ -233,7 +245,7 @@ main{
 .prev{
     width: 30px;
     height: 30px;
-    margin-left: 5px;
+    margin-left: 10px;
 
     position: absolute;
     top: 40%;
@@ -244,7 +256,7 @@ main{
 .next{
     width: 30px;
     height: 30px;
-    margin-right: 5px;
+    margin-right: 10px;
 
     position: absolute;
     top: 40%;
