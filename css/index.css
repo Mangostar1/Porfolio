@@ -322,7 +322,7 @@ main{
 
     /* works view */
 
-#img-calendar, #img-calc, #img-Frontend, #img-TimeTrack, #img-NFT{
+#img-calendar, #img-calc, #img-Frontend, #img-TimeTrack, #img-NFT, #img-ipAddress{
     width: 350px;
     height: 250px;
 
@@ -347,6 +347,9 @@ main{
 }
 #img-NFT{
     background-image: url("../icons/works-img/NFT.PNG");
+}
+#img-ipAddress{
+    background-image: url("../icons/works-img/ip-address\ tracker.PNG");
 }
 
 .content-works-2{
