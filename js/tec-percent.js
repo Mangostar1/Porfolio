@@ -28,3 +28,7 @@ percents[5].style.cssText = `width: ${Node}`;
 //React
 let React = p[6].innerHTML;
 percents[6].style.cssText = `width: ${React}`;
+
+//Bootstrap
+let Bootstrap = p[7].innerHTML;
+percents[7].style.cssText = `width: ${Bootstrap}`;
