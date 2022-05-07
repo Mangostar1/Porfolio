@@ -128,8 +128,7 @@ main{
 }
 
 #about{
-    width: 100%;
-    max-width: 1600px;
+    width: 90%;
 }
 #about div .card-text{
     padding-bottom: 2em;
