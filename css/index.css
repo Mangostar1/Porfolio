@@ -512,12 +512,12 @@ footer{
     margin-left: 1em;
 }
 
-.github, .linkedin, .email, .instagram{
+.github, .linkedin, .email, .instagram, .miweb{
     width: 30px;
     margin-right: .1em;
     transition: all 0.4s ease;
 }
-.github:hover, .linkedin:hover, .email:hover, .instagram:hover{
+.github:hover, .linkedin:hover, .email:hover, .instagram:hover, .miweb:hover{
     filter: invert(18%) sepia(73%) saturate(5632%) hue-rotate(236deg) brightness(98%) contrast(96%);
 }
 
