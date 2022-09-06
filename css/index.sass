@@ -36,7 +36,6 @@ html
             display: grid
             grid-template-columns: auto
             grid-template-rows: auto 1fr auto
-
             gap: 0em
 
             min-height: 100vh
@@ -105,6 +104,27 @@ html
                             margin-top: .5em
 
                             position: relative
+                            .prev
+                                width: 30px
+                                height: 30px
+                                margin-left: 10px
+
+                                position: absolute
+                                top: 40%
+                                left: 0
+
+                                cursor: pointer
+                            .next
+                                width: 30px
+                                height: 30px
+                                margin-right: 10px
+
+                                position: absolute
+                                top: 40%
+                                right: 0
+
+                                transform: rotate(180deg)
+                                cursor: pointer
                             .title-inner-about
                                 color: $colorMain
                                 font-size: 1.1em
@@ -141,6 +161,138 @@ html
 
                             margin-top: 1em
                             width: auto
+                            .btn-pdf
+                                padding: .5em 1em
+                                background-color: $buttons
+                                border: none
+                                border-radius: 10px
+                                box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.1)
+
+                                text-decoration: none
+                                color: $colorMain
+
+                                cursor: pointer
+                                transition: all 0.4s ease
+                                &:hover
+                                    background-color: $colorMain
+                                    color: white
+                                    box-shadow: 0px 1px 10px 0px $colorMain
+                                    .cv-img
+                                        filter: invert(100%)
+                                        transition: all .4s ease
+                                .cv-img
+                                    width: 20px
+                                    margin-right: 5px
+                        .dots
+                            display: flex
+                            flex-direction: row
+                            justify-content: center
+                            align-items: center
+                            gap: .5em
+
+                            margin-top: 5px
+                            .dot
+                                width: 15px
+                                height: 15px
+                                border-radius: 50%
+                                background-color: grey
+
+                                cursor: pointer
+                #content-contact
+                    padding: 150px 0px 150px 0px
+                    margin: 0px
+
+                    display: flex
+                    flex-flow: column
+                    align-items: center
+
+                    background-color:#F4F6F7
+                    
+                    position: relative
+                    z-index: 4
+                    .contact-article
+                        border-radius: 10px
+                        padding: 1em
+                        width: auto
+                        height: auto
+
+                        background-color: white
+                        .content-contact-me
+                            display: flex
+                            flex-direction: row
+                            align-items: center
+                            justify-content: center
+
+                            margin-top: 4em
+                            .contact-me
+                                margin: 1.5em 1em 1em 0px
+                                display: inline-block
+                                .link-contact
+                                    color: $colorMain
+                                    background-color: $buttons
+                                    text-decoration: none
+                                    border-radius: 10px
+                                    box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.1)
+                                    padding: 10px 5px
+                                    width: 150px
+
+                                    display: flex
+                                    align-items: center
+                                    justify-content: space-evenly
+
+                                    transition: all 0.4s ease
+                                    &:hover
+                                        color: $color-white
+                                        background-color: $colorHover
+                                        box-shadow: 0px 1px 10px 0px $colorMain
+                                    &:hover .email-contact
+                                        filter: invert(100%)
+                                    &:hover .linkedin-contact
+                                        filter: invert(100%)
+                                    &:hover .instagram-contact
+                                        filter: invert(100%)
+                                    .email-contact
+                                        width: 25px
+                                    .linkedin-contact
+                                        width: 25px
+                                    .instagram-contact
+                                        width: 30px
+            footer
+                grid-row: 3 / 4
+
+                min-height: 5em
+
+                border-top: 1px solid rgba(0, 0, 0, 0.125)
+                background-color:#F4F6F7
+
+                display: flex
+                align-items: center
+                justify-content: space-around
+                gap: 1em
+
+                position: relative
+                z-index: 4
+                div
+                    margin-top: .5em
+                    .copyright
+                        margin-left: 1em
+                .icons_foter
+                    display: flex
+                    flex-direction: row
+                    gap: 1em
+
+                    margin-right: 1em
+                    .personalLinks
+                        color: white
+                        font-weight: bold
+
+                        text-decoration: none
+                        .github, .linkedin, .email, .instagram, .miweb
+                            width: 30px
+                            margin-right: .1em
+                            transition: all 0.4s ease
+                        .github:hover, .linkedin:hover, .email:hover, .instagram:hover, .miweb:hover
+                            filter: invert(18%) sepia(73%) saturate(5632%) hue-rotate(236deg) brightness(98%) contrast(96%)
 
 
 .title-other
@@ -155,78 +307,6 @@ html
     width: 55px
     height: 55px
     margin-left: 5px
-
-.btn-pdf
-    padding: .5em 1em
-    background-color: $buttons
-    border: none
-    border-radius: 10px
-    box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.1)
-
-    text-decoration: none
-    color: $colorMain
-
-    cursor: pointer
-    transition: all 0.4s ease
-    &:hover
-        background-color: $colorMain
-        color: white
-        box-shadow: 0px 1px 10px 0px $colorMain
-        .cv-img
-            filter: invert(100%)
-            transition: all .4s ease
-    .cv-img
-        width: 20px
-        margin-right: 5px
-
-.prev
-    width: 30px
-    height: 30px
-    margin-left: 10px
-
-    position: absolute
-    top: 40%
-    left: 0
-
-    cursor: pointer
-
-.next
-    width: 30px
-    height: 30px
-    margin-right: 10px
-
-    position: absolute
-    top: 40%
-    right: 0
-
-    transform: rotate(180deg)
-    cursor: pointer
-
-
-.dots
-    display: flex
-    flex-direction: row
-    justify-content: center
-    align-items: center
-    gap: .5em
-
-    margin-top: 5px
-    .dot
-        width: 15px
-        height: 15px
-        border-radius: 50%
-        background-color: grey
-
-        cursor: pointer
-
-
-@keyframes sliderImage
-    0%
-        opacity: .4
-    
-    100%
-        opacity: 1
-
 
 #sec-works
     margin: 0px
@@ -244,6 +324,9 @@ html
         display: flex
         justify-content: center
         flex-flow: row wrap
+        .content-works-2
+            position: relative
+            z-index: 1
 
 
 #img-calendar, #img-calc, #img-Frontend, #img-TimeTrack, #img-NFT, #img-ipAddress
@@ -274,11 +357,6 @@ html
 
 #img-ipAddress
     background-image: url("../icons/works-img/ip-address\ tracker.PNG")
-
-
-.content-works-2
-    position: relative
-    z-index: 1
 
 
 .overlay-work
@@ -322,116 +400,12 @@ html
         background-color: $colorHover
         box-shadow: 0px 1px 10px 0px $colorMain
 
-#content-contact
-    padding: 150px 0px 150px 0px
-    margin: 0px
-
-    display: flex
-    flex-flow: column
-    align-items: center
-
-    background-color:#F4F6F7
+@keyframes sliderImage
+    0%
+        opacity: .4
     
-    position: relative
-    z-index: 4
-
-
-.contact-article
-    border-radius: 10px
-    padding: 1em
-    width: auto
-    height: auto
-
-    background-color: white
-
-
-.content-contact-me
-    display: flex
-    flex-direction: row
-    align-items: center
-    justify-content: center
-
-    margin-top: 4em
-
-
-.contact-me
-    margin: 1.5em 1em 1em 0px
-    display: inline-block
-
-
-
-#email-contact
-    width: 100px
-
-.link-contact
-    color: $colorMain
-    background-color: $buttons
-    text-decoration: none
-    border-radius: 10px
-    box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.1)
-    padding: 10px 5px
-    width: 150px
-
-    display: flex
-    align-items: center
-    justify-content: space-evenly
-
-    transition: all 0.4s ease
-    &:hover
-        color: $color-white
-        background-color: $colorHover
-        box-shadow: 0px 1px 10px 0px $colorMain
-
-.email-contact
-    width: 25px
-
-.linkedin-contact
-    width: 25px
-
-.instagram-contact
-    width: 30px
-
-.link-contact:hover .email-contact, .link-contact:hover .linkedin-contact, .link-contact:hover .instagram-contact
-    filter: invert(100%)
-
-footer
-    grid-row: 3 / 4
-
-    min-height: 5em
-
-    border-top: 1px solid rgba(0, 0, 0, 0.125)
-    background-color:#F4F6F7
-
-    display: flex
-    align-items: center
-    justify-content: space-around
-    gap: 1em
-
-    position: relative
-    z-index: 4
-    div
-        margin-top: .5em
-        .copyright
-            margin-left: 1em
-    .icons_foter
-        display: flex
-        flex-direction: row
-        gap: 1em
-
-        margin-right: 1em
-        .personalLinks
-            color: white
-            font-weight: bold
-
-            text-decoration: none
-            .github, .linkedin, .email, .instagram, .miweb
-                width: 30px
-                margin-right: .1em
-                transition: all 0.4s ease
-            .github:hover, .linkedin:hover, .email:hover, .instagram:hover, .miweb:hover
-                filter: invert(18%) sepia(73%) saturate(5632%) hue-rotate(236deg) brightness(98%) contrast(96%)
-
-
+    100%
+        opacity: 1
 
 @media (max-width: 767px)
     .prev

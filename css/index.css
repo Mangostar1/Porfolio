@@ -97,6 +97,25 @@ html body .contaienr main .sec-about #about .about-box {
   margin-top: 0.5em;
   position: relative;
 }
+html body .contaienr main .sec-about #about .about-box .prev {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  cursor: pointer;
+}
+html body .contaienr main .sec-about #about .about-box .next {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
 html body .contaienr main .sec-about #about .about-box .title-inner-about {
   color: #206EDB;
   font-size: 1.1em;
@@ -135,6 +154,146 @@ html body .contaienr main .sec-about #about #abot-me {
   margin-top: 1em;
   width: auto;
 }
+html body .contaienr main .sec-about #about #abot-me .btn-pdf {
+  padding: 0.5em 1em;
+  background-color: rgb(231, 244, 255);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.1);
+  text-decoration: none;
+  color: #206EDB;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+html body .contaienr main .sec-about #about #abot-me .btn-pdf:hover {
+  background-color: #206EDB;
+  color: white;
+  box-shadow: 0px 1px 10px 0px #206EDB;
+}
+html body .contaienr main .sec-about #about #abot-me .btn-pdf:hover .cv-img {
+  filter: invert(100%);
+  transition: all 0.4s ease;
+}
+html body .contaienr main .sec-about #about #abot-me .btn-pdf .cv-img {
+  width: 20px;
+  margin-right: 5px;
+}
+html body .contaienr main .sec-about #about .dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 5px;
+}
+html body .contaienr main .sec-about #about .dots .dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: grey;
+  cursor: pointer;
+}
+html body .contaienr main #content-contact {
+  padding: 150px 0px 150px 0px;
+  margin: 0px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #F4F6F7;
+  position: relative;
+  z-index: 4;
+}
+html body .contaienr main #content-contact .contact-article {
+  border-radius: 10px;
+  padding: 1em;
+  width: auto;
+  height: auto;
+  background-color: white;
+}
+html body .contaienr main #content-contact .contact-article .content-contact-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4em;
+}
+html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me {
+  margin: 1.5em 1em 1em 0px;
+  display: inline-block;
+}
+html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact {
+  color: #206EDB;
+  background-color: rgb(231, 244, 255);
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.1);
+  padding: 10px 5px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.4s ease;
+}
+html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact:hover {
+  color: #ffffff;
+  background-color: #0B428F;
+  box-shadow: 0px 1px 10px 0px #206EDB;
+}
+html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact:hover .email-contact {
+  filter: invert(100%);
+}
+html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact:hover .linkedin-contact {
+  filter: invert(100%);
+}
+html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact:hover .instagram-contact {
+  filter: invert(100%);
+}
+html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact .email-contact {
+  width: 25px;
+}
+html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact .linkedin-contact {
+  width: 25px;
+}
+html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact .instagram-contact {
+  width: 30px;
+}
+html body .contaienr footer {
+  grid-row: 3/4;
+  min-height: 5em;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #F4F6F7;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1em;
+  position: relative;
+  z-index: 4;
+}
+html body .contaienr footer div {
+  margin-top: 0.5em;
+}
+html body .contaienr footer div .copyright {
+  margin-left: 1em;
+}
+html body .contaienr footer .icons_foter {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin-right: 1em;
+}
+html body .contaienr footer .icons_foter .personalLinks {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+html body .contaienr footer .icons_foter .personalLinks .github, html body .contaienr footer .icons_foter .personalLinks .linkedin, html body .contaienr footer .icons_foter .personalLinks .email, html body .contaienr footer .icons_foter .personalLinks .instagram, html body .contaienr footer .icons_foter .personalLinks .miweb {
+  width: 30px;
+  margin-right: 0.1em;
+  transition: all 0.4s ease;
+}
+html body .contaienr footer .icons_foter .personalLinks .github:hover, html body .contaienr footer .icons_foter .personalLinks .linkedin:hover, html body .contaienr footer .icons_foter .personalLinks .email:hover, html body .contaienr footer .icons_foter .personalLinks .instagram:hover, html body .contaienr footer .icons_foter .personalLinks .miweb:hover {
+  filter: invert(18%) sepia(73%) saturate(5632%) hue-rotate(236deg) brightness(98%) contrast(96%);
+}
 
 .title-other {
   margin-bottom: 1em;
@@ -152,76 +311,6 @@ html body .contaienr main .sec-about #about #abot-me {
   margin-left: 5px;
 }
 
-.btn-pdf {
-  padding: 0.5em 1em;
-  background-color: rgb(231, 244, 255);
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.1);
-  text-decoration: none;
-  color: #206EDB;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-.btn-pdf:hover {
-  background-color: #206EDB;
-  color: white;
-  box-shadow: 0px 1px 10px 0px #206EDB;
-}
-.btn-pdf:hover .cv-img {
-  filter: invert(100%);
-  transition: all 0.4s ease;
-}
-.btn-pdf .cv-img {
-  width: 20px;
-  margin-right: 5px;
-}
-
-.prev {
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
-  position: absolute;
-  top: 40%;
-  left: 0;
-  cursor: pointer;
-}
-
-.next {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  position: absolute;
-  top: 40%;
-  right: 0;
-  transform: rotate(180deg);
-  cursor: pointer;
-}
-
-.dots {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5em;
-  margin-top: 5px;
-}
-.dots .dot {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: grey;
-  cursor: pointer;
-}
-
-@keyframes sliderImage {
-  0% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 #sec-works {
   margin: 0px;
   padding-top: 150px;
@@ -239,6 +328,10 @@ html body .contaienr main .sec-about #about #abot-me {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+#sec-works .content-works .content-works-2 {
+  position: relative;
+  z-index: 1;
 }
 
 #img-calendar, #img-calc, #img-Frontend, #img-TimeTrack, #img-NFT, #img-ipAddress {
@@ -272,11 +365,6 @@ html body .contaienr main .sec-about #about #abot-me {
 
 #img-ipAddress {
   background-image: url("../icons/works-img/ip-address tracker.PNG");
-}
-
-.content-works-2 {
-  position: relative;
-  z-index: 1;
 }
 
 .overlay-work {
@@ -320,115 +408,14 @@ html body .contaienr main .sec-about #about #abot-me {
   box-shadow: 0px 1px 10px 0px #206EDB;
 }
 
-#content-contact {
-  padding: 150px 0px 150px 0px;
-  margin: 0px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  background-color: #F4F6F7;
-  position: relative;
-  z-index: 4;
+@keyframes sliderImage {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-.contact-article {
-  border-radius: 10px;
-  padding: 1em;
-  width: auto;
-  height: auto;
-  background-color: white;
-}
-
-.content-contact-me {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4em;
-}
-
-.contact-me {
-  margin: 1.5em 1em 1em 0px;
-  display: inline-block;
-}
-
-#email-contact {
-  width: 100px;
-}
-
-.link-contact {
-  color: #206EDB;
-  background-color: rgb(231, 244, 255);
-  text-decoration: none;
-  border-radius: 10px;
-  box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.1);
-  padding: 10px 5px;
-  width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  transition: all 0.4s ease;
-}
-.link-contact:hover {
-  color: #ffffff;
-  background-color: #0B428F;
-  box-shadow: 0px 1px 10px 0px #206EDB;
-}
-
-.email-contact {
-  width: 25px;
-}
-
-.linkedin-contact {
-  width: 25px;
-}
-
-.instagram-contact {
-  width: 30px;
-}
-
-.link-contact:hover .email-contact, .link-contact:hover .linkedin-contact, .link-contact:hover .instagram-contact {
-  filter: invert(100%);
-}
-
-footer {
-  grid-row: 3/4;
-  min-height: 5em;
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
-  background-color: #F4F6F7;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 1em;
-  position: relative;
-  z-index: 4;
-}
-footer div {
-  margin-top: 0.5em;
-}
-footer div .copyright {
-  margin-left: 1em;
-}
-footer .icons_foter {
-  display: flex;
-  flex-direction: row;
-  gap: 1em;
-  margin-right: 1em;
-}
-footer .icons_foter .personalLinks {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-}
-footer .icons_foter .personalLinks .github, footer .icons_foter .personalLinks .linkedin, footer .icons_foter .personalLinks .email, footer .icons_foter .personalLinks .instagram, footer .icons_foter .personalLinks .miweb {
-  width: 30px;
-  margin-right: 0.1em;
-  transition: all 0.4s ease;
-}
-footer .icons_foter .personalLinks .github:hover, footer .icons_foter .personalLinks .linkedin:hover, footer .icons_foter .personalLinks .email:hover, footer .icons_foter .personalLinks .instagram:hover, footer .icons_foter .personalLinks .miweb:hover {
-  filter: invert(18%) sepia(73%) saturate(5632%) hue-rotate(236deg) brightness(98%) contrast(96%);
-}
-
 @media (max-width: 767px) {
   .prev {
     width: 40px;
