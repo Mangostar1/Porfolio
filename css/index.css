@@ -193,6 +193,28 @@ html body .contaienr main .sec-about #about .dots .dot {
   background-color: grey;
   cursor: pointer;
 }
+html body .contaienr main #sec-works {
+  margin: 0px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background-color: hsla(200deg, 16%, 96%, 0.8);
+  backdrop-filter: blur(20px);
+  position: relative;
+  z-index: 4;
+}
+html body .contaienr main #sec-works .work-text {
+  text-align: center;
+  margin-bottom: 100px;
+}
+html body .contaienr main #sec-works .content-works {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+html body .contaienr main #sec-works .content-works .content-works-2 {
+  position: relative;
+  z-index: 1;
+}
 html body .contaienr main #content-contact {
   padding: 150px 0px 150px 0px;
   margin: 0px;
@@ -309,29 +331,6 @@ html body .contaienr footer .icons_foter .personalLinks .github:hover, html body
   width: 55px;
   height: 55px;
   margin-left: 5px;
-}
-
-#sec-works {
-  margin: 0px;
-  padding-top: 150px;
-  padding-bottom: 100px;
-  background-color: hsla(200deg, 16%, 96%, 0.8);
-  backdrop-filter: blur(20px);
-  position: relative;
-  z-index: 4;
-}
-#sec-works .work-text {
-  text-align: center;
-  margin-bottom: 100px;
-}
-#sec-works .content-works {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-#sec-works .content-works .content-works-2 {
-  position: relative;
-  z-index: 1;
 }
 
 #img-calendar, #img-calc, #img-Frontend, #img-TimeTrack, #img-NFT, #img-ipAddress {
