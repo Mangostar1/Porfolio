@@ -78,112 +78,83 @@ html
                         letter-spacing: 2px
 
                         margin: 0px auto 200px auto
+                .sec-about
+                    background-color:#F4F6F7
+                    padding-top: 100px
+                    padding-bottom: 100px
+                    margin: 100vh 0px 0px 0px
+                    display: flex
+                    justify-content: center
+
+                    position: relative
+                    z-index: 4
+                    #about
+                        width: 90%
+                        div .card-text
+                            padding-bottom: 2em
+                        .about-box
+                            border-radius: 10px
+                            background-color: white
+                            animation: sliderImage .5s
+
+                            width: 100%
+                            height: auto
+                            min-height: 170px
+
+                            padding: 1em
+                            margin-top: .5em
+
+                            position: relative
+                            .title-inner-about
+                                color: $colorMain
+                                font-size: 1.1em
+                                text-align: center
+                                margin: 0em 0px 1em 0px
+                            .tec-div
+                                display: block
+                                margin-left: 10%
+
+                                width: 90%
+                                img
+                                    position: relative
+                                    top: -40px
+                                    left: -55px
+                                .percent-tec
+                                    width: 80%
+                                    height: 40px
+
+                                    border-top-right-radius: 15px
+                                    border-bottom-right-radius: 15px
+
+                                    background-color: $colorExtra
+                                    p
+                                        font-size: 1.5em
+                                        font-weight: 900
+                                        margin-left: 10px
+                                        padding-top: 4px
+                                        text-align: center
+                        #abot-me
+                            display: flex
+                            flex-flow: column
+                            justify-content: center
+                            align-items: center
+
+                            margin-top: 1em
+                            width: auto
 
 
 .title-other
     margin-bottom: 1em
 
 
-.title-inner-about
-    color: $colorMain
-    font-size: 1.1em
-    text-align: center
-    margin: 0em 0px 1em 0px
-
-.sec-about
-    background-color:#F4F6F7
-    padding-top: 100px
-    padding-bottom: 100px
-    margin: 100vh 0px 0px 0px
-    display: flex
-    justify-content: center
-
-    position: relative
-    z-index: 4
-    #about
-        width: 90%
-        div .card-text
-            padding-bottom: 2em
-
-.about-box
-    border-radius: 10px
-    background-color: white
-    animation: sliderImage .5s
-
-    width: 100%
-    height: auto
-    min-height: 170px
-
-    padding: 1em
-    margin-top: .5em
-
-    position: relative
-
-
-#abot-me
-    display: flex
-    flex-flow: column
-    justify-content: center
-    align-items: center
-
-    margin-top: 1em
-    width: auto
-
-
-.tec-p
-    text-align: center
-
-
 #img-html, #img-css, #img-js, #img-git, #img-node
     width: 40px
     height: 40px
     margin-left: 5px
-
 #img-npm
     width: 55px
     height: 55px
     margin-left: 5px
-
-
-.tec-div
-    display: block
-    margin-left: 10%
-
-    width: 90%
-
-.tec-div img
-    position: relative
-    top: -40px
-    left: -55px
-
-
-.percent-tec
-    width: 80%
-    height: 40px
-
-    border-top-right-radius: 15px
-    border-bottom-right-radius: 15px
-
-    background-color: $colorExtra
-
-.percent-tec p
-    font-size: 1.5em
-    font-weight: 900
-    margin-left: 10px
-    padding-top: 4px
-
-
-.logos-tec
-    width: 60px
-    height: 60px
-
-    margin: 30px 0px 0px 30px
-
-.logos-tec:hover
-    filter: brightness(1.1)
-    transform: scale(1.1)
-
-
 
 .btn-pdf
     padding: .5em 1em
@@ -192,25 +163,21 @@ html
     border-radius: 10px
     box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.1)
 
-    cursor: pointer
-    transition: all 0.4s ease
-
-.btn-pdf:hover
-    background-color: $colorMain
-    color: white
-    box-shadow: 0px 1px 10px 0px $colorMain
-
-.btn-pdf-link
     text-decoration: none
     color: $colorMain
 
-.cv-img
-    width: 20px
-    margin-right: 5px
-
-.btn-pdf:hover .cv-img
-    filter: invert(100%)
-
+    cursor: pointer
+    transition: all 0.4s ease
+    &:hover
+        background-color: $colorMain
+        color: white
+        box-shadow: 0px 1px 10px 0px $colorMain
+        .cv-img
+            filter: invert(100%)
+            transition: all .4s ease
+    .cv-img
+        width: 20px
+        margin-right: 5px
 
 .prev
     width: 30px
@@ -236,7 +203,6 @@ html
     cursor: pointer
 
 
-
 .dots
     display: flex
     flex-direction: row
@@ -245,14 +211,14 @@ html
     gap: .5em
 
     margin-top: 5px
+    .dot
+        width: 15px
+        height: 15px
+        border-radius: 50%
+        background-color: grey
 
-.dot
-    width: 15px
-    height: 15px
-    border-radius: 50%
-    background-color: grey
+        cursor: pointer
 
-    cursor: pointer
 
 @keyframes sliderImage
     0%
@@ -271,17 +237,14 @@ html
 
     position: relative
     z-index: 4
+    .work-text
+        text-align: center
+        margin-bottom: 100px
+    .content-works
+        display: flex
+        justify-content: center
+        flex-flow: row wrap
 
-
-.content-works
-    display: flex
-    justify-content: center
-    flex-flow: row wrap
-
-
-.work-text
-    text-align: center
-    margin-bottom: 100px
 
 #img-calendar, #img-calc, #img-Frontend, #img-TimeTrack, #img-NFT, #img-ipAddress
     width: 350px
@@ -334,12 +297,9 @@ html
     flex-flow: row wrap
     align-items: flex-end
     justify-content: space-around
-
-
-.overlay-work:hover
-    opacity: 1
-    box-shadow: 0px 0px 10px 2px gray
-
+    &:hover
+        opacity: 1
+        box-shadow: 0px 0px 10px 2px gray
 
 .descript-work
     color: $color-white
@@ -358,10 +318,9 @@ html
     padding: 2px 5px
     border-radius: 5px
     text-decoration: none
-
-.tec-used:hover
-    background-color: $colorHover
-    box-shadow: 0px 1px 10px 0px $colorMain
+    &:hover
+        background-color: $colorHover
+        box-shadow: 0px 1px 10px 0px $colorMain
 
 #content-contact
     padding: 150px 0px 150px 0px
@@ -418,11 +377,10 @@ html
     justify-content: space-evenly
 
     transition: all 0.4s ease
-
-.link-contact:hover
-    color: $color-white
-    background-color: $colorHover
-    box-shadow: 0px 1px 10px 0px $colorMain
+    &:hover
+        color: $color-white
+        background-color: $colorHover
+        box-shadow: 0px 1px 10px 0px $colorMain
 
 .email-contact
     width: 25px
