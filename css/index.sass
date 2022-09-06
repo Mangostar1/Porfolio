@@ -1,0 +1,495 @@
+$colorMain: #206EDB
+$colorHover: #0B428F
+$colorLight: #408FFF
+$colorExtra: #96CEE3
+$color-white: #ffffff
+$colorBlack: #000000
+$buttons: rgb(231, 244, 255)
+$test: red
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Roboto', sans-serif
+    font-size: 18px
+
+p::selection
+    background-color: $colorHover
+    color: $color-white
+
+.card-text //clase universal para todo el documento
+    text-align: center
+
+.card-title //clase universal para todo el documento
+    text-align: center
+
+    font-size: 2em
+    font-weight: 900
+    color: $colorMain
+
+html
+    scroll-behavior: smooth
+    body
+        background-color: $color-white
+        .contaienr
+            display: grid
+            grid-template-columns: auto
+            grid-template-rows: auto 1fr auto
+
+            gap: 0em
+
+            min-height: 100vh
+            main
+                grid-row: 2/3
+                .sec-welcome
+                    background-image: url(../icons/bg-images/17973908.jpg)
+                    background-size: cover
+                    background-position: center
+                    background-repeat: no-repeat
+
+                    height: 100vh
+                    width: 100%
+                    margin: 0px
+                    display: flex
+
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+
+                    position: fixed
+                    top: 0
+                    left: 0
+                    z-index: 1
+                    #welcome
+                        background-color: rgb(81 153 255 / 0.2)
+                        backdrop-filter: blur(10px)
+                        -webkit-backdrop-filter: blur(10px)
+                        color: black
+
+                        width: auto
+                        height: auto
+            
+                        padding: 1em
+                        border-radius: 8px
+                        font-size: 1.5em
+                        font-weight: 500
+                        text-align: center
+                        letter-spacing: 2px
+
+                        margin: 0px auto 200px auto
+
+
+.title-other
+    margin-bottom: 1em
+
+
+.title-inner-about
+    color: $colorMain
+    font-size: 1.1em
+    text-align: center
+    margin: 0em 0px 1em 0px
+
+.sec-about
+    background-color:#F4F6F7
+    padding-top: 100px
+    padding-bottom: 100px
+    margin: 100vh 0px 0px 0px
+    display: flex
+    justify-content: center
+
+    position: relative
+    z-index: 4
+    #about
+        width: 90%
+        div .card-text
+            padding-bottom: 2em
+
+.about-box
+    border-radius: 10px
+    background-color: white
+    animation: sliderImage .5s
+
+    width: 100%
+    height: auto
+    min-height: 170px
+
+    padding: 1em
+    margin-top: .5em
+
+    position: relative
+
+
+#abot-me
+    display: flex
+    flex-flow: column
+    justify-content: center
+    align-items: center
+
+    margin-top: 1em
+    width: auto
+
+
+.tec-p
+    text-align: center
+
+
+#img-html, #img-css, #img-js, #img-git, #img-node
+    width: 40px
+    height: 40px
+    margin-left: 5px
+
+#img-npm
+    width: 55px
+    height: 55px
+    margin-left: 5px
+
+
+.tec-div
+    display: block
+    margin-left: 10%
+
+    width: 90%
+
+.tec-div img
+    position: relative
+    top: -40px
+    left: -55px
+
+
+.percent-tec
+    width: 80%
+    height: 40px
+
+    border-top-right-radius: 15px
+    border-bottom-right-radius: 15px
+
+    background-color: $colorExtra
+
+.percent-tec p
+    font-size: 1.5em
+    font-weight: 900
+    margin-left: 10px
+    padding-top: 4px
+
+
+.logos-tec
+    width: 60px
+    height: 60px
+
+    margin: 30px 0px 0px 30px
+
+.logos-tec:hover
+    filter: brightness(1.1)
+    transform: scale(1.1)
+
+
+
+.btn-pdf
+    padding: .5em 1em
+    background-color: $buttons
+    border: none
+    border-radius: 10px
+    box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.1)
+
+    cursor: pointer
+    transition: all 0.4s ease
+
+.btn-pdf:hover
+    background-color: $colorMain
+    color: white
+    box-shadow: 0px 1px 10px 0px $colorMain
+
+.btn-pdf-link
+    text-decoration: none
+    color: $colorMain
+
+.cv-img
+    width: 20px
+    margin-right: 5px
+
+.btn-pdf:hover .cv-img
+    filter: invert(100%)
+
+
+.prev
+    width: 30px
+    height: 30px
+    margin-left: 10px
+
+    position: absolute
+    top: 40%
+    left: 0
+
+    cursor: pointer
+
+.next
+    width: 30px
+    height: 30px
+    margin-right: 10px
+
+    position: absolute
+    top: 40%
+    right: 0
+
+    transform: rotate(180deg)
+    cursor: pointer
+
+
+
+.dots
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    gap: .5em
+
+    margin-top: 5px
+
+.dot
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    background-color: grey
+
+    cursor: pointer
+
+@keyframes sliderImage
+    0%
+        opacity: .4
+    
+    100%
+        opacity: 1
+
+
+#sec-works
+    margin: 0px
+    padding-top: 150px
+    padding-bottom: 100px
+    background-color: hsla(200, 16%, 96%, 0.8)
+    backdrop-filter: blur(20px)
+
+    position: relative
+    z-index: 4
+
+
+.content-works
+    display: flex
+    justify-content: center
+    flex-flow: row wrap
+
+
+.work-text
+    text-align: center
+    margin-bottom: 100px
+
+#img-calendar, #img-calc, #img-Frontend, #img-TimeTrack, #img-NFT, #img-ipAddress
+    width: 350px
+    height: 250px
+
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+
+    background-color: hsla(0, 0%, 100%, 0.5)
+
+
+#img-calendar, #img-calc, #img-Frontend
+    background-image: url("../icons/works-img/calendar.PNG")
+
+#img-calc
+    background-image: url("../icons/works-img/ejercicios\ web.PNG")
+
+#img-Frontend
+    background-image: url("../icons/works-img/Comercio electronico.PNG")
+
+#img-TimeTrack
+    background-image: url("../icons/works-img/time track.PNG")
+
+#img-NFT
+    background-image: url("../icons/works-img/NFT.PNG")
+
+#img-ipAddress
+    background-image: url("../icons/works-img/ip-address\ tracker.PNG")
+
+
+.content-works-2
+    position: relative
+    z-index: 1
+
+
+.overlay-work
+    background-color: rgba(0, 0, 0, 0.65)
+    width: 350px
+    height: 250px
+    position: absolute
+    top: 1.2em
+    left: 0
+    z-index: 2
+    opacity: 0
+
+    transition: all 0.4s ease-in-out
+
+    display: flex
+    flex-flow: row wrap
+    align-items: flex-end
+    justify-content: space-around
+
+
+.overlay-work:hover
+    opacity: 1
+    box-shadow: 0px 0px 10px 2px gray
+
+
+.descript-work
+    color: $color-white
+    text-align: center
+
+
+.tec-used
+    color: white
+    background-color: $colorMain
+
+    text-align: center
+
+    width: auto
+    height: auto
+    margin-bottom: 1em
+    padding: 2px 5px
+    border-radius: 5px
+    text-decoration: none
+
+.tec-used:hover
+    background-color: $colorHover
+    box-shadow: 0px 1px 10px 0px $colorMain
+
+#content-contact
+    padding: 150px 0px 150px 0px
+    margin: 0px
+
+    display: flex
+    flex-flow: column
+    align-items: center
+
+    background-color:#F4F6F7
+    
+    position: relative
+    z-index: 4
+
+
+.contact-article
+    border-radius: 10px
+    padding: 1em
+    width: auto
+    height: auto
+
+    background-color: white
+
+
+.content-contact-me
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+    margin-top: 4em
+
+
+.contact-me
+    margin: 1.5em 1em 1em 0px
+    display: inline-block
+
+
+
+#email-contact
+    width: 100px
+
+.link-contact
+    color: $colorMain
+    background-color: $buttons
+    text-decoration: none
+    border-radius: 10px
+    box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.1)
+    padding: 10px 5px
+    width: 150px
+
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+
+    transition: all 0.4s ease
+
+.link-contact:hover
+    color: $color-white
+    background-color: $colorHover
+    box-shadow: 0px 1px 10px 0px $colorMain
+
+.email-contact
+    width: 25px
+
+.linkedin-contact
+    width: 25px
+
+.instagram-contact
+    width: 30px
+
+.link-contact:hover .email-contact, .link-contact:hover .linkedin-contact, .link-contact:hover .instagram-contact
+    filter: invert(100%)
+
+footer
+    grid-row: 3 / 4
+
+    min-height: 5em
+
+    border-top: 1px solid rgba(0, 0, 0, 0.125)
+    background-color:#F4F6F7
+
+    display: flex
+    align-items: center
+    justify-content: space-around
+    gap: 1em
+
+    position: relative
+    z-index: 4
+    div
+        margin-top: .5em
+        .copyright
+            margin-left: 1em
+    .icons_foter
+        display: flex
+        flex-direction: row
+        gap: 1em
+
+        margin-right: 1em
+        .personalLinks
+            color: white
+            font-weight: bold
+
+            text-decoration: none
+            .github, .linkedin, .email, .instagram, .miweb
+                width: 30px
+                margin-right: .1em
+                transition: all 0.4s ease
+            .github:hover, .linkedin:hover, .email:hover, .instagram:hover, .miweb:hover
+                filter: invert(18%) sepia(73%) saturate(5632%) hue-rotate(236deg) brightness(98%) contrast(96%)
+
+
+
+@media (max-width: 767px)
+    .prev
+        width: 40px
+        height: 40px
+    
+        top: 5%
+        left: 0
+
+        z-index: 10
+    
+    .next
+        width: 40px
+        height: 40px
+    
+        top: 5%
+        right: 0
+        
+        z-index: 10
