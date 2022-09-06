@@ -1,0 +1,43 @@
+$colorMain: #206EDB
+$colorHover: #0B428F
+$colorLight: #408FFF
+$colorExtra: #96CEE3
+$color-white: #ffffff
+$colorBlack: #000000
+$buttons: rgb(231, 244, 255)
+$test: red
+
+header
+    height: 3.5em
+    transition: all 0.4s ease
+    display: flex
+    justify-content: space-between
+    .logo
+        width: 160px
+        height: 45px
+        margin-left: 40px
+        margin-top: 10px
+        z-index: 3
+    .nav
+        margin-top: 0.6em
+        margin-right: 1em
+        .nav-menu
+            list-style: none
+            display: flex
+            justify-content: flex-end
+            gap: 1em
+            .nav-list
+                z-index: 3
+                .nav-link
+                    text-decoration: none
+                    padding: .5em .5em
+                    display: block
+                    color: $colorHover
+                    &:hover
+                        color: $colorLight
+
+@media (max-width: 767px)
+    header
+        height: 6em
+        flex-direction: column
+        align-items: center
