@@ -313,6 +313,9 @@ html body .contaienr footer div {
 html body .contaienr footer div .copyright {
   margin-left: 1em;
 }
+html body .contaienr footer div .copyright #love {
+  color: red;
+}
 html body .contaienr footer .icons_foter {
   display: flex;
   flex-direction: row;
@@ -337,7 +340,7 @@ html body .contaienr footer .icons_foter .personalLinks .github:hover, html body
   margin-bottom: 1em;
 }
 
-#img-html, #img-css, #img-js, #img-git, #img-node {
+#img-html, #img-css, #img-js, #img-git, #img-node, #img-tailwind, #img-react {
   width: 40px;
   height: 40px;
   margin-left: 5px;
@@ -347,6 +350,12 @@ html body .contaienr footer .icons_foter .personalLinks .github:hover, html body
   width: 55px;
   height: 55px;
   margin-left: 5px;
+}
+
+#img-sass {
+  width: 60px;
+  height: 40px;
+  margin-left: -10px;
 }
 
 #img-calendar, #img-calc, #img-Frontend, #img-TimeTrack, #img-NFT, #img-ipAddress {
