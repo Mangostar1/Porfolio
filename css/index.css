@@ -49,9 +49,21 @@ html body .contaienr {
   grid-template-rows: auto 1fr auto;
   gap: 0em;
   min-height: 100vh;
+  /*----------*/
+  /*  Footer  */
+  /*----------*/
 }
 html body .contaienr main {
   grid-row: 2/3;
+  /*-----------*/
+  /*  Welcome  */
+  /*-----------*/
+  /*---------*/
+  /*  About  */
+  /*---------*/
+  /*---------*/
+  /*  Works  */
+  /*---------*/
 }
 html body .contaienr main .sec-welcome {
   background-image: url(../icons/bg-images/17973908.jpg);
@@ -101,35 +113,16 @@ html body .contaienr main .sec-about #about {
 html body .contaienr main .sec-about #about div .card-text {
   padding-bottom: 2em;
 }
-html body .contaienr main .sec-about #about .about-box {
+html body .contaienr main .sec-about #about .content-tec {
+  background-color: #96CEE3;
   border-radius: 10px;
-  background-color: white;
-  animation: sliderImage 0.5s;
-  width: 100%;
-  height: auto;
-  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+}
+html body .contaienr main .sec-about #about .about-box {
   padding: 1em;
-  margin-top: 0.5em;
-  position: relative;
-}
-html body .contaienr main .sec-about #about .about-box .prev {
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
-  position: absolute;
-  top: 40%;
-  left: 0;
-  cursor: pointer;
-}
-html body .contaienr main .sec-about #about .about-box .next {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  position: absolute;
-  top: 40%;
-  right: 0;
-  transform: rotate(180deg);
-  cursor: pointer;
+  border-radius: 10px;
+  background-color: #ffffff;
 }
 html body .contaienr main .sec-about #about .about-box .title-inner-about {
   color: #206EDB;
@@ -179,6 +172,17 @@ html body .contaienr main .sec-about #about .about-box .tec-div #img-sass {
   height: 40px;
   margin-left: -10px;
 }
+html body .contaienr main .sec-about #about .about-box-1 {
+  width: 66%;
+  margin: 0 0 2rem 0;
+}
+html body .contaienr main .sec-about #about .about-box-2 {
+  width: 60%;
+  margin: 0 0 2rem 40%;
+}
+html body .contaienr main .sec-about #about .about-box-3 {
+  width: 60%;
+}
 html body .contaienr main .sec-about #about #abot-me {
   display: flex;
   flex-flow: column;
@@ -210,21 +214,6 @@ html body .contaienr main .sec-about #about #abot-me .btn-pdf:hover .cv-img {
 html body .contaienr main .sec-about #about #abot-me .btn-pdf .cv-img {
   width: 20px;
   margin-right: 5px;
-}
-html body .contaienr main .sec-about #about .dots {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5em;
-  margin-top: 5px;
-}
-html body .contaienr main .sec-about #about .dots .dot {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: grey;
-  cursor: pointer;
 }
 html body .contaienr main #sec-works {
   margin: 0px;
@@ -432,14 +421,6 @@ html body .contaienr footer .icons_foter .personalLinks .github:hover, html body
   box-shadow: 0px 1px 10px 0px #206EDB;
 }
 
-@keyframes sliderImage {
-  0% {
-    opacity: 0.4;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @media (max-width: 767px) {
   .prev {
     width: 40px;
