@@ -137,6 +137,7 @@ html body .contaienr main .sec-about #about .about-box .tec-div {
   display: block;
   margin-left: 10%;
   width: 90%;
+  height: 80px;
 }
 html body .contaienr main .sec-about #about .about-box .tec-div img {
   position: relative;
@@ -145,16 +146,15 @@ html body .contaienr main .sec-about #about .about-box .tec-div img {
 }
 html body .contaienr main .sec-about #about .about-box .tec-div .percent-tec {
   width: 80%;
-  height: 40px;
+  height: 20px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #96CEE3;
 }
 html body .contaienr main .sec-about #about .about-box .tec-div .percent-tec p {
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 900;
   margin-left: 10px;
-  padding-top: 4px;
   text-align: center;
 }
 html body .contaienr main .sec-about #about .about-box .tec-div #img-html, html body .contaienr main .sec-about #about .about-box .tec-div #img-css, html body .contaienr main .sec-about #about .about-box .tec-div #img-js, html body .contaienr main .sec-about #about .about-box .tec-div #img-git, html body .contaienr main .sec-about #about .about-box .tec-div #img-node, html body .contaienr main .sec-about #about .about-box .tec-div #img-tailwind, html body .contaienr main .sec-about #about .about-box .tec-div #img-react {
