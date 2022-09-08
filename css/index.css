@@ -137,6 +137,9 @@ html body .contaienr main .sec-about #about .about-box .title-inner-about {
   text-align: center;
   margin: 0em 0px 1em 0px;
 }
+html body .contaienr main .sec-about #about .about-box #mi-cv {
+  margin-top: 3rem;
+}
 html body .contaienr main .sec-about #about .about-box .tec-div {
   display: block;
   margin-left: 10%;
@@ -160,6 +163,21 @@ html body .contaienr main .sec-about #about .about-box .tec-div .percent-tec p {
   margin-left: 10px;
   padding-top: 4px;
   text-align: center;
+}
+html body .contaienr main .sec-about #about .about-box .tec-div #img-html, html body .contaienr main .sec-about #about .about-box .tec-div #img-css, html body .contaienr main .sec-about #about .about-box .tec-div #img-js, html body .contaienr main .sec-about #about .about-box .tec-div #img-git, html body .contaienr main .sec-about #about .about-box .tec-div #img-node, html body .contaienr main .sec-about #about .about-box .tec-div #img-tailwind, html body .contaienr main .sec-about #about .about-box .tec-div #img-react {
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+}
+html body .contaienr main .sec-about #about .about-box .tec-div #img-npm {
+  width: 55px;
+  height: 55px;
+  margin-left: 5px;
+}
+html body .contaienr main .sec-about #about .about-box .tec-div #img-sass {
+  width: 60px;
+  height: 40px;
+  margin-left: -10px;
 }
 html body .contaienr main .sec-about #about #abot-me {
   display: flex;
@@ -338,24 +356,6 @@ html body .contaienr footer .icons_foter .personalLinks .github:hover, html body
 
 .title-other {
   margin-bottom: 1em;
-}
-
-#img-html, #img-css, #img-js, #img-git, #img-node, #img-tailwind, #img-react {
-  width: 40px;
-  height: 40px;
-  margin-left: 5px;
-}
-
-#img-npm {
-  width: 55px;
-  height: 55px;
-  margin-left: 5px;
-}
-
-#img-sass {
-  width: 60px;
-  height: 40px;
-  margin-left: -10px;
 }
 
 #img-calendar, #img-calc, #img-Frontend, #img-TimeTrack, #img-NFT, #img-ipAddress {
