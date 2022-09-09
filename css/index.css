@@ -114,7 +114,7 @@ html body .contaienr main .sec-about #about div .card-text {
   padding-bottom: 2em;
 }
 html body .contaienr main .sec-about #about .content-tec {
-  background-color: #96CEE3;
+  background-color: #F4F6F7;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -421,21 +421,6 @@ html body .contaienr footer .icons_foter .personalLinks .github:hover, html body
   box-shadow: 0px 1px 10px 0px #206EDB;
 }
 
-@media (max-width: 767px) {
-  .prev {
-    width: 40px;
-    height: 40px;
-    top: 5%;
-    left: 0;
-    z-index: 10;
-  }
-  .next {
-    width: 40px;
-    height: 40px;
-    top: 5%;
-    right: 0;
-    z-index: 10;
-  }
-}
+@keyframes aboutAnim {}
 
 /*# sourceMappingURL=index.css.map */
