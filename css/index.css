@@ -347,7 +347,7 @@ html body .contaienr footer .icons_foter .personalLinks .github:hover, html body
   margin-bottom: 1em;
 }
 
-#img-calendar, #img-calc, #img-Frontend, #img-TimeTrack, #img-NFT, #img-ipAddress {
+#img-calendar, #img-calc, #img-Frontend, #img-TimeTrack, #img-NFT, #img-ipAddress, #img-shortening {
   width: 350px;
   height: 250px;
   background-size: contain;
@@ -378,6 +378,10 @@ html body .contaienr footer .icons_foter .personalLinks .github:hover, html body
 
 #img-ipAddress {
   background-image: url("../icons/works-img/ip-address tracker.PNG");
+}
+
+#img-shortening {
+  background-image: url("../icons/works-img/shortening-url-screenshot.PNG");
 }
 
 .overlay-work {
