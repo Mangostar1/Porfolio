@@ -129,11 +129,17 @@ html body .contaienr main .sec-about #about {
 html body .contaienr main .sec-about #about div .card-text {
   padding-bottom: 2em;
 }
+html body .contaienr main .sec-about #about .content-about-and-tec {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
 html body .contaienr main .sec-about #about .content-tec {
   background-color: #F4F6F7;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 html body .contaienr main .sec-about #about .about-box {
   padding: 1em;
@@ -151,14 +157,9 @@ html body .contaienr main .sec-about #about .about-box #mi-cv {
 }
 html body .contaienr main .sec-about #about .about-box .tec-div {
   display: block;
-  margin-left: 10%;
+  margin: 10px 0 0 10%;
   width: 90%;
-  height: 80px;
-}
-html body .contaienr main .sec-about #about .about-box .tec-div img {
-  position: relative;
-  top: -40px;
-  left: -55px;
+  height: 90px;
 }
 html body .contaienr main .sec-about #about .about-box .tec-div .percent-tec {
   width: 80%;
@@ -188,24 +189,13 @@ html body .contaienr main .sec-about #about .about-box .tec-div #img-sass {
   height: 40px;
   margin-left: -10px;
 }
-html body .contaienr main .sec-about #about .about-box-1 {
-  width: 66%;
-  margin: 0 0 2rem 0;
-}
-html body .contaienr main .sec-about #about .about-box-2 {
-  width: 60%;
-  margin: 0 0 2rem 40%;
-}
-html body .contaienr main .sec-about #about .about-box-3 {
-  width: 60%;
-}
 html body .contaienr main .sec-about #about #abot-me {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   margin-top: 1em;
-  width: auto;
+  width: 50%;
 }
 html body .contaienr main .sec-about #about #abot-me .btn-pdf {
   padding: 0.5em 1em;
