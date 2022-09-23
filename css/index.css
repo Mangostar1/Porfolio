@@ -97,6 +97,22 @@ html body .contaienr main .sec-welcome #welcome {
   letter-spacing: 2px;
   margin: 0px auto 200px auto;
 }
+html body .contaienr main .sec-welcome #welcome .social-media-contaienr {
+  margin: 1.1rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+html body .contaienr main .sec-welcome #welcome .social-media-contaienr .social-media-link {
+  text-decoration: none;
+}
+html body .contaienr main .sec-welcome #welcome .social-media-contaienr .social-media-icons {
+  width: 40px;
+}
+html body .contaienr main .sec-welcome #welcome .social-media-contaienr .github-social-media {
+  width: 35px;
+}
 html body .contaienr main .sec-about {
   background-color: #F4F6F7;
   padding-top: 100px;
@@ -424,7 +440,5 @@ html body .contaienr footer .icons_foter .personalLinks .github:hover, html body
   background-color: #0B428F;
   box-shadow: 0px 1px 10px 0px #206EDB;
 }
-
-@keyframes aboutAnim {}
 
 /*# sourceMappingURL=index.css.map */

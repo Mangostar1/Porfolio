@@ -7,6 +7,14 @@ $colorBlack: #000000
 $buttons: rgb(231, 244, 255)
 $test: red
 
+.underLine-hover
+    display: none
+    background-color: $colorLight
+    margin: 0 0 0 0
+    width: 100%
+    height: 3px
+    border-radius: 10px
+
 header
     height: 3.5em
     transition: all 0.4s ease
@@ -35,6 +43,16 @@ header
                     color: $colorHover
                     &:hover
                         color: $colorLight
+                    &:hover .underLine-hover
+                        display: block
+                        animation: navLinkHover .5s
+
+@keyframes navLinkHover
+    0%
+        width: 0%
+        background-color: gray
+    100%
+        width: 100%
 
 @media (max-width: 767px)
     header
