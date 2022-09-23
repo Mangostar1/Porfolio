@@ -1,4 +1,4 @@
-window.onscroll = () => {
+/* window.onscroll = () => {
     let scroll = window.scrollY;
     if(scroll > 500){
         document.getElementById('header').style.cssText = 
@@ -7,4 +7,4 @@ window.onscroll = () => {
     else{
         document.getElementById('header').style.cssText = 'background-color: transparent;';
     }
-}
+} */
