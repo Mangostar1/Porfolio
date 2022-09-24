@@ -29,10 +29,13 @@ percents[5].style.cssText = `width: ${react}`;
 let Tailwind = p[6].innerHTML;
 percents[6].style.cssText = `width: ${Tailwind}`;
 
-//NPM
-let npm = p[7].innerHTML;
-percents[7].style.cssText = `width: ${npm}`;
+//test
 
-//Node
-let node = p[8].innerHTML;
-percents[8].style.cssText = `width: ${node}`;
+/* Animacion */
+window.onscroll = () => {
+    let scroll = window.scrollY
+    
+    if (scroll > 500) {
+        //code || scroll funcionando, arreglar en que altura ejecutar la animacion
+    }
+}
