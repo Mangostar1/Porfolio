@@ -162,6 +162,10 @@ html body .contaienr main .sec-about #about .about-box .tec-div {
   width: 5rem;
   height: 90px;
 }
+html body .contaienr main .sec-about #about .about-box .tec-div .links-tec {
+  text-decoration: none;
+  color: #000000;
+}
 html body .contaienr main .sec-about #about .about-box .tec-div .percent-tec {
   width: 80%;
   height: 10px;
@@ -197,6 +201,7 @@ html body .contaienr main .sec-about #about .about-box .tec-div #img-sass {
 html body .contaienr main .sec-about #about .about-box-1, html body .contaienr main .sec-about #about .about-box-2 {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 html body .contaienr main .sec-about #about #abot-me {
   display: flex;
