@@ -194,7 +194,7 @@ html body .contaienr main .sec-about #about .about-box .tec-div #img-sass {
   height: 40px;
   margin-left: -10px;
 }
-html body .contaienr main .sec-about #about .about-box-1 {
+html body .contaienr main .sec-about #about .about-box-1, html body .contaienr main .sec-about #about .about-box-2 {
   display: flex;
   flex-flow: row wrap;
 }
