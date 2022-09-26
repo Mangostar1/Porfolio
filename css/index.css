@@ -7,7 +7,7 @@
 }
 
 p::selection {
-  background-color: #0B428F;
+  background-color: #123D78;
   color: #ffffff;
 }
 
@@ -35,7 +35,7 @@ html::-webkit-scrollbar-thumb {
   transition: all 9s ease;
 }
 html::-webkit-scrollbar-thumb:hover {
-  background-color: #0B428F;
+  background-color: #123D78;
 }
 html::-webkit-scrollbar-track {
   background-color: #D8D8D8;
@@ -171,7 +171,7 @@ html body .contaienr main .sec-about #about .about-box .tec-div .percent-tec {
   height: 10px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #96CEE3;
+  background-color: #87B2ED;
   position: relative;
 }
 html body .contaienr main .sec-about #about .about-box .tec-div .percent-tec p {
@@ -213,7 +213,7 @@ html body .contaienr main .sec-about #about #abot-me {
 }
 html body .contaienr main .sec-about #about #abot-me .btn-pdf {
   padding: 0.5em 1em;
-  background-color: rgb(231, 244, 255);
+  background-color: #E8F0FC;
   border: none;
   border-radius: 10px;
   box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.1);
@@ -288,7 +288,7 @@ html body .contaienr main #content-contact .contact-article .content-contact-me 
 }
 html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact {
   color: #206EDB;
-  background-color: rgb(231, 244, 255);
+  background-color: #E8F0FC;
   text-decoration: none;
   border-radius: 10px;
   box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.1);
@@ -301,7 +301,7 @@ html body .contaienr main #content-contact .contact-article .content-contact-me 
 }
 html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact:hover {
   color: #ffffff;
-  background-color: #0B428F;
+  background-color: #123D78;
   box-shadow: 0px 1px 10px 0px #206EDB;
 }
 html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact:hover .email-contact {
@@ -443,8 +443,15 @@ html body .contaienr footer .icons_foter .personalLinks .github:hover, html body
   text-decoration: none;
 }
 .tec-used:hover {
-  background-color: #0B428F;
+  background-color: #123D78;
   box-shadow: 0px 1px 10px 0px #206EDB;
+}
+
+@media (max-width: 767px) {
+  .content-about-and-tec {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

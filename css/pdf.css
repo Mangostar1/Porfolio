@@ -3,10 +3,15 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 body{
     background-color:#F4F6F7;
+    background-image: url(../icons/bg-images/17973908.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 h1{
