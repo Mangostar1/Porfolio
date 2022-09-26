@@ -258,6 +258,11 @@ html body .contaienr main #sec-works .content-works .content-works-2 {
   position: relative;
   z-index: 1;
 }
+html body .contaienr main #sec-works .content-works .content-works-2 .content-img-works {
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+}
 html body .contaienr main #content-contact {
   padding: 150px 0px 150px 0px;
   margin: 0px;
@@ -424,6 +429,7 @@ html body .contaienr footer .icons_foter .personalLinks .github:hover, html body
 .overlay-work:hover {
   opacity: 1;
   box-shadow: 0px 0px 10px 2px gray;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 .descript-work {
