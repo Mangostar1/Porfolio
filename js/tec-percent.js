@@ -31,11 +31,19 @@ percents[6].style.cssText = `width: ${Tailwind}`;
 
 //test
 
-/* Animacion */
-window.onscroll = () => {
-    let scroll = window.scrollY
-    
-    if (scroll > 500) {
-        //code || scroll funcionando, arreglar en que altura ejecutar la animacion
-    }
+let tecDiv = document.getElementsByClassName('tec-div');
+
+function isInViewport(elem) {
+    let distance = elem.getBoundingClientRect();
+    return (
+        distance.top < (window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0
+    );
 }
+
+window.addEventListener('scroll', () => {
+    if (isInViewport(tecDiv[0])) {
+        console.log('Es visible el elemento en pantalla');
+    } else {
+        console.log('No es visible el elemento en pantalla');
+    }
+});
