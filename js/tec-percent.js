@@ -77,52 +77,52 @@ const keyframeTailwind = [
 
 //images
 const keyframeHtmlImg = [
-    {width: 0,
-    height: 0},
-    {width: 40,
-    height: 40}
+    {width: '20px',
+    height: '20px'},
+    {width: '40px',
+    height: '40px'}
 ]
 
 const keyframeCssImg = [
-    {width: 0,
-    height: 0},
-    {width: 40,
-    height: 40}
+    {width: '20px',
+    height: '20px'},
+    {width: '40px',
+    height: '40px'}
 ]
 
 const keyframeSassImg = [
-    {width: 0,
-    height: 0},
-    {width: 60,
-    height: 40}
+    {width: '30px',
+    height: '20px'},
+    {width: '60px',
+    height: '40px'}
 ]
 
 const keyframeJsImg = [
-    {width: 0,
-    height: 0},
-    {width: 40,
-    height: 40}
+    {width: '20px',
+    height: '20px'},
+    {width: '40px',
+    height: '40px'}
 ]
 
 const keyframeGitImg = [
-    {width: 0,
-    height: 0},
-    {width: 40,
-    height: 40}
+    {width: '20px',
+    height: '20px'},
+    {width: '40px',
+    height: '40px'}
 ]
 
 const keyframeReactImg = [
-    {width: 0,
-    height: 0},
-    {width: 40,
-    height: 40}
+    {width: '20px',
+    height: '20px'},
+    {width: '40px',
+    height: '40px'}
 ]
 
 const keyframeTailImg = [
-    {width: 0,
-    height: 0},
-    {width: 40,
-    height: 40}
+    {width: '20px',
+    height: '20px'},
+    {width: '40px',
+    height: '40px'}
 ]
 
 //time
@@ -151,7 +151,13 @@ const Animacion = () => {
 }
 
 const AnimacionImg = () => {
-
+    imgHTML.animate(keyframeHtmlImg, timeAnim);
+    imgCSS.animate(keyframeCssImg, timeAnim);
+    imgSASS.animate(keyframeSassImg, timeAnim);
+    imgJS.animate(keyframeJsImg, timeAnim);
+    imgGIT.animate(keyframeGitImg, timeAnim);
+    imgREACT.animate(keyframeReactImg, timeAnim);
+    imgTAILWIND.animate(keyframeTailImg, timeAnim);
 }
 
 const observer = new IntersectionObserver(Animacion, options);
@@ -160,4 +166,10 @@ observer.observe(percents[0]);
 
 const observerImg = new IntersectionObserver(AnimacionImg, options);
 
-observer.observe(imgHTML);
+observerImg.observe(imgHTML);
+observerImg.observe(imgCSS);
+observerImg.observe(imgSASS);
+observerImg.observe(imgJS);
+observerImg.observe(imgGIT);
+observerImg.observe(imgREACT);
+observerImg.observe(imgTAILWIND);
