@@ -38,6 +38,8 @@ percents[6].style.cssText = `width: ${Tailwind}`;
 /*-------------------*/
 /* KeyFrame and Time */
 /*-------------------*/
+
+//percentages
 const keyframeHTML = [
     {width: 0},
     {width: html}
@@ -73,6 +75,57 @@ const keyframeTailwind = [
     {width: Tailwind}
 ]
 
+//images
+const keyframeHtmlImg = [
+    {width: 0,
+    height: 0},
+    {width: 40,
+    height: 40}
+]
+
+const keyframeCssImg = [
+    {width: 0,
+    height: 0},
+    {width: 40,
+    height: 40}
+]
+
+const keyframeSassImg = [
+    {width: 0,
+    height: 0},
+    {width: 60,
+    height: 40}
+]
+
+const keyframeJsImg = [
+    {width: 0,
+    height: 0},
+    {width: 40,
+    height: 40}
+]
+
+const keyframeGitImg = [
+    {width: 0,
+    height: 0},
+    {width: 40,
+    height: 40}
+]
+
+const keyframeReactImg = [
+    {width: 0,
+    height: 0},
+    {width: 40,
+    height: 40}
+]
+
+const keyframeTailImg = [
+    {width: 0,
+    height: 0},
+    {width: 40,
+    height: 40}
+]
+
+//time
 const timeAnim = {
     duration: 1000,
     iterations: 1,
@@ -97,6 +150,14 @@ const Animacion = () => {
     percents[6].animate(keyframeTailwind, timeAnim);
 }
 
+const AnimacionImg = () => {
+
+}
+
 const observer = new IntersectionObserver(Animacion, options);
 
 observer.observe(percents[0]);
+
+const observerImg = new IntersectionObserver(AnimacionImg, options);
+
+observer.observe(imgHTML);
