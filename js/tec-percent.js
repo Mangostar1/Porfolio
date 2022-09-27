@@ -31,7 +31,47 @@ percents[6].style.cssText = `width: ${Tailwind}`;
 
 //test
 
-let tecDiv = document.getElementsByClassName('tec-div');
+let tecDiv = document.getElementsByClassName('tec-div'); //La animacion se dispara cuando este elemento es visible en pantalla
+
+const keyframeHTML = [
+    {width: 0},
+    {width: html}
+]
+
+const keyframeCSS = [
+    {width: 0},
+    {width: css}
+]
+
+const keyframeSASS = [
+    {width: 0},
+    {width: sass}
+]
+
+const keyframeJS = [
+    {width: 0},
+    {width: javascript}
+]
+
+const keyframeGit = [
+    {width: 0},
+    {width: git}
+]
+
+const keyframeReact = [
+    {width: 0},
+    {width: react}
+]
+
+const keyframeTailwind = [
+    {width: 0},
+    {width: Tailwind}
+]
+
+const timeAnim = {
+    duration: 1000,
+    iterations: 1,
+}
 
 function isInViewport(elem) {
     let distance = elem.getBoundingClientRect();
@@ -40,10 +80,24 @@ function isInViewport(elem) {
     );
 }
 
-window.addEventListener('scroll', () => {
-    if (isInViewport(tecDiv[0])) {
-        console.log('Es visible el elemento en pantalla');
-    } else {
-        console.log('No es visible el elemento en pantalla');
-    }
-});
+let options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1.0
+}
+
+let callback = () => {
+    console.log('elemento visible');
+    percents[0].animate(keyframeHTML, timeAnim);
+    percents[1].animate(keyframeCSS, timeAnim);
+    percents[2].animate(keyframeSASS, timeAnim);
+    percents[3].animate(keyframeJS, timeAnim);
+    percents[4].animate(keyframeGit, timeAnim);
+    percents[5].animate(keyframeReact, timeAnim);
+    percents[6].animate(keyframeTailwind, timeAnim);
+}
+
+let observer = new IntersectionObserver(callback, options);
+
+observer.observe(percents[0]);
+observer.observe(percents[5]);
