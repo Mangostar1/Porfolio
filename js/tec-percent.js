@@ -141,8 +141,8 @@ const timeAnimImg = {
 /*----------------------*/
 const options = {
     root: null,
-    rootMargin: '0px 0px 0px 0px',
-    threshold: 1.0
+    rootMargin: '100px 0px 100px 0px',//margen del screen
+    threshold: 1.0//porsentaje del elemento que tiene que estar visible para en el screen para disparar el evento
 }
 
 const Animacion = (entradas, observador) => {
@@ -176,7 +176,7 @@ const AnimacionImg = (entradas, observador) => {
 
 const observer = new IntersectionObserver(Animacion, options);
 
-observer.observe(percents[0]);
+observer.observe(imgHTML);
 
 const observerImg = new IntersectionObserver(AnimacionImg, options);
 
