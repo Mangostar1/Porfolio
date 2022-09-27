@@ -1,6 +1,9 @@
 let percents = document.getElementsByClassName('percent-tec'); //divs with class percent-tec
 let p = document.getElementsByClassName('percent-p'); //divs with class percent-p
 
+/*---------------------------------*/
+/* Default width without animation */
+/*---------------------------------*/
 //HTML5
 let html = p[0].innerHTML;
 percents[0].style.cssText = `width: ${html}`;
@@ -29,10 +32,10 @@ percents[5].style.cssText = `width: ${react}`;
 let Tailwind = p[6].innerHTML;
 percents[6].style.cssText = `width: ${Tailwind}`;
 
-//test
 
-let tecDiv = document.getElementsByClassName('tec-div'); //La animacion se dispara cuando este elemento es visible en pantalla
-
+/*-------------------*/
+/* KeyFrame and Time */
+/*-------------------*/
 const keyframeHTML = [
     {width: 0},
     {width: html}
@@ -73,21 +76,16 @@ const timeAnim = {
     iterations: 1,
 }
 
-function isInViewport(elem) {
-    let distance = elem.getBoundingClientRect();
-    return (
-        distance.top < (window.innerHeight || document.documentElement.clientHeight) && distance.bottom > 0
-    );
-}
-
-let options = {
+/*----------------------*/
+/* Observer and options */
+/*----------------------*/
+const options = {
     root: null,
     rootMargin: '0px',
     threshold: 1.0
 }
 
-let callback = () => {
-    console.log('elemento visible');
+const Animacion = () => {
     percents[0].animate(keyframeHTML, timeAnim);
     percents[1].animate(keyframeCSS, timeAnim);
     percents[2].animate(keyframeSASS, timeAnim);
@@ -97,7 +95,6 @@ let callback = () => {
     percents[6].animate(keyframeTailwind, timeAnim);
 }
 
-let observer = new IntersectionObserver(callback, options);
+const observer = new IntersectionObserver(Animacion, options);
 
 observer.observe(percents[0]);
-observer.observe(percents[5]);
