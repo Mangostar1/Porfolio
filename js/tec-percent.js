@@ -131,33 +131,47 @@ const timeAnim = {
     iterations: 1,
 }
 
+const timeAnimImg = {
+    duration: 400,
+    iterations: 1,
+}
+
 /*----------------------*/
 /* Observer and options */
 /*----------------------*/
 const options = {
     root: null,
-    rootMargin: '0px',
+    rootMargin: '0px 0px 0px 0px',
     threshold: 1.0
 }
 
-const Animacion = () => {
-    percents[0].animate(keyframeHTML, timeAnim);
-    percents[1].animate(keyframeCSS, timeAnim);
-    percents[2].animate(keyframeSASS, timeAnim);
-    percents[3].animate(keyframeJS, timeAnim);
-    percents[4].animate(keyframeGit, timeAnim);
-    percents[5].animate(keyframeReact, timeAnim);
-    percents[6].animate(keyframeTailwind, timeAnim);
+const Animacion = (entradas, observador) => {
+    entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+        }
+        percents[0].animate(keyframeHTML, timeAnim);
+        percents[1].animate(keyframeCSS, timeAnim);
+        percents[2].animate(keyframeSASS, timeAnim);
+        percents[3].animate(keyframeJS, timeAnim);
+        percents[4].animate(keyframeGit, timeAnim);
+        percents[5].animate(keyframeReact, timeAnim);
+        percents[6].animate(keyframeTailwind, timeAnim);
+    })
 }
 
-const AnimacionImg = () => {
-    imgHTML.animate(keyframeHtmlImg, timeAnim);
-    imgCSS.animate(keyframeCssImg, timeAnim);
-    imgSASS.animate(keyframeSassImg, timeAnim);
-    imgJS.animate(keyframeJsImg, timeAnim);
-    imgGIT.animate(keyframeGitImg, timeAnim);
-    imgREACT.animate(keyframeReactImg, timeAnim);
-    imgTAILWIND.animate(keyframeTailImg, timeAnim);
+const AnimacionImg = (entradas, observador) => {
+    entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+            console.log('el elemento ahora es visible');
+            imgHTML.animate(keyframeHtmlImg, timeAnimImg);
+            imgCSS.animate(keyframeCssImg, timeAnimImg);
+            imgSASS.animate(keyframeSassImg, timeAnimImg);
+            imgJS.animate(keyframeJsImg, timeAnimImg);
+            imgGIT.animate(keyframeGitImg, timeAnimImg);
+            imgREACT.animate(keyframeReactImg, timeAnimImg);
+            imgTAILWIND.animate(keyframeTailImg, timeAnimImg);
+        }
+    })
 }
 
 const observer = new IntersectionObserver(Animacion, options);
@@ -167,9 +181,4 @@ observer.observe(percents[0]);
 const observerImg = new IntersectionObserver(AnimacionImg, options);
 
 observerImg.observe(imgHTML);
-observerImg.observe(imgCSS);
-observerImg.observe(imgSASS);
-observerImg.observe(imgJS);
-observerImg.observe(imgGIT);
-observerImg.observe(imgREACT);
-observerImg.observe(imgTAILWIND);
+//observerImg.observe(imgREACT);
