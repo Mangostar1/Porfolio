@@ -1,7 +1,7 @@
 {
-  "name": "gestor_prueba",
+  "name": "portafolio",
   "version": "1.0.0",
-  "description": "Este es un proyecto de ejemplo de  npm",
+  "description": "Este es mi portafolio web",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
