@@ -241,6 +241,7 @@ html body .contaienr main #sec-works {
   padding-bottom: 100px;
   background-color: hsla(200deg, 16%, 96%, 0.8);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   position: relative;
   z-index: 4;
 }
