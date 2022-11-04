@@ -1,38 +1,38 @@
-let percents = document.getElementsByClassName('percent-tec');
-let p = document.getElementsByClassName('percent-p');
+let $percents = document.getElementsByClassName('percent-tec');
+let $p = document.getElementsByClassName('percent-p');
 
-let imgHTML = document.getElementById('img-html');
-let imgCSS = document.getElementById('img-css');
-let imgSASS = document.getElementById('img-sass');
-let imgJS = document.getElementById('img-js');
-let imgGIT = document.getElementById('img-git');
-let imgREACT = document.getElementById('img-react');
-let imgTAILWIND = document.getElementById('img-tailwind');
+let $imgHTML = document.getElementById('img-html');
+let $imgCSS = document.getElementById('img-css');
+let $imgSASS = document.getElementById('img-sass');
+let $imgJS = document.getElementById('img-js');
+let $imgGIT = document.getElementById('img-git');
+let $imgREACT = document.getElementById('img-react');
+let $imgTAILWIND = document.getElementById('img-tailwind');
 
 /*---------------------------------*/
 /* Default width without animation */
 /*---------------------------------*/
 
-let html = p[0].innerHTML;
-percents[0].style.cssText = `width: ${html}`;
+let html = $p[0].innerHTML;
+$percents[0].style.cssText = `width: ${html}`;
 
-let css = p[1].innerHTML;
-percents[1].style.cssText = `width: ${css}`;
+let css = $p[1].innerHTML;
+$percents[1].style.cssText = `width: ${css}`;
 
-let sass = p[2].innerHTML;
-percents[2].style.cssText = `width: ${sass}`;
+let sass = $p[2].innerHTML;
+$percents[2].style.cssText = `width: ${sass}`;
 
-let javascript = p[3].innerHTML;
-percents[3].style.cssText = `width: ${javascript}`;
+let javascript = $p[3].innerHTML;
+$percents[3].style.cssText = `width: ${javascript}`;
 
-let git = p[4].innerHTML;
-percents[4].style.cssText = `width: ${git}`;
+let git = $p[4].innerHTML;
+$percents[4].style.cssText = `width: ${git}`;
 
-let react = p[5].innerHTML;
-percents[5].style.cssText = `width: ${react}`;
+let react = $p[5].innerHTML;
+$percents[5].style.cssText = `width: ${react}`;
 
-let Tailwind = p[6].innerHTML;
-percents[6].style.cssText = `width: ${Tailwind}`;
+let Tailwind = $p[6].innerHTML;
+$percents[6].style.cssText = `width: ${Tailwind}`;
 
 
 /*-------------------*/
@@ -149,13 +149,13 @@ const Animacion = (entradas, observador) => {
     entradas.forEach((entrada) => {
         if (entrada.isIntersecting) {
         }
-        percents[0].animate(keyframeHTML, timeAnim);
-        percents[1].animate(keyframeCSS, timeAnim);
-        percents[2].animate(keyframeSASS, timeAnim);
-        percents[3].animate(keyframeJS, timeAnim);
-        percents[4].animate(keyframeGit, timeAnim);
-        percents[5].animate(keyframeReact, timeAnim);
-        percents[6].animate(keyframeTailwind, timeAnim);
+        $percents[0].animate(keyframeHTML, timeAnim);
+        $percents[1].animate(keyframeCSS, timeAnim);
+        $percents[2].animate(keyframeSASS, timeAnim);
+        $percents[3].animate(keyframeJS, timeAnim);
+        $percents[4].animate(keyframeGit, timeAnim);
+        $percents[5].animate(keyframeReact, timeAnim);
+        $percents[6].animate(keyframeTailwind, timeAnim);
     })
 }
 
@@ -163,22 +163,21 @@ const AnimacionImg = (entradas, observador) => {
     entradas.forEach((entrada) => {
         if (entrada.isIntersecting) {
             console.log('el elemento ahora es visible');
-            imgHTML.animate(keyframeHtmlImg, timeAnimImg);
-            imgCSS.animate(keyframeCssImg, timeAnimImg);
-            imgSASS.animate(keyframeSassImg, timeAnimImg);
-            imgJS.animate(keyframeJsImg, timeAnimImg);
-            imgGIT.animate(keyframeGitImg, timeAnimImg);
-            imgREACT.animate(keyframeReactImg, timeAnimImg);
-            imgTAILWIND.animate(keyframeTailImg, timeAnimImg);
+            $imgHTML.animate(keyframeHtmlImg, timeAnimImg);
+            $imgCSS.animate(keyframeCssImg, timeAnimImg);
+            $imgSASS.animate(keyframeSassImg, timeAnimImg);
+            $imgJS.animate(keyframeJsImg, timeAnimImg);
+            $imgGIT.animate(keyframeGitImg, timeAnimImg);
+            $imgREACT.animate(keyframeReactImg, timeAnimImg);
+            $imgTAILWIND.animate(keyframeTailImg, timeAnimImg);
         }
     })
 }
 
 const observer = new IntersectionObserver(Animacion, options);
 
-observer.observe(imgHTML);
+observer.observe($imgHTML);
 
 const observerImg = new IntersectionObserver(AnimacionImg, options);
 
-observerImg.observe(imgHTML);
-//observerImg.observe(imgREACT);
+observerImg.observe($imgHTML);

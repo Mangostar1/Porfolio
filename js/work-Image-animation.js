@@ -8,7 +8,7 @@ const timeTrans = .2;
 const scale = 1.2;
 
 window.addEventListener('mouseover', (e) => {
-    //console.log(e.target);
+    
     if (e.target === overlayWork[0] || e.target === tecUsed[0] || e.target === tecUsed[1] || e.target === descriptWork[0]) {
             imgWorks[0].style.cssText = `transition: all ${timeTrans}s ease; transform: scale(${scale})`;
     } 
