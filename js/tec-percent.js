@@ -13,27 +13,17 @@ let $imgTAILWIND = document.getElementById('img-tailwind');
 /* Default width without animation */
 /*---------------------------------*/
 
+for (let e = 0; e < $p.length; e++) {
+    $percents[e].style.cssText = `width: ${$p[e].innerHTML}`;
+}
+
 let html = $p[0].innerHTML;
-$percents[0].style.cssText = `width: ${html}`;
-
 let css = $p[1].innerHTML;
-$percents[1].style.cssText = `width: ${css}`;
-
 let sass = $p[2].innerHTML;
-$percents[2].style.cssText = `width: ${sass}`;
-
 let javascript = $p[3].innerHTML;
-$percents[3].style.cssText = `width: ${javascript}`;
-
 let git = $p[4].innerHTML;
-$percents[4].style.cssText = `width: ${git}`;
-
 let react = $p[5].innerHTML;
-$percents[5].style.cssText = `width: ${react}`;
-
 let Tailwind = $p[6].innerHTML;
-$percents[6].style.cssText = `width: ${Tailwind}`;
-
 
 /*-------------------*/
 /* KeyFrame and Time */
@@ -76,19 +66,16 @@ const keyframeTailwind = [
 ]
 
 //images
-const keyframeHtmlImg = [
+const widthAndHeight = [
     {width: '20px',
     height: '20px'},
     {width: '40px',
     height: '40px'}
 ]
 
-const keyframeCssImg = [
-    {width: '20px',
-    height: '20px'},
-    {width: '40px',
-    height: '40px'}
-]
+const keyframeHtmlImg = widthAndHeight;
+
+const keyframeCssImg = widthAndHeight;
 
 const keyframeSassImg = [
     {width: '30px',
@@ -97,33 +84,13 @@ const keyframeSassImg = [
     height: '40px'}
 ]
 
-const keyframeJsImg = [
-    {width: '20px',
-    height: '20px'},
-    {width: '40px',
-    height: '40px'}
-]
+const keyframeJsImg = widthAndHeight;
 
-const keyframeGitImg = [
-    {width: '20px',
-    height: '20px'},
-    {width: '40px',
-    height: '40px'}
-]
+const keyframeGitImg = widthAndHeight;
 
-const keyframeReactImg = [
-    {width: '20px',
-    height: '20px'},
-    {width: '40px',
-    height: '40px'}
-]
+const keyframeReactImg = widthAndHeight;
 
-const keyframeTailImg = [
-    {width: '20px',
-    height: '20px'},
-    {width: '40px',
-    height: '40px'}
-]
+const keyframeTailImg = widthAndHeight;
 
 //time
 const timeAnim = {
@@ -162,7 +129,7 @@ const Animacion = (entradas, observador) => {
 const AnimacionImg = (entradas, observador) => {
     entradas.forEach((entrada) => {
         if (entrada.isIntersecting) {
-            console.log('el elemento ahora es visible');
+            //console.log('el elemento ahora es visible');
             $imgHTML.animate(keyframeHtmlImg, timeAnimImg);
             $imgCSS.animate(keyframeCssImg, timeAnimImg);
             $imgSASS.animate(keyframeSassImg, timeAnimImg);
