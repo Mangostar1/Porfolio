@@ -374,8 +374,11 @@ html body .contaienr footer .icons_foter .personalLinks .github, html body .cont
   margin-right: 0.1em;
   transition: all 0.4s ease;
 }
-html body .contaienr footer .icons_foter .personalLinks .github:hover, html body .contaienr footer .icons_foter .personalLinks .linkedin:hover, html body .contaienr footer .icons_foter .personalLinks .email:hover, html body .contaienr footer .icons_foter .personalLinks .instagram:hover, html body .contaienr footer .icons_foter .personalLinks .miweb:hover {
+html body .contaienr footer .icons_foter .personalLinks .github:hover, html body .contaienr footer .icons_foter .personalLinks .linkedin:hover, html body .contaienr footer .icons_foter .personalLinks .email:hover, html body .contaienr footer .icons_foter .personalLinks .miweb:hover {
   filter: invert(18%) sepia(73%) saturate(5632%) hue-rotate(236deg) brightness(98%) contrast(96%);
+}
+html body .contaienr footer .icons_foter .instagram {
+  filter: grayscale(100%);
 }
 
 .title-other {
