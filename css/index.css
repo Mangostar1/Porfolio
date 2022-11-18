@@ -66,9 +66,6 @@ html body .contaienr main {
   /*  Welcome  */
   /*-----------*/
   /*---------*/
-  /*  About  */
-  /*---------*/
-  /*---------*/
   /*  Works  */
   /*---------*/
 }
@@ -120,128 +117,6 @@ html body .contaienr main .sec-welcome #welcome .social-media-contaienr .social-
 html body .contaienr main .sec-welcome #welcome .social-media-contaienr .github-social-media {
   width: 35px;
 }
-html body .contaienr main .sec-about {
-  background-color: #F4F6F7;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin: 100vh 0px 0px 0px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 4;
-}
-html body .contaienr main .sec-about #about {
-  width: 90%;
-}
-html body .contaienr main .sec-about #about div .card-text {
-  padding-bottom: 2em;
-}
-html body .contaienr main .sec-about #about .content-about-and-tec {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-html body .contaienr main .sec-about #about .content-tec {
-  background-color: #F4F6F7;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-html body .contaienr main .sec-about #about .about-box {
-  padding: 1em;
-  border-radius: 10px;
-  background-color: #ffffff;
-}
-html body .contaienr main .sec-about #about .about-box .title-inner-about {
-  color: #206EDB;
-  font-size: 1.1em;
-  text-align: center;
-  margin: 0em 0px 1em 0px;
-  width: 100%;
-}
-html body .contaienr main .sec-about #about .about-box #mi-cv {
-  margin-top: 3rem;
-}
-html body .contaienr main .sec-about #about .about-box .tec-div {
-  display: block;
-  margin: 10px 0 0 10%;
-  width: 5rem;
-  height: 90px;
-}
-html body .contaienr main .sec-about #about .about-box .tec-div .links-tec {
-  text-decoration: none;
-  color: #000000;
-}
-html body .contaienr main .sec-about #about .about-box .tec-div .percent-tec {
-  width: 80%;
-  height: 10px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #87B2ED;
-  position: relative;
-}
-html body .contaienr main .sec-about #about .about-box .tec-div .percent-tec p {
-  font-size: 1em;
-  font-weight: 900;
-  margin-left: 10px;
-  text-align: center;
-  position: absolute;
-  top: 10px;
-  left: 20%;
-}
-html body .contaienr main .sec-about #about .about-box .tec-div #img-html, html body .contaienr main .sec-about #about .about-box .tec-div #img-css, html body .contaienr main .sec-about #about .about-box .tec-div #img-js, html body .contaienr main .sec-about #about .about-box .tec-div #img-git, html body .contaienr main .sec-about #about .about-box .tec-div #img-node, html body .contaienr main .sec-about #about .about-box .tec-div #img-tailwind, html body .contaienr main .sec-about #about .about-box .tec-div #img-react {
-  width: 40px;
-  height: 40px;
-  margin-left: 5px;
-}
-html body .contaienr main .sec-about #about .about-box .tec-div #img-npm {
-  width: 55px;
-  height: 55px;
-  margin-left: 5px;
-}
-html body .contaienr main .sec-about #about .about-box .tec-div #img-sass {
-  width: 60px;
-  height: 40px;
-  margin-left: -10px;
-}
-html body .contaienr main .sec-about #about .about-box-1, html body .contaienr main .sec-about #about .about-box-2 {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-html body .contaienr main .sec-about #about #abot-me {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1em;
-  width: 50%;
-}
-html body .contaienr main .sec-about #about #abot-me .btn-pdf {
-  padding: 0.5em 1em;
-  background-color: #E8F0FC;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.1);
-  text-decoration: none;
-  color: #206EDB;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-html body .contaienr main .sec-about #about #abot-me .btn-pdf:hover {
-  background-color: #206EDB;
-  color: white;
-  box-shadow: 0px 1px 10px 0px #206EDB;
-}
-html body .contaienr main .sec-about #about #abot-me .btn-pdf:hover .cv-img {
-  filter: invert(100%);
-  transition: all 0.4s ease;
-}
-html body .contaienr main .sec-about #about #abot-me .btn-pdf .cv-img {
-  width: 20px;
-  margin-right: 5px;
-}
 html body .contaienr main #sec-works {
   margin: 0px;
   padding-top: 150px;
@@ -270,70 +145,6 @@ html body .contaienr main #sec-works .content-works .content-works-2 .content-im
   width: 350px;
   height: 250px;
   overflow: hidden;
-}
-html body .contaienr main #content-contact {
-  padding: 150px 0px 150px 0px;
-  margin: 0px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  background-color: #F4F6F7;
-  position: relative;
-  z-index: 4;
-}
-html body .contaienr main #content-contact .contact-article {
-  border-radius: 10px;
-  padding: 1em;
-  width: auto;
-  height: auto;
-  background-color: white;
-}
-html body .contaienr main #content-contact .contact-article .content-contact-me {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4em;
-}
-html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me {
-  margin: 1.5em 1em 1em 0px;
-  display: inline-block;
-}
-html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact {
-  color: #206EDB;
-  background-color: #E8F0FC;
-  text-decoration: none;
-  border-radius: 10px;
-  box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.1);
-  padding: 10px 5px;
-  width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  transition: all 0.4s ease;
-}
-html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact:hover {
-  color: #ffffff;
-  background-color: #123D78;
-  box-shadow: 0px 1px 10px 0px #206EDB;
-}
-html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact:hover .email-contact {
-  filter: invert(100%);
-}
-html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact:hover .linkedin-contact {
-  filter: invert(100%);
-}
-html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact:hover .instagram-contact {
-  filter: invert(100%);
-}
-html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact .email-contact {
-  width: 25px;
-}
-html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact .linkedin-contact {
-  width: 25px;
-}
-html body .contaienr main #content-contact .contact-article .content-contact-me .contact-me .link-contact .instagram-contact {
-  width: 30px;
 }
 html body .contaienr footer {
   grid-row: 3/4;
@@ -472,6 +283,55 @@ html body .contaienr footer .icons_foter .instagram {
     display: flex;
     flex-direction: column;
   }
+}
+/* pruebas */
+#sec-welcom-id {
+  background-image: url(../icons/bg-images/17973908.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#sec-welcom-id #welcome {
+  background-color: rgba(81, 153, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: black;
+  width: auto;
+  height: auto;
+  padding: 1em;
+  border-radius: 8px;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0px auto 200px auto;
+}
+#sec-welcom-id #welcome .social-media-contaienr {
+  margin: 1.1rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+#sec-welcom-id #welcome .social-media-contaienr .social-media-link {
+  text-decoration: none;
+}
+#sec-welcom-id #welcome .social-media-contaienr .social-media-link .social-media-icons {
+  width: 40px;
+}
+#sec-welcom-id #welcome .social-media-contaienr .social-media-link .social-media-icons .github-social-media {
+  width: 35px;
 }
 
 /*# sourceMappingURL=index.css.map */
