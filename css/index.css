@@ -119,8 +119,8 @@ html body .contaienr main .sec-welcome #welcome .social-media-contaienr .github-
 }
 html body .contaienr main #sec-works {
   margin: 0px;
-  padding-top: 150px;
-  padding-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 0px;
   background-color: hsla(200deg, 16%, 96%, 0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);

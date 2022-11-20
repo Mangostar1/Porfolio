@@ -78,7 +78,7 @@
   height: 45px;
   margin-left: 40px;
   margin-top: 10px;
-  z-index: 3;
+  z-index: 10;
 }
 
 .nav {
@@ -93,7 +93,7 @@
   position: fixed;
   top: 75%;
   right: 45%;
-  z-index: 3;
+  z-index: 10;
 }
 .nav .nav-menu .nav-list .nav-link {
   text-decoration: none;
