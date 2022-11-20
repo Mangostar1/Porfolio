@@ -2,28 +2,31 @@
 const work = document.getElementById('work-link');
 const home = document.getElementById('home-link'); */
 
-const main = document.querySelector('main');
+const $main = document.querySelector('main');
 
-document.addEventListener('DOMContentLoaded', Home(main))
+document.addEventListener('DOMContentLoaded', Home($main))
 
 document.addEventListener('click', (e) => {
     
     if (e.target.matches('.logo')) {
-        main.lastChild.remove();
-        Home(main);
+        $main.lastChild.remove();
+        Home($main);
     }
 
     if (e.target.matches('#about-link')) {
-        main.lastChild.remove();
-        About(main);
+        $main.lastChild.remove();
+        About($main);
     }
 
     if (e.target.matches('#work-link')) {
-        main.lastChild.remove();
-        Work(main);
+        $main.lastChild.remove();
+        Work($main);
     }
 })
 
+/*----------------*/
+/*-Elementos HTML-*/
+/*----------------*/
 function Home(element) {
     const homeContent = document.createElement('section')
     homeContent.classList.add('sec-welcom');
