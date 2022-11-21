@@ -168,6 +168,9 @@ html body .contaienr footer div .copyright {
 }
 html body .contaienr footer div .copyright #love {
   color: red;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 html body .contaienr footer .icons_foter {
   display: flex;
@@ -278,6 +281,17 @@ html body .contaienr footer .icons_foter .instagram {
   background-color: #123D78;
 }
 
+@keyframes pulse {
+  0% {
+    font-size: 18px;
+  }
+  50% {
+    font-size: 15px;
+  }
+  100% {
+    font-size: 18px;
+  }
+}
 @media (max-width: 767px) {
   .content-about-and-tec {
     display: flex;

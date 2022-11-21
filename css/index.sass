@@ -164,6 +164,9 @@ html
                         margin-left: 1em
                         #love
                             color: $test
+                            animation-name: pulse
+                            animation-duration: 1s
+                            animation-iteration-count: infinite
                 .icons_foter
                     display: flex
                     flex-direction: row
@@ -256,6 +259,14 @@ html
     text-decoration: none
     &:hover
         background-color: $colorHover
+
+@keyframes pulse
+    0%
+        font-size: 18px
+    50%
+        font-size: 15px
+    100%
+        font-size: 18px
 
 @media (max-width: 767px)
     .content-about-and-tec
