@@ -67,10 +67,7 @@
 }
 /* Test Nuevo diseño */
 .link-logo-test {
-  z-index: 3;
-  position: fixed;
-  top: 0;
-  left: 0;
+  z-index: 10;
 }
 
 .logo-test {
@@ -79,34 +76,6 @@
   margin-left: 40px;
   margin-top: 10px;
   z-index: 10;
-}
-
-.nav {
-  margin-top: 0.6em;
-  margin-right: 1em;
-}
-.nav .nav-menu {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  gap: 1em;
-  position: fixed;
-  top: 75%;
-  right: 45%;
-  z-index: 10;
-}
-.nav .nav-menu .nav-list .nav-link {
-  text-decoration: none;
-  padding: 0.5em 0.5em;
-  display: block;
-  color: #0B428F;
-}
-.nav .nav-menu .nav-list .nav-link:hover {
-  color: #408FFF;
-}
-.nav .nav-menu .nav-list .nav-link:hover .underLine-hover {
-  display: block;
-  animation: navLinkHover 0.5s;
 }
 
 /*# sourceMappingURL=nav.css.map */
