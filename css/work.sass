@@ -1,0 +1,75 @@
+$colorHover: #123D78
+$colorMain: #206EDB
+$colorLight: #5F98E7
+$colorExtra: #87B2ED
+$buttons: #E8F0FC
+
+$color-white: #ffffff
+$colorBlack: #000000
+
+#img-calendar, #img-calc, #img-Frontend, #img-TimeTrack, #img-NFT, #img-ipAddress, #img-shortening
+    width: 350px
+    height: 250px
+
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+
+    background-color: hsla(0, 0%, 100%, 0.5)
+#img-calendar, #img-calc, #img-Frontend
+    background-image: url("../icons/works-img/calendar.PNG")
+#img-calc
+    background-image: url("../icons/works-img/ejercicios\ web.PNG")
+#img-Frontend
+    background-image: url("../icons/works-img/Comercio electronico.PNG")
+#img-TimeTrack
+    background-image: url("../icons/works-img/time track.PNG")
+#img-NFT
+    background-image: url("../icons/works-img/NFT.PNG")
+#img-ipAddress
+    background-image: url("../icons/works-img/ip-address\ tracker.PNG")
+#img-shortening
+    background-image: url("../icons/works-img/shortening-url-screenshot.PNG")
+
+.overlay-work
+    background-color: rgb(0, 0, 0)
+    width: 350px
+    height: 250px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+    opacity: 0
+
+    transition: all .4s ease-in-out
+
+    display: flex
+    flex-flow: row wrap
+    align-items: flex-end
+    justify-content: space-around
+    &:hover
+        opacity: 1
+        box-shadow: 0px 0px 10px 2px gray
+        background-color: rgb(0, 0, 0)
+
+.texto-work
+    color: $color-white
+
+.descript-work
+    color: $color-white
+    text-align: center
+
+.tec-used
+    color: white
+    background-color: $colorMain
+
+    text-align: center
+
+    width: auto
+    height: auto
+    margin-bottom: 1em
+    padding: 2px 5px
+    border-radius: 5px
+    text-decoration: none
+    &:hover
+        background-color: $colorHover

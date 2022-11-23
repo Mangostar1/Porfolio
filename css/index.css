@@ -69,7 +69,7 @@ html body .contaienr main {
   /*  Works  */
   /*---------*/
 }
-html body .contaienr main .sec-welcome {
+html body .contaienr main #sec-welcom-id {
   background-image: url(../icons/bg-images/17973908.jpg);
   background-size: cover;
   background-position: center;
@@ -86,7 +86,7 @@ html body .contaienr main .sec-welcome {
   left: 0;
   z-index: 1;
 }
-html body .contaienr main .sec-welcome #welcome {
+html body .contaienr main #sec-welcom-id #welcome {
   background-color: rgba(81, 153, 255, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -101,20 +101,20 @@ html body .contaienr main .sec-welcome #welcome {
   letter-spacing: 2px;
   margin: 0px auto 200px auto;
 }
-html body .contaienr main .sec-welcome #welcome .social-media-contaienr {
+html body .contaienr main #sec-welcom-id #welcome .social-media-contaienr {
   margin: 1.1rem 0 0 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 1rem;
 }
-html body .contaienr main .sec-welcome #welcome .social-media-contaienr .social-media-link {
+html body .contaienr main #sec-welcom-id #welcome .social-media-contaienr .social-media-link {
   text-decoration: none;
 }
-html body .contaienr main .sec-welcome #welcome .social-media-contaienr .social-media-icons {
+html body .contaienr main #sec-welcom-id #welcome .social-media-contaienr .social-media-link .social-media-icons {
   width: 40px;
 }
-html body .contaienr main .sec-welcome #welcome .social-media-contaienr .github-social-media {
+html body .contaienr main #sec-welcom-id #welcome .social-media-contaienr .social-media-link .social-media-icons .github-social-media {
   width: 35px;
 }
 html body .contaienr main #sec-works {
@@ -199,88 +199,6 @@ html body .contaienr footer .icons_foter .instagram {
   margin-bottom: 1em;
 }
 
-#img-calendar, #img-calc, #img-Frontend, #img-TimeTrack, #img-NFT, #img-ipAddress, #img-shortening {
-  width: 350px;
-  height: 250px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: hsla(0deg, 0%, 100%, 0.5);
-}
-
-#img-calendar, #img-calc, #img-Frontend {
-  background-image: url("../icons/works-img/calendar.PNG");
-}
-
-#img-calc {
-  background-image: url("../icons/works-img/ejercicios web.PNG");
-}
-
-#img-Frontend {
-  background-image: url("../icons/works-img/Comercio electronico.PNG");
-}
-
-#img-TimeTrack {
-  background-image: url("../icons/works-img/time track.PNG");
-}
-
-#img-NFT {
-  background-image: url("../icons/works-img/NFT.PNG");
-}
-
-#img-ipAddress {
-  background-image: url("../icons/works-img/ip-address tracker.PNG");
-}
-
-#img-shortening {
-  background-image: url("../icons/works-img/shortening-url-screenshot.PNG");
-}
-
-.overlay-work {
-  background-color: rgb(0, 0, 0);
-  width: 350px;
-  height: 250px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-end;
-  justify-content: space-around;
-}
-.overlay-work:hover {
-  opacity: 1;
-  box-shadow: 0px 0px 10px 2px gray;
-  background-color: rgb(0, 0, 0);
-}
-
-.texto-work {
-  color: #ffffff;
-}
-
-.descript-work {
-  color: #ffffff;
-  text-align: center;
-}
-
-.tec-used {
-  color: white;
-  background-color: #206EDB;
-  text-align: center;
-  width: auto;
-  height: auto;
-  margin-bottom: 1em;
-  padding: 2px 5px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-.tec-used:hover {
-  background-color: #123D78;
-}
-
 @keyframes pulse {
   0% {
     font-size: 18px;
@@ -297,55 +215,6 @@ html body .contaienr footer .icons_foter .instagram {
     display: flex;
     flex-direction: column;
   }
-}
-/* pruebas */
-#sec-welcom-id {
-  background-image: url(../icons/bg-images/17973908.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
-  margin: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-#sec-welcom-id #welcome {
-  background-color: rgba(81, 153, 255, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  color: black;
-  width: auto;
-  height: auto;
-  padding: 1em;
-  border-radius: 8px;
-  font-size: 1.5em;
-  font-weight: 500;
-  text-align: center;
-  letter-spacing: 2px;
-  margin: 0px auto 200px auto;
-}
-#sec-welcom-id #welcome .social-media-contaienr {
-  margin: 1.1rem 0 0 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
-}
-#sec-welcom-id #welcome .social-media-contaienr .social-media-link {
-  text-decoration: none;
-}
-#sec-welcom-id #welcome .social-media-contaienr .social-media-link .social-media-icons {
-  width: 40px;
-}
-#sec-welcom-id #welcome .social-media-contaienr .social-media-link .social-media-icons .github-social-media {
-  width: 35px;
 }
 
 /*# sourceMappingURL=index.css.map */
