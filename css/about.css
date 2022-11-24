@@ -51,32 +51,17 @@
   text-decoration: none;
   color: #000000;
 }
-.sec-about #about .about-box .tec-div .percent-tec {
-  width: 80%;
-  height: 10px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #87B2ED;
-  position: relative;
-}
-.sec-about #about .about-box .tec-div .percent-tec p {
-  font-size: 1em;
-  font-weight: 900;
-  margin-left: 10px;
-  text-align: center;
-  position: absolute;
-  top: 10px;
-  left: 20%;
+.sec-about #about .about-box .tec-div .links-tec p {
+  font-size: 0.9rem;
 }
 .sec-about #about .about-box .tec-div #img-html, .sec-about #about .about-box .tec-div #img-css, .sec-about #about .about-box .tec-div #img-js, .sec-about #about .about-box .tec-div #img-git, .sec-about #about .about-box .tec-div #img-node, .sec-about #about .about-box .tec-div #img-tailwind, .sec-about #about .about-box .tec-div #img-react {
   width: 40px;
   height: 40px;
   margin-left: 5px;
 }
-.sec-about #about .about-box .tec-div #img-npm {
-  width: 55px;
-  height: 55px;
-  margin-left: 5px;
+.sec-about #about .about-box .tec-div #img-mysql {
+  width: 100px;
+  margin-left: -20px;
 }
 .sec-about #about .about-box .tec-div #img-sass {
   width: 60px;
