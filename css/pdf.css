@@ -1,3 +1,13 @@
+:root{
+    --colorHover: #123D78;
+    --colorMain: #206EDB;
+    --colorLight: #5F98E7;
+    --colorExtra: #87B2ED;
+    --buttons: #E8F0FC;
+
+    --color-white: #ffffff;
+    --colorBlack: #000000;
+}
 
 *{
     margin: 0px;
@@ -12,6 +22,48 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+header{
+    height: 3.5em;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+header img{
+    width: 160px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+nav{
+    margin-top: 0.6em;
+    margin-right: 1em;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: .5em .5em;
+    color: var(--colorHover);
+}
+nav ul li a:hover{
+    color: var(--colorLight);
+}
+.underLine-hover{
+    display: none;
+    background-color: var(--colorLight);
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+}
+nav ul li a:hover .underLine-hover{
+    display: block;
+    animation: navLinkHover .5s;
 }
 
 h1{
@@ -31,4 +83,14 @@ h1{
     background-color:#fff;
     padding:10px;
     box-shadow: 0px 0px 15px rgb(156, 156, 156);
+}
+
+@keyframes navLinkHover{
+    0%{
+        width: 0%;
+        background-color: gray;
+    }
+    100%{
+        width: 100%
+    }
 }
