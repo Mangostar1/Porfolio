@@ -1,3 +1,107 @@
+const htmlTec = 
+    `<div class="tec-div">
+        <a class="links-tec" href="https://developer.mozilla.org/es/docs/Glossary/HTML5">
+            <p>HTML 5</p>
+            <img src="./icons/logos_tecnologias/html5-svgrepo-com.svg" alt="html" id="img-html">
+            <div class="percent-tec">
+                <p class="percent-p">
+                    80%
+                </p>
+            </div>
+        </a>
+    </div>`;
+
+const cssTec = 
+    `<div class="tec-div">
+        <a class="links-tec" href="https://developer.mozilla.org/es/docs/Web/CSS">
+            <p>CSS 3</p>
+            <img src="./icons/logos_tecnologias/css3-svgrepo-com.svg" alt="css" id="img-css">
+            <div class="percent-tec">
+                <p class="percent-p">
+                    80%
+                </p>
+            </div>
+        </a>
+    </div>`;
+
+const sassTec = 
+    `<div class="tec-div">
+        <a class="links-tec" href="https://sass-lang.com/">
+            <p>SASS</p>
+            <img src="./icons/logos_tecnologias/sass-color.png" alt="sass" id="img-sass">
+            <div class="percent-tec">
+                <p class="percent-p">
+                    75%
+                </p>
+            </div>
+        </a>
+    </div>`;
+
+const jsTec = 
+    `<div class="tec-div">
+        <a class="links-tec" href="https://developer.mozilla.org/es/docs/Web/JavaScript">
+            <P>Javascript</P>
+            <img src="./icons/logos_tecnologias/javascript-svgrepo-com.svg" alt="js" id="img-js">
+            <div class="percent-tec">
+                <p class="percent-p">
+                    60%
+                </p>
+            </div>
+        </a>
+    </div>`;
+
+const gitTec = 
+    `<div class="tec-div">
+        <a class="links-tec" href="https://git-scm.com/">
+            <P id="git-p">Git</P>
+            <img src="./icons/logos_tecnologias/git-svgrepo-com.svg" alt="GIT" id="img-git">
+            <div class="percent-tec">
+                <p class="percent-p">
+                    70%
+                </p>
+            </div>
+        </a>
+    </div>`;
+
+const reactTec = 
+    `<div class="tec-div">
+        <a class="links-tec" href="https://reactjs.org/">
+            <p>React JS</p>
+            <img src="./icons/logos_tecnologias/react-svgrepo-com.svg" alt="react" id="img-react">
+            <div class="percent-tec">
+                <p class="percent-p">
+                    40%
+                </p>
+            </div>
+        </a>
+    </div>`;
+
+const tailwindTec = 
+    `<div class="tec-div">
+        <a class="links-tec" href="https://tailwindcss.com/">
+            <p>Tailwind</p>
+            <img src="./icons/logos_tecnologias/tailwindcss-color.svg" alt="tailwind" id="img-tailwind">
+            <div class="percent-tec">
+                <p class="percent-p">
+                    40%
+                </p>
+            </div>
+        </a>
+    </div>`;
+
+const mysqlTec = 
+    `<div class="tec-div">
+        <a class="links-tec" href="https://www.mysql.com/">
+            <p>MySQL</p>
+            <img src="./icons/logos_tecnologias/mysql.svg" alt="tailwind" id="img-mysql">
+            <div class="percent-tec">
+                <p class="percent-p">
+                    20%
+                </p>
+            </div>
+        </a>
+    </div>`;
+
 export function About(element) {
     const aboutContent = document.createElement('section')
     aboutContent.classList.add('sec-about');
@@ -38,93 +142,25 @@ export function About(element) {
                     <div class="about-box about-box-1">
                         <h5 class="title-inner-about">Tecnologias que manejo</h5>
 
-                        <div class="tec-div">
-                            <a class="links-tec" href="https://developer.mozilla.org/es/docs/Glossary/HTML5">
-                                <p>HTML 5</p>
-                                <img src="./icons/logos_tecnologias/html5-svgrepo-com.svg" alt="html" id="img-html">
-                                <div class="percent-tec">
-                                    <p class="percent-p">
-                                        80%
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+                        ${htmlTec}
                     
-                        <div class="tec-div">
-                            <a class="links-tec" href="https://developer.mozilla.org/es/docs/Web/CSS">
-                                <p>CSS 3</p>
-                                <img src="./icons/logos_tecnologias/css3-svgrepo-com.svg" alt="css" id="img-css">
-                                <div class="percent-tec">
-                                    <p class="percent-p">
-                                        80%
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+                        ${cssTec}
 
-                        <div class="tec-div">
-                            <a class="links-tec" href="https://sass-lang.com/">
-                                <p>SASS</p>
-                                <img src="./icons/logos_tecnologias/sass-color.png" alt="sass" id="img-sass">
-                                <div class="percent-tec">
-                                    <p class="percent-p">
-                                        75%
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+                        ${sassTec}
 
-                        <div class="tec-div">
-                            <a class="links-tec" href="https://developer.mozilla.org/es/docs/Web/JavaScript">
-                                <P>Javascript</P>
-                                <img src="./icons/logos_tecnologias/javascript-svgrepo-com.svg" alt="js" id="img-js">
-                                <div class="percent-tec">
-                                    <p class="percent-p">
-                                        60%
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+                        ${jsTec}
 
-                        <div class="tec-div">
-                            <a class="links-tec" href="https://git-scm.com/">
-                                <P id="git-p">Git</P>
-                                <img src="./icons/logos_tecnologias/git-svgrepo-com.svg" alt="GIT" id="img-git">
-                                <div class="percent-tec">
-                                    <p class="percent-p">
-                                        70%
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+                        ${gitTec}
                     </div>
 
                     <div class="about-box about-box-2">
                         <h5 class="title-inner-about">Tecnologias que estoy aprendiendo</h5>
 
-                        <div class="tec-div">
-                            <a class="links-tec" href="https://reactjs.org/">
-                                <p>React JS</p>
-                                <img src="./icons/logos_tecnologias/react-svgrepo-com.svg" alt="react" id="img-react">
-                                <div class="percent-tec">
-                                    <p class="percent-p">
-                                        30%
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+                        ${reactTec}
 
-                        <div class="tec-div">
-                            <a class="links-tec" href="https://tailwindcss.com/">
-                                <p>Tailwind</p>
-                                <img src="./icons/logos_tecnologias/tailwindcss-color.svg" alt="tailwind" id="img-tailwind">
-                                <div class="percent-tec">
-                                    <p class="percent-p">
-                                        20%
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
+                        ${tailwindTec}
+
+                        ${mysqlTec}
                     </div>
                     
                 </div>
