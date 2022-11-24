@@ -23,6 +23,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+
 header{
     height: 3.5em;
     transition: all 0.4s ease;
@@ -47,7 +48,6 @@ nav ul{
 }
 nav ul li a{
     text-decoration: none;
-    padding: .5em .5em;
     color: var(--colorHover);
 }
 nav ul li a:hover{
