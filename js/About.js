@@ -57,8 +57,14 @@ const tailwindTec =
 const mysqlTec = 
     `<div class="tec-div">
         <a class="links-tec" href="https://www.mysql.com/">
-            <p>MySQL</p>
-            <img src="./icons/logos_tecnologias/mysql.svg" alt="tailwind" id="img-mysql">
+            <img src="./icons/logos_tecnologias/mysql.svg" alt="mysql" id="img-mysql">
+        </a>
+    </div>`;
+
+const dockerTec = 
+    `<div class="tec-div">
+        <a class="links-tec" href="https://www.docker.com/">
+            <img src="./icons/logos_tecnologias/vertical-logo-monochromatic.webp" alt="Docker" id="img-docker">
         </a>
     </div>`;
 
@@ -122,6 +128,8 @@ export function About(element) {
                         ${tailwindTec}
 
                         ${mysqlTec}
+
+                        ${dockerTec}
                     </div>
                     
                 </div>
