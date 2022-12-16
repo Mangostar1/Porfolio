@@ -71,6 +71,9 @@
 .sec-about #about .about-box .tec-div #img-docker {
   width: 70px;
 }
+.sec-about #about .about-box .tec-div #img-node {
+  width: 70px;
+}
 .sec-about #about .about-box-1, .sec-about #about .about-box-2 {
   display: flex;
   flex-flow: row wrap;

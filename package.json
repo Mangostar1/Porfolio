@@ -1,11 +1,8 @@
 {
   "name": "portafolio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Este es mi portafolio web",
   "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mangostar1/repositorioDePrueba.git"
@@ -18,5 +15,5 @@
   "bugs": {
     "url": "https://github.com/Mangostar1/repositorioDePrueba/issues"
   },
-  "homepage": "https://github.com/Mangostar1/repositorioDePrueba#readme"
+  "homepage": "https://omar-zavala.xyz/"
 }

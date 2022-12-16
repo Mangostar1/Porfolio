@@ -1,72 +1,4 @@
-const htmlTec = 
-    `<div class="tec-div">
-        <a class="links-tec" href="https://developer.mozilla.org/es/docs/Glossary/HTML5">
-            <p>HTML 5</p>
-            <img src="./icons/logos_tecnologias/html5-svgrepo-com.svg" alt="html" id="img-html">
-        </a>
-    </div>`;
-
-const cssTec = 
-    `<div class="tec-div">
-        <a class="links-tec" href="https://developer.mozilla.org/es/docs/Web/CSS">
-            <p>CSS 3</p>
-            <img src="./icons/logos_tecnologias/css3-svgrepo-com.svg" alt="css" id="img-css">
-        </a>
-    </div>`;
-
-const sassTec = 
-    `<div class="tec-div">
-        <a class="links-tec" href="https://sass-lang.com/">
-            <p>SASS</p>
-            <img src="./icons/logos_tecnologias/sass-color.png" alt="sass" id="img-sass">
-        </a>
-    </div>`;
-
-const jsTec = 
-    `<div class="tec-div">
-        <a class="links-tec" href="https://developer.mozilla.org/es/docs/Web/JavaScript">
-            <P>Javascript</P>
-            <img src="./icons/logos_tecnologias/javascript-svgrepo-com.svg" alt="js" id="img-js">
-        </a>
-    </div>`;
-
-const gitTec = 
-    `<div class="tec-div">
-        <a class="links-tec" href="https://git-scm.com/">
-            <P id="git-p">Git</P>
-            <img src="./icons/logos_tecnologias/git-svgrepo-com.svg" alt="GIT" id="img-git">
-        </a>
-    </div>`;
-
-const reactTec = 
-    `<div class="tec-div">
-        <a class="links-tec" href="https://reactjs.org/">
-            <p>React JS</p>
-            <img src="./icons/logos_tecnologias/react-svgrepo-com.svg" alt="react" id="img-react">
-        </a>
-    </div>`;
-
-const tailwindTec = 
-    `<div class="tec-div">
-        <a class="links-tec" href="https://tailwindcss.com/">
-            <p>Tailwind</p>
-            <img src="./icons/logos_tecnologias/tailwindcss-color.svg" alt="tailwind" id="img-tailwind">
-        </a>
-    </div>`;
-
-const mysqlTec = 
-    `<div class="tec-div">
-        <a class="links-tec" href="https://www.mysql.com/">
-            <img src="./icons/logos_tecnologias/mysql.svg" alt="mysql" id="img-mysql">
-        </a>
-    </div>`;
-
-const dockerTec = 
-    `<div class="tec-div">
-        <a class="links-tec" href="https://www.docker.com/">
-            <img src="./icons/logos_tecnologias/vertical-logo-monochromatic.webp" alt="Docker" id="img-docker">
-        </a>
-    </div>`;
+import {htmlTec, cssTec, sassTec, jsTec, gitTec, reactTec, tailwindTec, mysqlTec, dockerTec, nodeTec, expressTec} from './tecnologias.js';
 
 export function About(element) {
     const aboutContent = document.createElement('section')
@@ -118,18 +50,23 @@ export function About(element) {
                         ${jsTec}
 
                         ${gitTec}
+
+                        ${reactTec}
+
+                        ${tailwindTec}
                     </div>
 
                     <div class="about-box about-box-2">
                         <h5 class="title-inner-about">Tecnologias que estoy aprendiendo</h5>
 
-                        ${reactTec}
-
-                        ${tailwindTec}
 
                         ${mysqlTec}
 
                         ${dockerTec}
+
+                        ${nodeTec}
+
+                        ${expressTec}
                     </div>
                     
                 </div>
