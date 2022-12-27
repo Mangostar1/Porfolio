@@ -9,7 +9,7 @@ export function About(element) {
             <div>
                 <h5 class="card-title title-other">Acerca de mí</h5>
                 <p class="card-text">
-                    Me llamo Omar Zavala Ugarte y me inicie en el mundo del desarrollo web en octubre del año 2021 como autodidacta.
+                    Hola, me llamo Omar Zavala Ugarte y me inicie en el mundo del desarrollo web en octubre del año 2021 como autodidacta.
                 </p>
             </div>
             <div class="content-about-and-tec">
