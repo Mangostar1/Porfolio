@@ -23,8 +23,21 @@
 #header .social-links .social-links-list {
   z-index: 10;
 }
-#header .social-links .social-links-list img {
-  width: 30px;
+#header .social-links .social-links-list .img-social:hover {
+  transition: ease 0.2s all;
+  filter: invert(61%) sepia(52%) saturate(5147%) hue-rotate(196deg) brightness(97%) contrast(108%);
+}
+#header .social-links .social-links-list #img-instagram {
+  width: 25px;
+}
+#header .social-links .social-links-list #img-github {
+  width: 20px;
+}
+#header .social-links .social-links-list #img-linkedin {
+  width: 20px;
+}
+#header .social-links .social-links-list #img-gmail {
+  width: 25px;
 }
 #header input {
   display: none;
