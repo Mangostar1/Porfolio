@@ -101,22 +101,6 @@ html body .contaienr main #sec-welcom-id #welcome {
   letter-spacing: 2px;
   margin: 0px auto 200px auto;
 }
-html body .contaienr main #sec-welcom-id #welcome .social-media-contaienr {
-  margin: 1.1rem 0 0 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
-}
-html body .contaienr main #sec-welcom-id #welcome .social-media-contaienr .social-media-link {
-  text-decoration: none;
-}
-html body .contaienr main #sec-welcom-id #welcome .social-media-contaienr .social-media-link .social-media-icons {
-  width: 40px;
-}
-html body .contaienr main #sec-welcom-id #welcome .social-media-contaienr .social-media-link .social-media-icons .github-social-media {
-  width: 35px;
-}
 html body .contaienr main #sec-works {
   margin: 0px;
   padding-top: 10px;
