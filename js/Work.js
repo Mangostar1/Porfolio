@@ -57,7 +57,7 @@ export function Work(element) {
                             <p class="descript-work">
                                 Este proyecto fue una prueba de desarrollo de una tienda online. 
                             </p>
-                            <a href="https://mangostar1.github.io/Frontend_mentor/ecommerce-product-page-main/index_e-commerce.html" class="tec-used" target="_blank" rel="noopener">Website</a>
+                            <a href="https://mangostar1.github.io/Retos_Frontend/ecommerce-product-page-main/index_e-commerce.html" class="tec-used" target="_blank" rel="noopener">Website</a>
                             <a href="https://github.com/Mangostar1/Frontend_mentor/tree/main/ecommerce-product-page-main" class="tec-used" target="_blank" rel="noopener">Repositorio</a>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ export function Work(element) {
                                 Este proyecto fue una prueba de desarrollo de una aplicación web en la que se crea un registro 
                                 de actividades de una persona, su registro es diario, semanal y mensual.
                             </p>
-                            <a href="https://mangostar1.github.io/Frontend_mentor/time-tracking-dashboard-main/index-time_tracking.html" class="tec-used" target="_blank" rel="noopener">Website</a>
+                            <a href="https://mangostar1.github.io/Retos_Frontend/time-tracking-dashboard-main/index-time_tracking.html" class="tec-used" target="_blank" rel="noopener">Website</a>
                             <a href="https://github.com/Mangostar1/Frontend_mentor/tree/main/time-tracking-dashboard-main" class="tec-used" target="_blank" rel="noopener">Repositorio</a>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ export function Work(element) {
                             <p class="descript-work">
                                 Este proyecto fue una prueba de desarrollo de una aplicación web en la que se visualiza una imagen nft.
                             </p>
-                            <a href="https://mangostar1.github.io/Frontend_mentor/nft-preview-card-component-main/proyect_1.html#" class="tec-used" target="_blank" rel="noopener">Website</a>
+                            <a href="https://mangostar1.github.io/Retos_Frontend/nft-preview-card-component-main/proyect_1.html" class="tec-used" target="_blank" rel="noopener">Website</a>
                             <a href="https://github.com/Mangostar1/Frontend_mentor/tree/main/nft-preview-card-component-main" class="tec-used" target="_blank" rel="noopener">Repositorio</a>
                         </div>
                     </div>
@@ -112,7 +112,7 @@ export function Work(element) {
                             <p class="descript-work">
                                 Este IP Adrress Tracker fue un ejercicio de desarrollo web en la que se trabajo con 2 APIs externas para lograr el resultado
                             </p>
-                            <a href="https://mangostar1.github.io/Frontend_mentor/ip-address-tracker-master/ip-index.html" class="tec-used" target="_blank" rel="noopener">Website</a>
+                            <a href="https://mangostar1.github.io/Retos_Frontend/ip-address-tracker-master/ip-index.html" class="tec-used" target="_blank" rel="noopener">Website</a>
                             <a href="https://github.com/Mangostar1/Frontend_mentor/tree/main/ip-address-tracker-master" class="tec-used" target="_blank" rel="noopener">Repositorio</a>
                         </div>
                     </div>
@@ -130,7 +130,7 @@ export function Work(element) {
                             <p class="descript-work">
                                 Este URL Shortening es un ejercicio de desarrollo en la que a traves de un API disminuye la longitud de una url.
                             </p>
-                            <a href="https://mangostar1.github.io/Frontend_mentor/url-shortening-api-master/index-url.html" class="tec-used" target="_blank" rel="noopener">Website</a>
+                            <a href="https://mangostar1.github.io/Retos_Frontend/url-shortening-api-master/index-url.html" class="tec-used" target="_blank" rel="noopener">Website</a>
                             <a href="https://github.com/Mangostar1/Frontend_mentor/tree/main/url-shortening-api-master" class="tec-used" target="_blank" rel="noopener">Repositorio</a>
                         </div>
                     </div>
