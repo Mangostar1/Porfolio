@@ -33,19 +33,19 @@ $test: red
             #img-instagram
                 width: 25px
                 &:hover
-                    filter: invert(25%) sepia(31%) saturate(3877%) hue-rotate(297deg) brightness(106%) contrast(88%)
+                    filter: brightness(0) saturate(100%) invert(25%) sepia(31%) saturate(3877%) hue-rotate(297deg) brightness(106%) contrast(88%)
             #img-github
                 width: 20px
                 &:hover
-                    filter: invert(15%) sepia(1%) saturate(282%) hue-rotate(314deg) brightness(98%) contrast(85%)
+                    filter: brightness(0) saturate(100%) invert(15%) sepia(1%) saturate(282%) hue-rotate(314deg) brightness(98%) contrast(85%)
             #img-linkedin
                 width: 20px
                 &:hover
-                    filter: invert(28%) sepia(38%) saturate(4012%) hue-rotate(196deg) brightness(92%) contrast(92%)
+                    filter: brightness(0) saturate(100%) invert(28%) sepia(38%) saturate(4012%) hue-rotate(196deg) brightness(92%) contrast(92%)
             #img-gmail
                 width: 25px
                 &:hover
-                    filter: invert(9%) sepia(95%) saturate(6901%) hue-rotate(2deg) brightness(88%) contrast(89%)
+                    filter: brightness(0) saturate(100%) invert(9%) sepia(95%) saturate(6901%) hue-rotate(2deg) brightness(88%) contrast(89%)
     input
             display: none
     .link-logo
@@ -57,6 +57,9 @@ $test: red
         margin-top: 10px
         z-index: 10
         cursor: pointer
+        transition: all .2s ease
+        &:hover
+            filter: brightness(0) saturate(100%) invert(78%) sepia(92%) saturate(355%) hue-rotate(167deg) brightness(95%) contrast(87%)
     .nav
         margin-top: 0.6em
         margin-right: 1em
