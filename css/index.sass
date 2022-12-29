@@ -3,12 +3,12 @@ $colorMain: #206EDB
 $colorLight: #5F98E7
 $colorExtra: #87B2ED
 $buttons: #E8F0FC
-
 $color-white: #ffffff
 $colorBlack: #000000
-
-
 $test: red
+
+$radius-works: 8px
+
 
 *
     padding: 0
@@ -116,10 +116,12 @@ html
                         justify-content: center
                         flex-flow: row wrap
                         gap: 10px
+                        border-radius: $radius-works
                         .content-works-2
                             position: relative
                             z-index: 1
                             .content-img-works
+                                border-radius: $radius-works
                                 width: 350px
                                 height: 250px
                                 overflow: hidden

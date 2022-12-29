@@ -117,12 +117,14 @@ html body .contaienr main #sec-works .content-works {
   justify-content: center;
   flex-flow: row wrap;
   gap: 10px;
+  border-radius: 8px;
 }
 html body .contaienr main #sec-works .content-works .content-works-2 {
   position: relative;
   z-index: 1;
 }
 html body .contaienr main #sec-works .content-works .content-works-2 .content-img-works {
+  border-radius: 8px;
   width: 350px;
   height: 250px;
   overflow: hidden;
