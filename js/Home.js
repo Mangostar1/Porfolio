@@ -4,7 +4,6 @@ export function Home(element) {
     homeContent.id = "sec-welcom-id"
     homeContent.innerHTML = 
         `<article class="article" id="welcome">
-            <h5 class="card-title">Omar Zavala</h5>
             <p class="card-text">
                 Frontend Developer
             </p>

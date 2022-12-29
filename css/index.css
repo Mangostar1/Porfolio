@@ -14,6 +14,7 @@ p::selection {
 
 .card-text {
   text-align: center;
+  color: #ffffff;
 }
 
 .card-title {
@@ -103,14 +104,21 @@ html body .contaienr main #sec-welcom-id #welcome {
   margin: 0px auto 200px auto;
 }
 html body .contaienr main #sec-works {
+  background-image: url(../icons/bg-images/conny-schneider-xuTJZ7uD7PI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
   margin: 0px;
-  padding-top: 10px;
-  padding-bottom: 0px;
-  background-color: hsla(200deg, 16%, 96%, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  position: relative;
-  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 html body .contaienr main #sec-works .work-text {
   text-align: center;

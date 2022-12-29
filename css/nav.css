@@ -57,8 +57,7 @@
   z-index: 10;
 }
 #header .logo {
-  width: 160px;
-  height: 45px;
+  width: 180px;
   margin-left: 40px;
   margin-top: 10px;
   z-index: 10;
@@ -86,10 +85,10 @@
   text-decoration: none;
   padding: 0.5em 0.5em;
   display: block;
-  color: #0B428F;
+  color: #206EDB;
 }
 #header .nav .nav-menu .nav-list .nav-link:hover {
-  color: #408FFF;
+  color: #96CEE3;
 }
 #header .nav .nav-menu .nav-list .nav-link:hover .underLine-hover {
   display: block;
