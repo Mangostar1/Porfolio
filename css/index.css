@@ -59,7 +59,6 @@ html body .contaienr {
   grid-template-rows: auto 1fr auto;
   gap: 0em;
   min-height: 100vh;
-  background-image: url(../icons/bg-images/conny-schneider-xuTJZ7uD7PI-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
