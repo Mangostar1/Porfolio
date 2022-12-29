@@ -35,9 +35,7 @@ export function About(element) {
                         <img src="./icons/curriculum-resume-svgrepo-com.svg" alt="CV" class="cv-img">
                         Ve mi Curriculum
                     </a>
-                </div>
 
-                <div class="content-tec">
                     <div class="about-box about-box-1">
                         <h5 class="title-inner-about">Tecnologias que manejo</h5>
 
@@ -68,7 +66,6 @@ export function About(element) {
 
                         ${expressTec}
                     </div>
-                    
                 </div>
             </div>
         </article>`;

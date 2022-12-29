@@ -6,10 +6,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 .sec-about #about {
   width: 90%;
@@ -20,6 +16,7 @@
 .sec-about #about .content-about-and-tec {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 1rem;
 }
 .sec-about #about .content-tec {

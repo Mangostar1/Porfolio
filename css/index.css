@@ -51,7 +51,7 @@ html::-webkit-scrollbar-track {
 }
 html body {
   background-color: #111111;
-  overflow-x: hidden;
+  /* overflow-x: hidden */
 }
 html body .contaienr {
   display: grid;
@@ -76,17 +76,13 @@ html body .contaienr main {
   /*---------*/
 }
 html body .contaienr main #sec-welcom-id {
-  height: 100vh;
+  height: calc(100vh - 10em);
   width: 100%;
   margin: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 html body .contaienr main #sec-welcom-id #welcome {
   background-color: rgba(81, 153, 255, 0.2);
@@ -111,10 +107,6 @@ html body .contaienr main #sec-works {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 html body .contaienr main #sec-works .work-text {
   text-align: center;
@@ -138,7 +130,6 @@ html body .contaienr main #sec-works .content-works .content-works-2 .content-im
 html body .contaienr footer {
   grid-row: 3/4;
   min-height: 5em;
-  padding-bottom: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
