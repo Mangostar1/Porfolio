@@ -50,7 +50,8 @@ html::-webkit-scrollbar-track {
   background-color: #D8D8D8;
 }
 html body {
-  background-color: #ffffff;
+  background-color: #111111;
+  overflow-x: hidden;
 }
 html body .contaienr {
   display: grid;
@@ -58,6 +59,10 @@ html body .contaienr {
   grid-template-rows: auto 1fr auto;
   gap: 0em;
   min-height: 100vh;
+  background-image: url(../icons/bg-images/conny-schneider-xuTJZ7uD7PI-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   /*----------*/
   /*  Footer  */
   /*----------*/
@@ -72,10 +77,6 @@ html body .contaienr main {
   /*---------*/
 }
 html body .contaienr main #sec-welcom-id {
-  background-image: url(../icons/bg-images/conny-schneider-xuTJZ7uD7PI-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   margin: 0px;
@@ -104,10 +105,6 @@ html body .contaienr main #sec-welcom-id #welcome {
   margin: 0px auto 200px auto;
 }
 html body .contaienr main #sec-works {
-  background-image: url(../icons/bg-images/conny-schneider-xuTJZ7uD7PI-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   margin: 0px;
@@ -157,6 +154,7 @@ html body .contaienr footer div {
 }
 html body .contaienr footer div .copyright {
   margin-left: 1em;
+  color: #ffffff;
 }
 html body .contaienr footer div .copyright #love {
   color: red;
@@ -200,6 +198,41 @@ html body .contaienr footer .icons_foter .instagram {
   }
   100% {
     font-size: 18px;
+  }
+}
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
   }
 }
 @media (max-width: 767px) {
