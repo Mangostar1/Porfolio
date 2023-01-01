@@ -24,6 +24,15 @@ p::selection {
   color: #206EDB;
 }
 
+.footer-link {
+  color: #87B2ED;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.footer-link:hover {
+  color: #206EDB;
+}
+
 .otros-links {
   color: #206EDB;
 }
@@ -100,7 +109,6 @@ html body .contaienr main #sec-welcom-id #welcome {
   margin: auto;
 }
 html body .contaienr main #sec-works {
-  height: 100vh;
   width: 100%;
   margin: 0px;
   display: flex;
