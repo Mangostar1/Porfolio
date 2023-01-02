@@ -108,6 +108,11 @@ html body .contaienr main #sec-welcom-id #welcome {
   letter-spacing: 2px;
   margin: auto;
 }
+html body .contaienr main #sec-welcom-id #welcome .hello-words {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: bold;
+}
 html body .contaienr main #sec-works {
   width: 100%;
   margin: 0px;
