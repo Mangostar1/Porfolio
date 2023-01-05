@@ -34,10 +34,10 @@ p::selection {
 }
 
 .otros-links {
-  color: #206EDB;
+  color: #87B2ED;
 }
 .otros-links:hover {
-  color: #5F98E7;
+  color: #206EDB;
 }
 
 html {
