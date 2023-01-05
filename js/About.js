@@ -1,4 +1,4 @@
-import {htmlTec, cssTec, sassTec, jsTec, gitTec, reactTec, tailwindTec, mysqlTec, dockerTec, nodeTec, expressTec} from './tecnologias.js';
+import {htmlTec, cssTec, sassTec, jsTec, gitTec, reactTec, tailwindTec, mysqlTec, dockerTec, nodeTec, expressTec} from './technologies.js';
 
 export function About(element) {
     const aboutContent = document.createElement('section')

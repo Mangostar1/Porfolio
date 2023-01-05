@@ -35,7 +35,7 @@ export function Work(element) {
                         </div>
                         <div class="overlay-work">
                             <p class="texto-work">
-                                Calculadora
+                                Ejercicios
                             </p>
                             <p class="descript-work">
                                 En esta página se encuentran todos los pequeños proyectos personales que he realizado a modo de ejercicio.
