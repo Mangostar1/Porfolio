@@ -52,8 +52,8 @@ export const frontendRetos = `
                 <p class="descript-work">
                     En esta pagina estan alojados todos los retos que he realizado de la pagina <a class="otros-links" href="https://www.frontendmentor.io/" rel="noopener">Frontend Mentor</a>
                 </p>
-                <a href="https://mangostar1.github.io/Retos_Frontend/ip-address-tracker-master/ip-index.html" class="tec-used" target="_blank" rel="noopener">Website</a>
-                <a href="https://github.com/Mangostar1/Frontend_mentor/tree/main/ip-address-tracker-master" class="tec-used" target="_blank" rel="noopener">Repositorio</a>
+                <a href="https://mangostar1.github.io/Retos_Frontend/index.html" class="tec-used" target="_blank" rel="noopener">Website</a>
+                <a href="https://github.com/Mangostar1/Retos_Frontend" class="tec-used" target="_blank" rel="noopener">Repositorio</a>
             </div>
         </div>
     </div>
