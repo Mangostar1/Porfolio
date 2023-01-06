@@ -94,7 +94,7 @@ html body .contaienr main #sec-welcom-id {
   align-items: center;
 }
 html body .contaienr main #sec-welcom-id #welcome {
-  background-color: rgba(81, 153, 255, 0.2);
+  background-color: rgba(81, 153, 255, 0.1254901961);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: black;

@@ -7,6 +7,8 @@ $buttons: #E8F0FC
 $color-white: #ffffff
 $colorBlack: #000000
 
+$bg-articles: #5199FF20
+
 
 .sec-about
     width: 100%
@@ -34,7 +36,8 @@ $colorBlack: #000000
         .about-box
             padding: 1em
             border-radius: 10px
-            background-color: $color-white
+            background-color: $bg-articles
+            color: $color-white
             .title-inner-about
                 color: $colorMain
                 font-size: 1.1em
@@ -43,36 +46,6 @@ $colorBlack: #000000
                 width: 100%
             #mi-cv
                 margin-top: 3rem
-            .tec-div
-                display: block
-                margin: 10px 0 0 10%
-
-                width: 5rem
-                height: 90px
-                .links-tec
-                    text-decoration: none
-                    color: $colorBlack
-                    p
-                        font-size: .9rem
-                #img-html, #img-css, #img-js, #img-git, #img-node, #img-tailwind, #img-react
-                    width: 40px
-                    height: 40px
-                    margin-left: 5px
-                #img-mysql
-                    width: 100px
-                    margin-left: -20px
-                #img-sass
-                    width: 60px
-                    height: 40px
-                    margin-left: -10px
-                #img-docker
-                    width: 70px
-                #img-node
-                    width: 70px
-        .about-box-1, .about-box-2
-            display: flex
-            flex-flow: row wrap
-            justify-content: center
         #abot-me
             display: flex
             flex-flow: column

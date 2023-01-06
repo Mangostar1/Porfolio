@@ -28,7 +28,8 @@
 .sec-about #about .about-box {
   padding: 1em;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: rgba(81, 153, 255, 0.1254901961);
+  color: #ffffff;
 }
 .sec-about #about .about-box .title-inner-about {
   color: #206EDB;
@@ -39,44 +40,6 @@
 }
 .sec-about #about .about-box #mi-cv {
   margin-top: 3rem;
-}
-.sec-about #about .about-box .tec-div {
-  display: block;
-  margin: 10px 0 0 10%;
-  width: 5rem;
-  height: 90px;
-}
-.sec-about #about .about-box .tec-div .links-tec {
-  text-decoration: none;
-  color: #000000;
-}
-.sec-about #about .about-box .tec-div .links-tec p {
-  font-size: 0.9rem;
-}
-.sec-about #about .about-box .tec-div #img-html, .sec-about #about .about-box .tec-div #img-css, .sec-about #about .about-box .tec-div #img-js, .sec-about #about .about-box .tec-div #img-git, .sec-about #about .about-box .tec-div #img-node, .sec-about #about .about-box .tec-div #img-tailwind, .sec-about #about .about-box .tec-div #img-react {
-  width: 40px;
-  height: 40px;
-  margin-left: 5px;
-}
-.sec-about #about .about-box .tec-div #img-mysql {
-  width: 100px;
-  margin-left: -20px;
-}
-.sec-about #about .about-box .tec-div #img-sass {
-  width: 60px;
-  height: 40px;
-  margin-left: -10px;
-}
-.sec-about #about .about-box .tec-div #img-docker {
-  width: 70px;
-}
-.sec-about #about .about-box .tec-div #img-node {
-  width: 70px;
-}
-.sec-about #about .about-box-1, .sec-about #about .about-box-2 {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
 }
 .sec-about #about #abot-me {
   display: flex;
