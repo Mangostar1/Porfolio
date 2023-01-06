@@ -36,7 +36,7 @@ export function About(element) {
                         Ve mi Curriculum
                     </a>
 
-                    <div class="about-box about-box-1">
+                    <div class="about-tec">
                         <h5 class="title-inner-about">Tecnologias que manejo</h5>
 
                         ${htmlTec}
@@ -54,7 +54,7 @@ export function About(element) {
                         ${tailwindTec}
                     </div>
 
-                    <div class="about-box about-box-2">
+                    <div class="about-tec">
                         <h5 class="title-inner-about">Tecnologias que estoy aprendiendo</h5>
 
 

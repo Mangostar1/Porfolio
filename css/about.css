@@ -38,6 +38,9 @@
   margin: 0em 0px 1em 0px;
   width: 100%;
 }
+.sec-about #about .about-box .about-tec {
+  margin: 0.5rem 0 0 0;
+}
 .sec-about #about .about-box #mi-cv {
   margin-top: 3rem;
 }
