@@ -80,9 +80,6 @@ html body .contaienr main {
   /*-----------*/
   /*  Welcome  */
   /*-----------*/
-  /*---------*/
-  /*  Works  */
-  /*---------*/
 }
 html body .contaienr main #sec-welcom-id {
   height: calc(100vh - 10em);
@@ -112,42 +109,6 @@ html body .contaienr main #sec-welcom-id #welcome .hello-words {
   color: #ffffff;
   font-size: 4rem;
   font-weight: bold;
-}
-html body .contaienr main #sec-works {
-  width: 100%;
-  margin: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-html body .contaienr main #sec-works .work-text {
-  text-align: center;
-  margin-bottom: 100px;
-}
-html body .contaienr main #sec-works .content-works {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  gap: 10px;
-  border-radius: 8px;
-}
-html body .contaienr main #sec-works .content-works .content-works-2 {
-  position: relative;
-  z-index: 1;
-}
-html body .contaienr main #sec-works .content-works .content-works-2 .content-img-works {
-  border-radius: 8px;
-  width: 350px;
-  height: 250px;
-  overflow: hidden;
-}
-html body .contaienr main #sec-works .content-works-list-links {
-  margin: 1rem 0 0 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
 }
 html body .contaienr footer {
   grid-row: 3/4;
