@@ -18,6 +18,10 @@ export function Work(element) {
 
                 ${frontendRetos}
             </div>
+            <div class="content-works-list-links">
+                <h5 class="card-title title-other">Otros proyectos</h5>
+                <li class="works-list-links"><a class="footer-link" href="https://mangostar1.github.io/Retos_Frontend/">Retos Frontend Mentor</a></li>
+            </div>
         </article>`;
 
     element.appendChild(workContent);

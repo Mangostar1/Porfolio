@@ -1,11 +1,11 @@
 export const htmlTec = 
     `<li class="list-tec">
-        HTML 5
+        HTML
     </li>`;
 
 export const cssTec = 
     `<li class="list-tec">
-        CSS 3
+        CSS
     </li>`;
 
 export const sassTec = 
@@ -30,7 +30,7 @@ export const reactTec =
 
 export const tailwindTec = 
     `<li class="list-tec">
-        Tailwind
+        Tailwind Css
     </li>`;
 
 export const mysqlTec = 

@@ -142,6 +142,13 @@ html body .contaienr main #sec-works .content-works .content-works-2 .content-im
   height: 250px;
   overflow: hidden;
 }
+html body .contaienr main #sec-works .content-works-list-links {
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
 html body .contaienr footer {
   grid-row: 3/4;
   min-height: 5em;
