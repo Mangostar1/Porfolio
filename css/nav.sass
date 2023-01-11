@@ -15,12 +15,15 @@ $test: red
     height: 3px
     border-radius: 10px
 
+.menu-sandwich
+    display: none
+
 #header
-    height: 3.5em
     transition: all 0.4s ease
-    display: flex
-    justify-content: space-between
     position: relative
+    .nav-logo-content
+        display: flex
+        justify-content: space-between
     .social-links
         display: flex
         gap: 1em
@@ -52,8 +55,7 @@ $test: red
         z-index: 10
     .logo
         width: 180px
-        margin-left: 40px
-        margin-top: 10px
+        margin: 10px 0 0 10px
         z-index: 10
         cursor: pointer
         transition: all .2s ease
@@ -92,8 +94,27 @@ $test: red
     100%
         width: 100%
 
+@keyframes menuSandwich
+    0%
+        
+    100%
+        
+
+
 @media (max-width: 767px)
+
     header
-        height: 6em
         flex-direction: column
-        align-items: center
+        .nav
+            flex-direction: column
+            align-items: center
+
+    .menu-sandwich
+        display: flex
+        flex-direction: column
+        gap: 10px
+        margin: 20px 0 0 20px
+        .line
+            background-color: $buttons
+            width: 50px
+            height: 5px

@@ -7,12 +7,17 @@
   border-radius: 10px;
 }
 
+.menu-sandwich {
+  display: none;
+}
+
 #header {
-  height: 3.5em;
   transition: all 0.4s ease;
+  position: relative;
+}
+#header .nav-logo-content {
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 #header .social-links {
   display: flex;
@@ -58,8 +63,7 @@
 }
 #header .logo {
   width: 180px;
-  margin-left: 40px;
-  margin-top: 10px;
+  margin: 10px 0 0 10px;
   z-index: 10;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -110,11 +114,25 @@
     width: 100%;
   }
 }
+@keyframes menuSandwich {}
 @media (max-width: 767px) {
   header {
-    height: 6em;
+    flex-direction: column;
+  }
+  header .nav {
     flex-direction: column;
     align-items: center;
+  }
+  .menu-sandwich {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0 0 20px;
+  }
+  .menu-sandwich .line {
+    background-color: #e7f4ff;
+    width: 50px;
+    height: 5px;
   }
 }
 
