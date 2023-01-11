@@ -45,10 +45,15 @@ export const dockerTec =
 
 export const nodeTec = 
     `<li class="list-tec">
-        NodeJS
+        Node
     </li>`;
 
 export const expressTec = 
     `<li class="list-tec">
-        ExpressJS
+        Express
+    </li>`;
+
+export const FigmaTec = 
+    `<li class="list-tec">
+        Figma
     </li>`;

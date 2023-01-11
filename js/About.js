@@ -1,4 +1,4 @@
-import {htmlTec, cssTec, sassTec, jsTec, gitTec, reactTec, tailwindTec, mysqlTec, dockerTec, nodeTec, expressTec} from './technologies.js';
+import {htmlTec, cssTec, sassTec, jsTec, gitTec, reactTec, tailwindTec, mysqlTec, dockerTec, nodeTec, expressTec, FigmaTec} from './technologies.js';
 
 export function About(element) {
     const aboutContent = document.createElement('section')
@@ -37,7 +37,7 @@ export function About(element) {
                     </a>
 
                     <div class="about-tec">
-                        <h5 class="title-inner-about">Tecnologias que manejo</h5>
+                        <h5 class="title-inner-about">Frontend</h5>
 
                         ${htmlTec}
                     
@@ -55,16 +55,35 @@ export function About(element) {
                     </div>
 
                     <div class="about-tec">
-                        <h5 class="title-inner-about">Tecnologias que estoy aprendiendo</h5>
+                        <h5 class="title-inner-about">Diseño</h5>
 
+                        ${FigmaTec}
+
+                    </div>
+
+                    <div class="about-tec">
+                        <h5 class="title-inner-about">Base de Datos</h5>
 
                         ${mysqlTec}
 
+                    </div>
+
+                    <div class="about-tec">
+                        <h5 class="title-inner-about">Herramientas</h5>
+
+                        ${gitTec}
+
                         ${dockerTec}
+                        
+                    </div>
+
+                    <div class="about-tec">
+                        <h5 class="title-inner-about">Backend</h5>
 
                         ${nodeTec}
 
                         ${expressTec}
+                        
                     </div>
                 </div>
             </div>
