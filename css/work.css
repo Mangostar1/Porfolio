@@ -34,7 +34,7 @@
   align-items: center;
   list-style: none;
 }
-#img-calendar, #img-calc, #img-ipAddress {
+#img-calendar, #img-calc, #img-ipAddress, #img-freeTabs {
   border-radius: 8px;
   width: 350px;
   height: 250px;
@@ -54,6 +54,10 @@
 
 #img-ipAddress {
   background-image: url("../icons/works-img/ip-address tracker.PNG");
+}
+
+#img-freeTabs {
+  background-image: url("../icons/works-img/free_tabs.png");
 }
 
 .overlay-work {

@@ -1,4 +1,4 @@
-import { calendar, ejercicios, frontendRetos } from "./workDone.js";
+import { calendar, ejercicios, frontendRetos, freeTabs } from "./workDone.js";
 
 export function Work(element) {
     const workContent = document.createElement('section')
@@ -14,9 +14,9 @@ export function Work(element) {
             <div class="content-works">
                 ${calendar}
 
-                ${ejercicios}
+                ${freeTabs}
 
-                ${frontendRetos}
+                ${ejercicios}
             </div>
             <div class="content-works-list-links">
                 <h5 class="card-title title-other">Otros proyectos</h5>

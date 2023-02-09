@@ -39,21 +39,21 @@ export const ejercicios = `
     </div>
 `;
 
-export const frontendRetos = `
+export const freeTabs = `
     <div class="content-works-1">
         <div class="content-works-2">
             <div class="content-img-works">
-                <div class="img-works" id="img-ipAddress"></div>
+                <div class="img-works" id="img-freeTabs"></div>
             </div>
             <div class="overlay-work">
                 <p class="texto-work">
-                    Retos de Frontend Mentor
+                    Free Tabs
                 </p>
                 <p class="descript-work">
-                    En esta pagina estan alojados todos los retos que he realizado de la pagina <a class="otros-links" href="https://www.frontendmentor.io/" rel="noopener">Frontend Mentor</a>
+                    En esta web podrás crear tus tablaturas de manera sencilla.
                 </p>
-                <a href="https://mangostar1.github.io/Retos_Frontend/index.html" class="tec-used" target="_blank" rel="noopener">Website</a>
-                <a href="https://github.com/Mangostar1/Retos_Frontend" class="tec-used" target="_blank" rel="noopener">Repositorio</a>
+                <a href="https://free-tabs.netlify.app/" class="tec-used" target="_blank" rel="noopener">Website</a>
+                <a href="https://github.com/Mangostar1/Free-Tabs" class="tec-used" target="_blank" rel="noopener">Repositorio</a>
             </div>
         </div>
     </div>
