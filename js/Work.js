@@ -1,4 +1,4 @@
-import { calendar, ejercicios, frontendRetos, freeTabs } from "./workDone.js";
+import { calendar, ejercicios, freeTabs } from "./workDone.js";
 
 export function Work(element) {
     const workContent = document.createElement('section')
@@ -21,17 +21,20 @@ export function Work(element) {
             <div class="content-works-list-links">
                 <h5 class="card-title title-other">Otros proyectos</h5>
                 <li class="works-list-links"><a class="otros-links" href="https://mangostar1.github.io/Retos_Frontend/">Retos Frontend Mentor</a></li>
+                <li class="works-list-links"><a class="otros-links" href="https://github.com/Mangostar1/My-Backend-ExpressJS">My Backend ExpressJS</a></li>
             </div>
         </article>`;
 
     element.appendChild(workContent);
     
+    /* Animations */
     const overlayWork = document.getElementsByClassName('overlay-work');
     const tecUsed = document.getElementsByClassName('tec-used');
     const descriptWork= document.getElementsByClassName('descript-work');
     
     const imgWorks = document.querySelectorAll('.img-works');
     
+    /* Animations options */
     const timeTrans = .2;
     const scale = 1.2;
     
@@ -45,8 +48,7 @@ export function Work(element) {
         } 
         else if (e.target === overlayWork[2] || e.target === tecUsed[4] || e.target === tecUsed[5] || e.target === descriptWork[2]) {
             Animations(2);
-        } 
-        else {
+        } else {
             for (let i = 0; i < overlayWork.length; i++) {
                 imgWorks[i].style.cssText = `transition: all ${timeTrans}s ease; transform: scale(1)`;
             }
