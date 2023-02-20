@@ -110,6 +110,12 @@ html body .contaienr main #sec-welcom-id #welcome .hello-words {
   font-size: 4rem;
   font-weight: bold;
 }
+html body .contaienr main #sec-welcom-id #welcome #p-hello {
+  animation: hello 0.5s;
+}
+html body .contaienr main #sec-welcom-id #welcome #p-world {
+  animation: world 1s;
+}
 html body .contaienr footer {
   grid-row: 3/4;
   min-height: 5em;
@@ -172,6 +178,25 @@ html body .contaienr footer .icons_foter .instagram {
   visibility: visible;
 }
 
+@keyframes hello {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes world {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes pulse {
   0% {
     font-size: 18px;

@@ -100,6 +100,10 @@ html
                             color: $color-white
                             font-size: 4rem
                             font-weight: bold
+                        #p-hello
+                            animation: hello .5s
+                        #p-world
+                            animation: world 1s
             /*----------*/
             /*  Footer  */
             /*----------*/
@@ -156,6 +160,21 @@ html
     animation: bg-animation .2s infinite
     opacity: .9
     visibility: visible
+
+
+@keyframes hello
+    0%
+        transform: scale(0)
+    100%
+        transform: scale(1)
+
+@keyframes world
+    0%
+        transform: scale(0)
+    50%
+        transform: scale(0)
+    100%
+        transform: scale(1)
 
 @keyframes pulse
     0%
