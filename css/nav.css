@@ -83,7 +83,7 @@
   gap: 1em;
 }
 #header .nav .nav-menu .home-mobile {
-  display: none;
+  display: block;
 }
 #header .nav .nav-menu .nav-list {
   z-index: 3;
@@ -117,7 +117,10 @@
     width: 100%;
   }
 }
-@keyframes menuSandwich {}
+/* @keyframes menuSandwich
+ *  0%
+ *  100%
+ *       */
 @media (max-width: 767px) {
   #header {
     flex-direction: column;
