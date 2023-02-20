@@ -68,16 +68,6 @@ html
             grid-template-rows: auto 1fr auto
             gap: 0em
             min-height: 100vh
-            //background-image: url(../icons/bg-images/conny-schneider-xuTJZ7uD7PI-unsplash.jpg)
-            background-size: cover
-            background-position: center
-            background-repeat: no-repeat
-            //Separacion de bgs
-            //background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0
-            //background-repeat: repeat
-            //opacity: .9
-            //visibility: visible
-            //animation: bg-animation .2s infinite //<-- da problemas con el contenido de la pagina
             main
                 grid-row: 2/3
                 /*-----------*/
@@ -156,6 +146,21 @@ html
 
 .title-other
     margin-bottom: 1em
+
+.bg-animation
+    //background-image: url(../icons/bg-images/conny-schneider-xuTJZ7uD7PI-unsplash.jpg)
+    position: fixed
+    top: -50%
+    left: -50%
+    right: -50%
+    bottom: -50%
+    width: 200%
+    height: 200vh
+    background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0
+    background-repeat: repeat
+    animation: bg-animation .2s infinite
+    opacity: .9
+    visibility: visible
 
 @keyframes pulse
     0%
