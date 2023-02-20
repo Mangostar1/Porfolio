@@ -1,15 +1,5 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  /* font-family: 'Fredoka One', cursive */
-  font-family: "Roboto", ssans-serif;
-  font-size: 18px;
-}
-
-p::selection {
-  background-color: #123D78;
-  color: #ffffff;
+.title-other {
+  margin-bottom: 1em;
 }
 
 .card-text {
@@ -24,19 +14,32 @@ p::selection {
   color: #206EDB;
 }
 
+.otros-links {
+  color: #87B2ED;
+}
+.otros-links:hover {
+  color: #206EDB;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", ssans-serif;
+  font-size: 18px;
+}
+
+p::selection {
+  background-color: #123D78;
+  color: #ffffff;
+}
+
 .footer-link {
   color: #87B2ED;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 .footer-link:hover {
-  color: #206EDB;
-}
-
-.otros-links {
-  color: #87B2ED;
-}
-.otros-links:hover {
   color: #206EDB;
 }
 
@@ -138,7 +141,7 @@ html body .contaienr footer .icons_foter {
   margin-right: 1em;
 }
 html body .contaienr footer .icons_foter .personalLinks {
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   text-decoration: none;
 }
@@ -152,10 +155,6 @@ html body .contaienr footer .icons_foter .personalLinks .github:hover, html body
 }
 html body .contaienr footer .icons_foter .instagram {
   filter: grayscale(100%);
-}
-
-.title-other {
-  margin-bottom: 1em;
 }
 
 .bg-animation {

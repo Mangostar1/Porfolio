@@ -10,18 +10,8 @@ $bg-articles: #5199FF20
 
 $radius-works: 8px
 
-
-*
-    padding: 0
-    margin: 0
-    box-sizing: border-box
-    /* font-family: 'Fredoka One', cursive */
-    font-family: 'Roboto', ssans-serif
-    font-size: 18px
-
-p::selection
-    background-color: $colorHover
-    color: $color-white
+.title-other
+    margin-bottom: 1em
 
 .card-text //clase universal para todo el documento
     text-align: center
@@ -34,15 +24,26 @@ p::selection
     font-weight: 900
     color: $colorMain
 
+.otros-links
+    color: $colorExtra
+    &:hover
+        color: $colorMain
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Roboto', ssans-serif
+    font-size: 18px
+
+p::selection
+    background-color: $colorHover
+    color: $color-white
+
 .footer-link
     color: $colorExtra
     text-decoration: none
     transition: all .3s ease
-    &:hover
-        color: $colorMain
-
-.otros-links
-    color: $colorExtra
     &:hover
         color: $colorMain
 
@@ -130,9 +131,8 @@ html
 
                     margin-right: 1em
                     .personalLinks
-                        color: white
+                        color: $color-white
                         font-weight: bold
-
                         text-decoration: none
                         .github, .linkedin, .email, .instagram, .miweb
                             width: 30px
@@ -143,12 +143,7 @@ html
                     .instagram
                         filter: grayscale(100%)
 
-
-.title-other
-    margin-bottom: 1em
-
 .bg-animation
-    //background-image: url(../icons/bg-images/conny-schneider-xuTJZ7uD7PI-unsplash.jpg)
     position: fixed
     top: -50%
     left: -50%
