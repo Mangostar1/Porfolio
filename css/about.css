@@ -29,6 +29,8 @@
   padding: 1em;
   border-radius: 10px;
   background-color: rgba(81, 153, 255, 0.1254901961);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: #ffffff;
 }
 .sec-about #about .about-box .title-inner-about {

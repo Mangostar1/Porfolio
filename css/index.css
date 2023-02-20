@@ -71,11 +71,13 @@ html body .contaienr {
   grid-template-rows: auto 1fr auto;
   gap: 0em;
   min-height: 100vh;
+  position: relative;
   /*----------*/
   /*  Footer  */
   /*----------*/
 }
 html body .contaienr main {
+  z-index: 1;
   grid-row: 2/3;
   /*-----------*/
   /*  Welcome  */
