@@ -132,13 +132,22 @@ $test: red
         .active
             display: flex
 
-    .menu-sandwich
-        display: flex
-        flex-direction: column
-        gap: 10px
-        margin: 10px 0 10px 10px
-        padding: 20px
-        .line
-            background-color: $buttons
-            width: 50px
-            height: 5px
+        .menu-sandwich
+            display: flex
+            flex-direction: column
+            gap: 10px
+            margin: 10px 0 10px 10px
+            padding: 20px
+            .line
+                background-color: $buttons
+                width: 50px
+                height: 5px
+                transition: .8s
+            input
+                &:checked ~ .line-1
+                    transform: rotate(45deg) translateY(10px) translateX(10px)
+                &:checked ~ .line-2
+                    transform: rotate(-45deg)
+                &:checked ~ .line-3
+                    transform: translateX(-80px)
+                    visibility: hidden
