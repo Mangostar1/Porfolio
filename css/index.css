@@ -107,16 +107,35 @@ html body .contaienr main #sec-welcom-id #welcome {
   letter-spacing: 2px;
   margin: auto;
 }
-html body .contaienr main #sec-welcom-id #welcome .hello-words {
+html body .contaienr main #sec-welcom-id #welcome .hello-content {
+  position: relative;
+}
+html body .contaienr main #sec-welcom-id #welcome .hello-content .hello-words {
   color: #ffffff;
   font-size: 4rem;
   font-weight: bold;
 }
-html body .contaienr main #sec-welcom-id #welcome #p-hello {
-  animation: hello 0.5s;
+html body .contaienr main #sec-welcom-id #welcome .hello-content #p-hello {
+  animation: hello 1.5s;
+  opacity: 0;
 }
-html body .contaienr main #sec-welcom-id #welcome #p-world {
-  animation: world 1s;
+html body .contaienr main #sec-welcom-id #welcome .hello-content #p-world {
+  animation: world 2s;
+  opacity: 0;
+}
+html body .contaienr main #sec-welcom-id #welcome .hello-content #p-omar {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: omar 2s;
+}
+html body .contaienr main #sec-welcom-id #welcome .hello-content #p-zavala {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: zavala 2.5s;
 }
 html body .contaienr footer {
   grid-row: 3/4;
@@ -182,21 +201,59 @@ html body .contaienr footer .icons_foter .instagram {
 
 @keyframes hello {
   0% {
+    opacity: 1;
     transform: scale(0);
   }
-  100% {
+  50% {
+    opacity: 1;
     transform: scale(1);
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes world {
   0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  25% {
     transform: scale(0);
   }
   50% {
-    transform: scale(0);
+    opacity: 1;
+    transform: scale(1);
   }
   100% {
-    transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes omar {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes zavala {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes pulse {
