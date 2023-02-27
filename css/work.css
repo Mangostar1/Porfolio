@@ -41,7 +41,7 @@
 
 #img-calendar, #img-calc, #img-ipAddress, #img-freeTabs {
   border-radius: 8px;
-  width: 350px;
+  width: 250px;
   height: 250px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@
 }
 
 #img-calendar {
-  background-image: url("../icons/works-img/calendar.PNG");
+  background-image: url("../icons/works-img/web_calendar_presentacion.png");
 }
 
 #img-calc {
@@ -62,13 +62,13 @@
 }
 
 #img-freeTabs {
-  background-image: url("../icons/works-img/free_tabs.png");
+  background-image: url("../icons/works-img/Free_Tabs_presentacion.png");
 }
 
 .overlay-work {
   background-color: rgb(0, 0, 0);
   border-radius: 8px;
-  width: 350px;
+  width: 280px;
   height: 250px;
   position: absolute;
   top: 0;
