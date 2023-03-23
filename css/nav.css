@@ -62,7 +62,7 @@
   z-index: 10;
 }
 #header .logo {
-  width: 180px;
+  width: 70px;
   margin: 10px 0 0 10px;
   z-index: 10;
   cursor: pointer;
@@ -125,6 +125,9 @@
   #header {
     flex-direction: column;
   }
+  #header .logo {
+    margin: 0 0 0 35%;
+  }
   #header .nav-logo-content {
     display: none;
     background-color: rgba(68, 68, 68, 0.9647058824);
@@ -132,6 +135,7 @@
     justify-content: flex-start;
     position: fixed;
     z-index: 15;
+    width: 200px;
     height: 400px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -140,6 +144,14 @@
     flex-direction: column;
     align-items: center;
     margin: 20px 0 0 0;
+    gap: 60px;
+  }
+  #header .nav-logo-content .nav .social-links {
+    order: 2;
+  }
+  #header .nav-logo-content .nav .nav-menu {
+    order: 1;
+    align-items: center;
   }
   #header .nav-logo-content .nav .home-mobile {
     display: block;
@@ -157,14 +169,15 @@
   #header .menu-sandwich {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     gap: 10px;
     margin: 10px 0 10px 10px;
     padding: 20px;
   }
   #header .menu-sandwich .line {
     background-color: #e7f4ff;
-    width: 50px;
-    height: 5px;
+    width: 30px;
+    height: 2px;
     transition: 0.8s;
   }
   #header .menu-sandwich input:checked ~ .line-1 {
@@ -174,7 +187,7 @@
     transform: rotate(-45deg);
   }
   #header .menu-sandwich input:checked ~ .line-3 {
-    transform: translateX(-80px);
+    transform: translateX(80px);
     visibility: hidden;
   }
 }
