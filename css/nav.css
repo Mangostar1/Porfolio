@@ -187,7 +187,7 @@
     transform: rotate(-45deg);
   }
   #header .menu-sandwich input:checked ~ .line-3 {
-    transform: translateX(80px);
+    transform: translateX(-80px);
     visibility: hidden;
   }
 }
