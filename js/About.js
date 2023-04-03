@@ -9,25 +9,15 @@ export function About(element) {
             <div>
                 <h5 class="card-title title-other">Acerca de mí</h5>
                 <p class="card-text">
-                    Hola, me llamo Omar Zavala Ugarte y me inicie en el mundo del desarrollo web en octubre del año 2021 como autodidacta.
+                ¡Hola! Soy Omar Zavala Ugarte, un desarrollador web autodidacta apasionado por la tecnología y las últimas 
+                tendencias en diseño y desarrollo web. Con una sólida formación autodidacta, he adquirido habilidades en HTML, 
+                CSS, JavaScript y React, a través de cursos en línea y proyectos personales en mi perfil de GitHub. Mi objetivo 
+                es seguir mejorando mis habilidades y aprender de los profesionales más experimentados en la industria, ¡y estoy 
+                emocionado de formar parte de su equipo!
                 </p>
             </div>
             <div class="content-about-and-tec">
                 <div class="about-box" id="abot-me">
-                    <h5 class="title-inner-about">¿Quién soy?</h5>
-                    <p class="p-about">
-                        Hola, me llamo Omar Zavala, soy chileno y me inicie en el mundo 
-                        de desarrollo web como un estudiante autodidacta 
-                        y a la fecha lo sigo siendo.
-                        <br>
-                        <br>
-                        Me caracterizó por mi
-                        constante deseo de aprender nuevas
-                        tecnologías y perfeccionarme en
-                        ellas, me apasiona el mundo de la
-                        programación y crear soluciones a
-                        través del software.
-                    </p>
 
                     <h5 class="title-inner-about" id="mi-cv">Mi Curriculum</h5>
                     
