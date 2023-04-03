@@ -6,6 +6,12 @@ export const htmlTec =
 export const cssTec = 
     `<li class="list-tec">
         CSS
+    </li>
+    <li class="list-tec">
+        CSS Flexbox
+    </li>
+    <li class="list-tec">
+        CSS Grid
     </li>`;
 
 export const sassTec = 
@@ -25,7 +31,10 @@ export const gitTec =
 
 export const reactTec = 
     `<li class="list-tec">
-        React JS
+        React
+    </li>
+    <li class="list-tec">
+        React Router
     </li>`;
 
 export const tailwindTec = 
