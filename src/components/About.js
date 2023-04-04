@@ -1,4 +1,4 @@
-import {htmlTec, cssTec, sassTec, jsTec, gitTec, reactTec, tailwindTec, mysqlTec, dockerTec, nodeTec, expressTec, FigmaTec} from './technologies.js';
+import { htmlTec, cssTec, sassTec, jsTec, gitTec, reactTec, tailwindTec, mysqlTec, dockerTec, nodeTec, expressTec, FigmaTec } from '../helpers/technologies.js';
 
 export function About(element) {
     const aboutContent = document.createElement('section')
@@ -22,7 +22,7 @@ export function About(element) {
                     <h5 class="title-inner-about" id="mi-cv">Mi Curriculum</h5>
                     
                     <a class="btn-pdf-link btn-pdf"href="./pdf.html">
-                        <img src="./icons/curriculum-resume-svgrepo-com.svg" alt="CV" class="cv-img">
+                        <img src="src/assets/imgs/curriculum-resume-svgrepo-com.svg" alt="CV" class="cv-img">
                         Ve mi Curriculum
                     </a>
 

@@ -1,6 +1,6 @@
-import {About} from './About.js';
-import {Work} from './Work.js';
-import {Home} from './Home.js';
+import {About} from './components/About.js';
+import {Work} from './components/Work.js';
+import {Home} from './components/Home.js';
 
 const $main = document.querySelector('main');
 

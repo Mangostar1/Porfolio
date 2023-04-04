@@ -50,19 +50,19 @@
 }
 
 #img-calendar {
-  background-image: url("../icons/works-img/web_calendar_presentacion.png");
+  background-image: url("../assets/imgs/works-img/web_calendar_presentacion.png");
 }
 
 #img-calc {
-  background-image: url("../icons/works-img/ejercicios-web-presentacion.png");
+  background-image: url("../assets/imgs/works-img/ejercicios-web-presentacion.png");
 }
 
 #img-ipAddress {
-  background-image: url("../icons/works-img/ip-address tracker.PNG");
+  background-image: url("../assets/imgs/works-img/ip-address tracker.PNG");
 }
 
 #img-freeTabs {
-  background-image: url("../icons/works-img/Free_Tabs_presentacion.png");
+  background-image: url("../assets/imgs/works-img/Free_Tabs_presentacion.png");
 }
 
 .overlay-work {

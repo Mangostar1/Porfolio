@@ -1,4 +1,4 @@
-import { calendar, ejercicios, freeTabs } from "./workDone.js";
+import { calendar, ejercicios, freeTabs } from "../helpers/workDone.js";
 
 export function Work(element) {
     const workContent = document.createElement('section')
