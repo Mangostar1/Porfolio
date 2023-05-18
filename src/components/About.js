@@ -1,11 +1,24 @@
-import { htmlTec, cssTec, sassTec, jsTec, gitTec, reactTec, tailwindTec, mysqlTec, dockerTec, nodeTec, expressTec, FigmaTec } from '../helpers/technologies.js';
+import {
+  htmlTec,
+  cssTec,
+  sassTec,
+  jsTec,
+  gitTec,
+  reactTec,
+  tailwindTec,
+  mysqlTec,
+  dockerTec,
+  nodeTec,
+  expressTec,
+  FigmaTec,
+  ReactNativeTec,
+} from "../helpers/technologies.js";
 
 export function About(element) {
-    const aboutContent = document.createElement('section')
-    aboutContent.classList.add('sec-about');
-    aboutContent.id = "sec-about-id";
-    aboutContent.innerHTML = 
-        `<article class="article" id="about">
+  const aboutContent = document.createElement("section");
+  aboutContent.classList.add("sec-about");
+  aboutContent.id = "sec-about-id";
+  aboutContent.innerHTML = `<article class="article" id="about">
             <div>
                 <h5 class="card-title title-other">Acerca de mí</h5>
                 <p class="card-text">
@@ -42,6 +55,8 @@ export function About(element) {
                         ${reactTec}
 
                         ${tailwindTec}
+
+												${ReactNativeTec}
                     </div>
 
                     <div class="about-tec">
@@ -79,5 +94,5 @@ export function About(element) {
             </div>
         </article>`;
 
-    element.appendChild(aboutContent);
+  element.appendChild(aboutContent);
 }
