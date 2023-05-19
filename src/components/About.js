@@ -56,7 +56,7 @@ export function About(element) {
 
                         ${tailwindTec}
 
-												${ReactNativeTec}
+						${ReactNativeTec}
                     </div>
 
                     <div class="about-tec">
