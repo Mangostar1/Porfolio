@@ -55,8 +55,6 @@ export function About(element) {
                         ${reactTec}
 
                         ${tailwindTec}
-
-						${ReactNativeTec}
                     </div>
 
                     <div class="about-tec">
