@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Zavala Ugarte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- <link rel="shortcut icon" href="icons/webpagehome_85808.ico"> -->
+    <link rel="stylesheet" href="src/styles/index.css">
+    <link rel="stylesheet" href="src/styles/nav.css">
+    <link rel="stylesheet" href="src/styles/about.css">
+    <link rel="stylesheet" href="src/styles/work.css">
+    <meta name="description" content="
+        Hola, me llamo Omar Zavala y este es mi portafolio. Acá encontraras mis proyectos más destacados y mis redes sociales por si gustas seguirme o contactarme.
+    ">
+</head>
+
+<body>
+    <div class="contaienr">
+        <div class="bg-animation"></div>
+        <header id="header">
+            <label class="menu-sandwich" for="menu-S-input">
+                <input type="checkbox" name="menu-S" id="menu-S-input">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </label>
+            <div class="nav-logo-content">
+                <label for="home" class="link-logo" id="home-link">
+                    <img src="src/assets/imgs/Logo-corto-o.svg" class="logo" title="home page" alt="home page">
+                </label>
+                <input type="radio" name="check" id="home">
+                <nav class="nav">
+                    <ul class="social-links">
+                        <li class="social-links-list">
+                            <a href="https://www.instagram.com/omar.zavala0/">
+                                <img id="img-instagram" class="img-social" src="src/assets/imgs/instagram-black&whithe.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="social-links-list">
+                            <a href="https://github.com/Mangostar1">
+                                <img id="img-github" class="img-social" src="src/assets/imgs/github.svg" alt="github">
+                            </a>
+                        </li>
+                        <li class="social-links-list">
+                            <a href="https://www.linkedin.com/in/omar-zavala-ugarte/">
+                                <img id="img-linkedin" class="img-social" src="src/assets/imgs/linkedin-svgrepo-com.svg" alt="linkedin">
+                            </a>
+                        </li>
+                        <li class="social-links-list">
+                            <a href="mailto:influencia.x.94@gmail.com" title="gmail">
+                                <img id="img-gmail" class="img-social" src="src/assets/imgs/email-svgrepo-com.svg" alt="gmail">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav-menu">
+
+                        <li class="nav-list home-mobile">
+                            <label for="home" class="nav-link" id="home-link">
+                                Inicio
+                                <div class="underLine-hover"></div>
+                            </label>
+                            <input type="radio" name="check" id="home">
+                        </li>
+
+                        <li class="nav-list">
+                            <label for="about" class="nav-link" id="about-link">
+                                Acerca de
+                                <div class="underLine-hover"></div>
+                            </label>
+                            <input type="radio" name="check" id="about">
+                        </li>
+
+                        <li class="nav-list">
+                            <label for="work" class="nav-link" id="work-link">
+                                Proyectos
+                                <div class="underLine-hover"></div>
+                            </label>
+                            <input type="radio" name="check" id="work">
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- the main content it's render from js/nav.js -->
+        <main>
+        </main>
+
+        <footer>
+            <div>
+                <p class="copyright">
+                    Hecho con <span id="love">❤</span> por <a class="footer-link" href="https://github.com/Mangostar1">Mi</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="src/index.js" type="module"></script>
+    <script src="src/helpers/technologies.js" type="module"></script>
+    <script src="src/helpers/workDone.js" type="module"></script>
+    <script src="src/components/About.js" type="module"></script>
+    <script src="src/components/Work.js" type="module"></script>
+    <script src="src/components/Home.js" type="module"></script>
+</body>
+</html>
