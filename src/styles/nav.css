@@ -92,7 +92,6 @@
   text-decoration: none;
   padding: 0.5em 0.5em;
   display: block;
-  color: #ffffff;
 }
 #header .nav .nav-menu .nav-list .nav-link:hover {
   color: #96CEE3;
@@ -100,6 +99,10 @@
 #header .nav .nav-menu .nav-list .nav-link:hover .underLine-hover {
   display: block;
   animation: navLinkHover 0.5s;
+}
+#header .nav .nav-menu .nav-list a {
+  text-decoration: none;
+  color: #ffffff;
 }
 #header .nav input {
   display: none;

@@ -1,31 +1,31 @@
-import {About} from './components/About.js';
-import {Work} from './components/Work.js';
-import {Home} from './components/Home.js';
+/* Animations */
+const overlayWork = document.getElementsByClassName('overlay-work');
+const tecUsed = document.getElementsByClassName('tec-used');
+const descriptWork= document.getElementsByClassName('descript-work');
 
-const $main = document.querySelector('main');
+const imgWorks = document.querySelectorAll('.img-works');
 
-document.addEventListener('DOMContentLoaded', Home($main))
+/* Animations options */
+const timeTrans = .2;
+const scale = 1.2;
 
-document.addEventListener('click', (e) => {
+window.addEventListener('mouseover', (e) => {
     
-    if (e.target.matches('.logo') || e.target.matches('#home-link')) {
-        $main.lastChild.remove();
-        Home($main);
+    if (e.target === overlayWork[0] || e.target === tecUsed[0] || e.target === tecUsed[1] || e.target === descriptWork[0]) {
+        Animations(0);
+    } 
+    else if (e.target === overlayWork[1] || e.target === tecUsed[2] || e.target === tecUsed[3] || e.target === descriptWork[1]) {
+        Animations(1);
+    } 
+    else if (e.target === overlayWork[2] || e.target === tecUsed[4] || e.target === tecUsed[5] || e.target === descriptWork[2]) {
+        Animations(2);
+    } else {
+        for (let i = 0; i < overlayWork.length; i++) {
+            imgWorks[i].style.cssText = `transition: all ${timeTrans}s ease; transform: scale(1)`;
+        }
     }
+});
 
-    if (e.target.matches('#about-link')) {
-        $main.lastChild.remove();
-        About($main);
-    }
-
-    if (e.target.matches('#work-link')) {
-        $main.lastChild.remove();
-        Work($main);
-    }
-
-    let $menuSandwich = document.querySelector('.nav-logo-content')
-    if (e.target.matches('.menu-sandwich') || e.target.matches('.line')) {
-        console.log('hace algo')
-        $menuSandwich.classList.toggle('active');
-    }
-})
+function Animations(numOverWork) {
+    imgWorks[numOverWork].style.cssText = `transition: all ${timeTrans}s ease; transform: scale(${scale}`;
+}
