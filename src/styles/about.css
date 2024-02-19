@@ -40,7 +40,13 @@
   margin: 0em 0px 1em 0px;
   width: 100%;
 }
-.sec-about #about .about-box .about-tec {
+.sec-about #about .about-box .about-tec-content {
+  margin: 2rem 0 1rem 0;
+  display: flex;
+  gap: 2rem;
+  flex-flow: row wrap;
+}
+.sec-about #about .about-box .about-tec-content .about-tec {
   margin: 0.5rem 0 0 0;
   text-align: center;
 }
