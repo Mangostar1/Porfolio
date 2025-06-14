@@ -1,0 +1,65 @@
+$colorHover: #123D78
+$colorMain: #206EDB
+$colorLight: #5F98E7
+$colorExtra: #87B2ED
+$buttons: #E8F0FC
+$color-white: #ffffff
+$colorBlack: #000000
+$test: red
+$bg-articles: #5199FF20
+
+footer
+  grid-row: 3 / 4
+  min-height: 5em
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  gap: 1em
+  position: relative
+  z-index: 4
+
+  #footer-copyright
+    height: 30px
+
+  .social-container
+    display: flex
+    justify-content: center
+    width: 100%
+
+    .social-links
+      display: flex
+      justify-content: center
+      align-items: center
+      gap: 1.5em
+      list-style: none
+      padding: 0
+      margin: 0
+
+      li
+        a
+          display: inline-block
+
+          .img-social
+            width: 30px
+            transition: all 0.4s ease
+
+            &:hover
+              filter: invert(18%) sepia(73%) saturate(5632%) hue-rotate(236deg) brightness(98%) contrast(96%)
+
+  .copyright
+    margin: 0
+    text-align: center
+    color: $color-white
+
+    #love
+      color: $test
+      animation: pulse 1s infinite
+
+@keyframes pulse
+  0%
+    font-size: 18px
+  50%
+    font-size: 15px
+  100%
+    font-size: 18px

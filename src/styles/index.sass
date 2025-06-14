@@ -122,48 +122,6 @@ html
                                 top: 0
                                 left: 0
                                 animation: zavala 2.5s
-            /*----------*/
-            /*  Footer  */
-            /*----------*/
-            footer
-                grid-row: 3 / 4
-                min-height: 5em
-                display: flex
-                align-items: center
-                justify-content: space-around
-                flex-direction: column
-                gap: 1em
-
-                position: relative
-                z-index: 4
-                div
-                    margin-top: .5em
-                    .copyright
-                        margin-left: 1em
-                        color: $color-white
-                        #love
-                            color: $test
-                            animation-name: pulse
-                            animation-duration: 1s
-                            animation-iteration-count: infinite
-                .icons_foter
-                    display: flex
-                    flex-direction: row
-                    gap: 1em
-
-                    margin-right: 1em
-                    .personalLinks
-                        color: $color-white
-                        font-weight: bold
-                        text-decoration: none
-                        .github, .linkedin, .email, .instagram, .miweb
-                            width: 30px
-                            margin-right: .1em
-                            transition: all 0.4s ease
-                        .github:hover, .linkedin:hover, .email:hover, .miweb:hover
-                            filter: invert(18%) sepia(73%) saturate(5632%) hue-rotate(236deg) brightness(98%) contrast(96%)
-                    .instagram
-                        filter: grayscale(100%)
 
 .bg-animation
     position: fixed
@@ -221,14 +179,6 @@ html
         opacity: 0
     100%
         opacity: 1
-
-@keyframes pulse
-    0%
-        font-size: 18px
-    50%
-        font-size: 15px
-    100%
-        font-size: 18px
 
 @keyframes bg-animation
     0%  
