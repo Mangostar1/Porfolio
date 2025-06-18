@@ -1,3 +1,3 @@
 # Mi portafolio
 
-[Link a la web](https://omar-zavala.xyz/)
+[Link a la web](https://omar-zavala.cl/)

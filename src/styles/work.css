@@ -6,6 +6,16 @@
   justify-content: center;
   align-items: center;
 }
+#sec-works .article {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
 #sec-works .work-text {
   text-align: center;
   margin-bottom: 100px;
@@ -13,9 +23,15 @@
 #sec-works .content-works {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
-  gap: 10px;
+  flex-flow: column wrap;
+  gap: 1rem;
+  width: 100%;
   border-radius: 8px;
+}
+#sec-works .content-works .content-works-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 #sec-works .content-works .content-works-2 {
   position: relative;
@@ -32,6 +48,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .works-list-links {
@@ -41,8 +58,8 @@
 
 #img-calendar, #img-rain, #img-isuit, #img-freeTabs {
   border-radius: 8px;
-  width: 400px;
-  height: 200px;
+  width: 600px;
+  height: 300px;
   background-size: contain;
   background-repeat: no-repeat;
   /* background-position: center */
@@ -68,8 +85,8 @@
 .overlay-work {
   background-color: rgb(0, 0, 0);
   border-radius: 8px;
-  width: 400px;
-  height: 200px;
+  width: 600px;
+  height: 300px;
   position: absolute;
   top: 0;
   left: 0;
@@ -104,7 +121,7 @@
   text-align: center;
   width: auto;
   height: auto;
-  margin-bottom: 1em;
+  margin: 2rem 0rem 0rem 0rem;
   padding: 2px 5px;
   border-radius: 5px;
   text-decoration: none;
@@ -114,6 +131,48 @@
 .tec-used:hover {
   color: #206EDB;
   border: 1px solid #87B2ED;
+}
+
+.description-work-content {
+  text-align: left;
+  color: #ffffff;
+}
+.description-work-content .description-work-tittle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.description-work-content p {
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* media query */
+@media (max-width: 768px) {
+  #sec-works .article {
+    padding: 0 1rem;
+  }
+  #sec-works .content-works {
+    flex-direction: column;
+    align-items: center;
+  }
+  #sec-works .content-works .content-works-1, #sec-works .content-works .content-works-2 {
+    width: 100%;
+    max-width: 600px;
+  }
+  #sec-works .content-img-works {
+    width: 100%;
+    height: 300px;
+  }
+  #img-calendar, #img-rain, #img-isuit, #img-freeTabs {
+    width: 100%;
+    height: 300px;
+  }
+  .overlay-work {
+    width: 100%;
+    height: 300px;
+  }
 }
 
 /*# sourceMappingURL=work.css.map */
