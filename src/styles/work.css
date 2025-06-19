@@ -67,7 +67,7 @@
 }
 
 #img-calendar {
-  background-image: url("../assets/imgs/works-img/calendar - 2.png");
+  background-image: url("../assets/imgs/works-img/calendario-actual.png");
 }
 
 #img-rain {
@@ -75,7 +75,7 @@
 }
 
 #img-isuit {
-  background-image: url("../assets/imgs/works-img/iSuit - 3.png");
+  background-image: url("../assets/imgs/works-img/isuit.png");
 }
 
 #img-freeTabs {
@@ -145,7 +145,10 @@
 .description-work-content p {
   font-size: 1rem;
   line-height: 1.5em;
-  margin-bottom: 0.5em;
+  margin: 0rem 0rem 0.5rem 0rem;
+}
+.description-work-content .description-work-teconologies {
+  margin: 1rem 0rem 1rem 0rem;
 }
 
 /* media query */
