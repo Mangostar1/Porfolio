@@ -117,7 +117,7 @@ main {
   padding: 0 1em;
 }
 .skills-section .skills-grid .skill-item {
-  background: #1c1f26;
+  background: #829ec5;
   border-radius: 12px;
   padding: 1em;
   display: flex;
@@ -137,13 +137,77 @@ main {
   margin-bottom: 0.5em;
 }
 .skills-section .skills-grid .skill-item span {
-  font-size: 0.9em;
+  font-size: 0.8rem;
   color: #ffffff;
+}
+
+#img-express {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5em;
+}
+
+#img-router {
+  width: 80px;
+  height: auto;
+  margin-bottom: 0.5em;
+}
+
+#img-node {
+  width: 50px;
+  height: auto;
+  margin-bottom: 0.5em;
+}
+
+#img-mysql {
+  width: 70px;
+  height: auto;
+  margin-bottom: 0rem;
+}
+
+#img-figma {
+  width: 50px;
+  height: auto;
+  margin-bottom: 0rem;
+}
+
+#img-jquery {
+  width: 70px;
+  height: auto;
+  margin-bottom: 0.5rem;
 }
 
 @media (max-width: 767px) {
   .sec-about #about #abot-me {
     width: 100%;
+  }
+  .skills-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 0rem 6rem 0rem;
+  }
+  .skills-section .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+  .sec-about {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec-about #about {
+    width: 100%;
+    max-width: 320px;
   }
 }
 
